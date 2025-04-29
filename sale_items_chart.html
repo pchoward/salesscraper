@@ -1,0 +1,458 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sale Items and Changes</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f4f4f4;
+            }
+            h1, h2 {
+                text-align: center;
+                color: #333;
+            }
+            h2 {
+                margin-top: 40px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            th, td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+            }
+            th:hover {
+                background-color: #0056b3;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+            a {
+                color: #007bff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .new {
+                background-color: #e6ffe6;
+            }
+            .price-change {
+                background-color: #fff3cd;
+            }
+            .removed {
+                background-color: #ffe6e6;
+            }
+            .section {
+                margin-bottom: 40px;
+            }
+        </style>
+        <script>
+            function sortTable(tableId, colIndex, isNumeric = false) {
+                const table = document.getElementById(tableId);
+                let rows = Array.from(table.rows).slice(1); // Skip header row
+                const isAsc = table.rows[0].cells[colIndex].getAttribute('data-sort') !== 'asc';
+                
+                rows.sort((a, b) => {
+                    let aValue = a.cells[colIndex].innerText.trim();
+                    let bValue = b.cells[colIndex].innerText.trim();
+                    
+                    if (isNumeric) {
+                        aValue = parseFloat(aValue.replace('%', '')) || 0;
+                        bValue = parseFloat(bValue.replace('%', '')) || 0;
+                        return isAsc ? aValue - bValue : bValue - aValue;
+                    } else {
+                        return isAsc ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+                    }
+                });
+                
+                // Update sort direction
+                table.rows[0].cells[colIndex].setAttribute('data-sort', isAsc ? 'asc' : 'desc');
+                
+                // Re-append sorted rows
+                const tbody = table.getElementsByTagName('tbody')[0];
+                tbody.innerHTML = '';
+                rows.forEach(row => tbody.appendChild(row));
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Sale Items and Changes</h1>
+    
+        <div class="section">
+            <h2>Current Sale Items</h2>
+            <table id="table-all">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('table-all', 0)">Store</th>
+                        <th onclick="sortTable('table-all', 1)">Product Name</th>
+                        <th onclick="sortTable('table-all', 2, true)">New Price ($)</th>
+                        <th onclick="sortTable('table-all', 3, true)">Old Price ($)</th>
+                        <th onclick="sortTable('table-all', 4, true)">% Off</th>
+                        <th onclick="sortTable('table-all', 5)">Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html" target="_blank">OJ Thunderjuice 75mm 78a Orange Cruiser Wheels</a></td>
+                    <td>44.99</td>
+                    <td>54.95</td>
+                    <td>18.13%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html" target="_blank">Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html" target="_blank">Powell Peralta Dragons 93a 56mm Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>42.95</td>
+                    <td>18.53%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ From Concentrate 53mm 101a Orange Skateboard Wheels</a></td>
+                    <td>19.99</td>
+                    <td>25.00</td>
+                    <td>20.04%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-double-duro-53mm-101a-pastel-orange-skateboard-wheels.html" target="_blank">OJ Double Duro 53mm 101a Pastel Orange Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>56.95</td>
+                    <td>38.56%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-superwide-hd-80hd-58mm-orange-skateboard-wheels.html" target="_blank">Spitfire Superwide 80HD 58mm Orange Skateboard Wheels</a></td>
+                    <td>24.99</td>
+                    <td>49.95</td>
+                    <td>49.97%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html" target="_blank">Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html" target="_blank">Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html" target="_blank">Bones Roughriders ATF 59mm 80a Red Cruiser Wheels</a></td>
+                    <td>34.99</td>
+                    <td>35.95</td>
+                    <td>2.67%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html" target="_blank">OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels</a></td>
+                    <td>24.99</td>
+                    <td>39.95</td>
+                    <td>37.45%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html" target="_blank">Spitfire Firebolt 51mm 99a Red Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>37.95</td>
+                    <td>20.97%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>39.95</td>
+                    <td>24.93%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html" target="_blank">Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>42.95</td>
+                    <td>18.53%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html" target="_blank">Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>54.95</td>
+                    <td>36.32%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html" target="_blank">OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>39.95</td>
+                    <td>24.93%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/spitfire-x-skate-like-a-girl-formula-four-54mm-full-conical-99d-skateboard-wheels.html" target="_blank">Spitfire x Skate Like A Girl Formula Four 54mm Full Conical 99d Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>45.95</td>
+                    <td>23.85%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels</a></td>
+                    <td>44.99</td>
+                    <td>56.95</td>
+                    <td>21.00%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>Zumiez</td>
+                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>38.95</td>
+                    <td>23.00%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK4
+" target="_blank">NewBones Mummy Skulls 100a V4 Wide Wheels Black</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK3
+" target="_blank">Bones Mummy Skulls 100a V4 Wide Wheels Black</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH3
+" target="_blank">NewBones Mummy Skulls 100a V4 Wide Wheels White</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH4
+" target="_blank">NewBones Mummy Skulls 100a V4 Wide Wheels White</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK4
+" target="_blank">NewBones Mummy Skulls 100a V5 Sidecut Wheels Black</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK3
+" target="_blank">Bones Mummy Skulls 100a V5 Sidecut Wheels Black</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSSWH.html?color=WH4
+" target="_blank">Bones Mummy Skulls 100a V5 Sidecut Wheels White</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSSWH.html?color=WH5
+" target="_blank">Bones Mummy Skulls 100a V5 Sidecut Wheels White</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNO4WH.html?color=OR
+" target="_blank">NewBones NEONderthal 100a V4 Wheels Orange</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNY4WH.html?color=YE
+" target="_blank">Bones NEONderthal 100a V4 Wheels Yellow</a></td>
+                    <td>24.99</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Classic_101a_Wheels/descpage-SFLSCWH.html?color=WH
+" target="_blank">Spitfire F4 Lil Smokies Classic 101a Wheels</a></td>
+                    <td>29.98</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH
+" target="_blank">Clearance -33%Spitfire F4 Lil Smokies Tablet 101a Wheels</a></td>
+                    <td>29.98</td>
+                    <td>45.00</td>
+                    <td>33.38%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH
+" target="_blank">Clearance -33%Spitfire F4 Lil Smokies Tablet 99a Wheels</a></td>
+                    <td>29.98</td>
+                    <td>45.00</td>
+                    <td>33.38%</td>
+                    <td>Check store</td>
+                </tr>
+        
+                <tr>
+                    <td>SkateWarehouse</td>
+                    <td><a href="
+https://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH
+" target="_blank">Spitfire Flashpoint Classic 99a Wheels</a></td>
+                    <td>29.98</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Check store</td>
+                </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="section">
+            <h2>Historical Changes</h2>
+    <p>No changes detected since the last run.</p>
+        </div>
+    </body>
+    </html>
+    

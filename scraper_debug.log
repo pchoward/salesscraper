@@ -1,0 +1,169 @@
+2025-04-28 18:31:33,346 - skate_scraper - INFO - Starting skateboard wheel sales scraper
+2025-04-28 18:31:33,347 - skate_scraper - INFO - Running Zumiez scraper
+2025-04-28 18:31:33,347 - skate_scraper.Zumiez - INFO - Starting scrape for Zumiez
+2025-04-28 18:31:33,347 - skate_scraper - INFO - Fetching page: https://www.zumiez.com/skate/components/wheels.html?sale=1
+2025-04-28 18:31:33,348 - WDM - INFO - ====== WebDriver manager ======
+2025-04-28 18:31:36,104 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:31:36,160 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:31:36,199 - WDM - INFO - Driver [C:\Users\User\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-04-28 18:31:42,532 - skate_scraper - INFO - Waiting for page to load completely...
+2025-04-28 18:31:42,617 - skate_scraper - INFO - Attempting to dismiss cookie banners...
+2025-04-28 18:31:42,756 - skate_scraper - INFO - On Zumiez site, looking for 'load more' buttons...
+2025-04-28 18:31:42,870 - skate_scraper - INFO - No more 'load more' buttons found
+2025-04-28 18:31:43,056 - skate_scraper - INFO - Page fully loaded, returning HTML
+2025-04-28 18:31:46,596 - skate_scraper.Zumiez - INFO - Parsing Zumiez HTML. Length: 500063
+2025-04-28 18:31:46,610 - skate_scraper.Zumiez - INFO - Selector '.product-item' found 0 items
+2025-04-28 18:31:46,612 - skate_scraper.Zumiez - INFO - Selector '.product-grid-item' found 0 items
+2025-04-28 18:31:46,614 - skate_scraper.Zumiez - INFO - Selector '.item.product' found 0 items
+2025-04-28 18:31:46,616 - skate_scraper.Zumiez - INFO - Selector '[data-role="priceBox"]' found 0 items
+2025-04-28 18:31:46,618 - skate_scraper.Zumiez - INFO - Selector '.product-tile' found 0 items
+2025-04-28 18:31:46,618 - skate_scraper.Zumiez - INFO - HTML parsing found no products, trying JSON extraction
+2025-04-28 18:31:46,620 - skate_scraper.Zumiez - INFO - Scraped 0 products from Zumiez
+2025-04-28 18:31:46,620 - skate_scraper - INFO - Zumiez: 0 items scraped
+2025-04-28 18:31:46,621 - skate_scraper - INFO - Running SkateWarehouse scraper
+2025-04-28 18:31:46,621 - skate_scraper.SkateWarehouse - INFO - Starting scrape for SkateWarehouse
+2025-04-28 18:31:46,621 - skate_scraper - INFO - Fetching page: https://www.skatewarehouse.com/Clearance_Skateboard_Wheels/catpage-SALEWHEELS.html
+2025-04-28 18:31:46,622 - WDM - INFO - ====== WebDriver manager ======
+2025-04-28 18:31:49,198 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:31:49,307 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:31:49,344 - WDM - INFO - Driver [C:\Users\User\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-04-28 18:31:56,642 - skate_scraper - INFO - Waiting for page to load completely...
+2025-04-28 18:31:56,716 - skate_scraper - INFO - Attempting to dismiss cookie banners...
+2025-04-28 18:31:57,103 - skate_scraper - INFO - Clicked cookie button with selector: //button[contains(text(),'Accept')]
+2025-04-28 18:31:58,115 - skate_scraper - INFO - Page fully loaded, returning HTML
+2025-04-28 18:32:01,041 - skate_scraper.SkateWarehouse - INFO - Parsing SkateWarehouse HTML. Length: 292554
+2025-04-28 18:32:01,091 - skate_scraper.SkateWarehouse - INFO - Found 75 product links
+2025-04-28 18:32:01,092 - skate_scraper.SkateWarehouse - INFO - Scraped 37 products from SkateWarehouse
+2025-04-28 18:32:01,092 - skate_scraper - INFO - SkateWarehouse: 37 items scraped
+2025-04-28 18:32:01,094 - skate_scraper - INFO - Running CCS scraper
+2025-04-28 18:32:01,094 - skate_scraper.CCS - INFO - Starting scrape for CCS
+2025-04-28 18:32:01,094 - skate_scraper - INFO - Fetching page: https://shop.ccs.com/collections/clearance/skateboard-wheels
+2025-04-28 18:32:01,094 - WDM - INFO - ====== WebDriver manager ======
+2025-04-28 18:32:04,036 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:32:04,074 - WDM - INFO - Get LATEST geckodriver version for 137.0 firefox
+2025-04-28 18:32:04,112 - WDM - INFO - Driver [C:\Users\User\.wdm\drivers\geckodriver\win64\v0.36.0\geckodriver.exe] found in cache
+2025-04-28 18:32:11,255 - skate_scraper - INFO - Waiting for page to load completely...
+2025-04-28 18:32:11,310 - skate_scraper - INFO - Attempting to dismiss cookie banners...
+2025-04-28 18:32:11,618 - skate_scraper - INFO - Page fully loaded, returning HTML
+2025-04-28 18:32:14,898 - skate_scraper.CCS - INFO - Parsing CCS HTML. Length: 557413
+2025-04-28 18:32:15,006 - skate_scraper.CCS - INFO - Selector '.product-item' found 0 items
+2025-04-28 18:32:15,020 - skate_scraper.CCS - INFO - Selector '.product-card' found 0 items
+2025-04-28 18:32:15,032 - skate_scraper.CCS - INFO - Selector '.product' found 0 items
+2025-04-28 18:32:15,033 - skate_scraper.CCS - INFO - Scraped 0 products from CCS
+2025-04-28 18:32:15,033 - skate_scraper - INFO - CCS: 0 items scraped
+2025-04-28 18:32:15,047 - skate_scraper - INFO - Changes detected:
+2025-04-28 18:32:15,047 - skate_scraper - INFO - 
+SkateWarehouse:
+2025-04-28 18:32:15,047 - skate_scraper - INFO -   Price change: 28.98 -> $28.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Opera_SOS_Cadenza_101a_Wheels/descpage-OPC5WH.html
+
+2025-04-28 18:32:15,047 - skate_scraper - INFO -   Price change: 29.98 -> $29.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH
+
+2025-04-28 18:32:15,048 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK4
+
+2025-04-28 18:32:15,048 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK3
+
+2025-04-28 18:32:15,048 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH3
+
+2025-04-28 18:32:15,048 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH4
+
+2025-04-28 18:32:15,048 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK4
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK3
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSSWH.html?color=WH4
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSSWH.html?color=WH5
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNO4WH.html?color=OR
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 24.99 -> $24.99 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNY4WH.html?color=YE
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Arc_Wheels/descpage-DSARCWH.html?color=WH
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Arc_Wheels/descpage-DSARMWH.html?color=WH0
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Divide_Wheels/descpage-DSDQ4WH.html?color=WH2
+
+2025-04-28 18:32:15,049 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Quarter_Wheels/descpage-DSQUAWH.html?color=WH1
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Quarter_Wheels/descpage-DSQUAWH.html?color=WH2
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 14.98 -> $14.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Darkstar_Responder_Wheels/descpage-DSRESWH.html?color=WH2
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 18.98 -> $18.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Enjoi_Box_Panda_Wheels/descpage-EIBXPWH.html?color=WH1
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 18.98 -> $18.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Enjoi_Helvetica_Neue_Orange_99a_Wheels/descpage-EIHNOWH.html?color=WH
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 49.98 -> $49.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_Double_Duro_101a_95a_Wheels/descpage-OJDWHWH.html?color=WH
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 49.98 -> $49.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_Double_Duro_101a_95a_Wheels/descpage-OJ58WH.html?color=WH
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 49.98 -> $49.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_Dressen_Koi_Double_Duro_101a_95a_Mini_Combo_Wheels/descpage-OJDKWH.html?color=WH
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 19.98 -> $19.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_From_Concentrate_Hardline_101a_Wheels/descpage-OJC21WH.html?color=WH1
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 19.98 -> $19.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_From_Concentrate_Hardline_101a_Wheels/descpage-OJC21WH.html?color=WH2
+
+2025-04-28 18:32:15,050 - skate_scraper - INFO -   Price change: 19.98 -> $19.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_From_Concentrate_Hardline_101a_Wheels/descpage-OJC21WH.html?color=WH3
+
+2025-04-28 18:32:15,051 - skate_scraper - INFO -   Price change: 49.98 -> $49.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/OJ_Vianna_High_Roller_Double_Duro_101a_95a_Wheels/descpage-OJGVWH.html?color=WH
+
+2025-04-28 18:32:15,051 - skate_scraper - INFO -   Price change: 28.98 -> $28.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Opera_SOS_Cadenza_101a_Wheels/descpage-OPC52WH.html?color=WH
+
+2025-04-28 18:32:15,051 - skate_scraper - INFO -   Price change: 28.98 -> $28.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Opera_SOS_Echo_Classic_101a_Wheels/descpage-OPE52WH.html
+
+2025-04-28 18:32:15,051 - skate_scraper - INFO -   Price change: 28.98 -> $28.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Opera_SOS_Echo_Classic_101a_Wheels/descpage-OPE55WH.html
+
+2025-04-28 18:32:15,051 - skate_scraper - INFO -   Price change: 28.98 -> $28.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Opera_SOS_Mezzo_Hardline_Conical_101a_Wheels/descpage-OPMHWH.html
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 18.98 -> $18.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Ricta_Wireframe_Sparx_99a_Wheels/descpage-RIWFSWH.html?color=WH
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 18.98 -> $18.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Ricta_Wireframe_Sparx_99a_Wheels/descpage-RIWFSWH.html?color=WH1
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 44.98 -> $44.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Slime_Balls_Angler_Light_Ups_OG_Slime_78a_Wheels/descpage-SBALUWH.html?color=GN
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 29.98 -> $29.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Classic_101a_Wheels/descpage-SFLSCWH.html?color=WH
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 29.98 -> $29.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH
+
+2025-04-28 18:32:15,052 - skate_scraper - INFO -   Price change: 29.98 -> $29.98 | https://www.skatewarehouse.com
+https://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH
+
+2025-04-28 18:32:15,059 - skate_scraper - INFO - Saved current data to previous_data.json
+2025-04-28 18:32:15,059 - skate_scraper - INFO - Scraper completed successfully

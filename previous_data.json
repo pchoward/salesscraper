@@ -1,11 +1,12 @@
 {
-  "Zumiez": [
+  "Zumiez_Wheels": [
     {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
       "price_old": "54.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -14,6 +15,7 @@
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -22,22 +24,7 @@
       "price_new": "34.99",
       "price_old": "42.95",
       "availability": "Check store",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Double Duro 53mm 101a Pastel Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-double-duro-53mm-101a-pastel-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
-      "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -46,6 +33,25 @@
       "price_new": "24.99",
       "price_old": "49.95",
       "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Double Duro 53mm 101a Pastel Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-double-duro-53mm-101a-pastel-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -54,6 +60,7 @@
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -62,6 +69,7 @@
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -70,6 +78,7 @@
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -78,22 +87,7 @@
       "price_new": "34.99",
       "price_old": "35.95",
       "availability": "Check store",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
-      "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -102,22 +96,25 @@
       "price_new": "29.99",
       "price_old": "37.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
       "price_old": "39.95",
       "availability": "Check store",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "42.95",
-      "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -126,6 +123,25 @@
       "price_new": "34.99",
       "price_old": "54.95",
       "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "42.95",
+      "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -134,6 +150,7 @@
       "price_new": "29.99",
       "price_old": "39.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -142,6 +159,7 @@
       "price_new": "34.99",
       "price_old": "45.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -150,6 +168,7 @@
       "price_new": "44.99",
       "price_old": "56.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     },
     {
@@ -158,16 +177,18 @@
       "price_new": "29.99",
       "price_old": "38.95",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse": [
+  "SkateWarehouse_Wheels": [
     {
       "name": "NewBones Mummy Skulls 100a V4 Wide Wheels Black",
       "url": "\nhttps://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK4\n",
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -176,6 +197,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -184,6 +206,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -192,6 +215,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -200,6 +224,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -208,6 +233,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -216,6 +242,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -224,6 +251,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -232,6 +260,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -240,6 +269,7 @@
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -248,6 +278,7 @@
       "price_new": "29.98",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -256,6 +287,7 @@
       "price_new": "29.98",
       "price_old": "45.00",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -264,6 +296,7 @@
       "price_new": "29.98",
       "price_old": "45.00",
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     },
     {
@@ -272,8 +305,240 @@
       "price_new": "29.98",
       "price_old": null,
       "availability": "Check store",
+      "part": "Wheels",
       "store": "SkateWarehouse"
     }
   ],
-  "CCS": []
+  "CCS_Wheels": [],
+  "Zumiez_Trucks": [
+    {
+      "name": "Independent x Hockey Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 AF1 Gold Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "32.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace Anderson 66 AF1 Black & White Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
+      "price_new": "27.99",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "30.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Colbourn 139mm Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "30.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    }
+  ],
+  "SkateWarehouse_Trucks": [
+    {
+      "name": "Clearance\u00a0-30%Independent Mid Truck Tiago Lemos",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
+      "price_new": "19.98",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-16%Independent S11 Hollow Grant Taylor Barcode Truck",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Hollow_Grant_Taylor_Barcode_Truck/descpage-INHGTTR.html?color=SI\n",
+      "price_new": "24.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-26%Independent S11 Louie Lopez IKP Standard Truck Black",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Louie_Lopez_IKP_Standard_Truck/descpage-INLLITR.html?color=BK\n",
+      "price_new": "21.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-21%Independent Stage 11 BTG Speed Standard Truck",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTGTR.html?color=BL\n",
+      "price_new": "21.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-10%Independent Stage 11 BTG Speed Standard Truck Burgundy",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTBTR.html?color=RD\n",
+      "price_new": "24.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-16%Independent Stage 11 Hollow Delfino Truck Silver/Red",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Hollow_Delfino_Truck/descpage-INPDTR.html?color=SI\n",
+      "price_new": "24.98",
+      "price_old": "29.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-21%Independent Stage 11 Santa Cruz Standard Truck",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Santa_Cruz_Standard_Truck/descpage-INCZTR.html?color=BK\n",
+      "price_new": "24.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-7%Independent Stage 11 Standard Bar Truck Flat Black",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-INBRTR.html?color=BK\n",
+      "price_new": "24.98",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    }
+  ],
+  "SkateWarehouse_Bearings": [
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Alex Midler Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Alex_Midler_Pro_G3_Bearings/descpage-BSAMBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Alexis Ramirez Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Alexis_Ramirez_Pro_G3_Bearings/descpage-BSARBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. David Gravette Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_David_Gravette_Pro_G3_Bearings/descpage-BSDGBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Eric Dressen Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Eric_Dressen_Pro_G3_Bearings/descpage-BSEDBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Mason Silva Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Mason_Silva_Pro_G3_Bearings/descpage-BSMSBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Pedro Delfino Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Pedro_Delfino_Pro_G3_Bearings/descpage-BSPDBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Fabiana Delfino Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Fabiana_Delfino_Pro_G3_Bearings/descpage-BSFDBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Roman Pabich Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Roman_Pabich_Pro_G3_Bearings/descpage-BSRPBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-51%Bronson Speed Co. Samarria Brevard Pro G3 Bearings",
+      "url": "\nhttps://www.skatewarehouse.com/Bronson_Speed_Co_Samarria_Brevard_Pro_G3_Bearings/descpage-BSSBBR.html\n",
+      "price_new": "16.98",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Bearings",
+      "store": "SkateWarehouse"
+    }
+  ]
 }

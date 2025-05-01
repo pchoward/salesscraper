@@ -12,12 +12,12 @@ import random
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 from selenium.common.exceptions import TimeoutException, WebDriverException
 
@@ -26,40 +26,38 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def fetch_page(url, max_retries=3, timeout=30):
     """
-    Uses Firefox (via Selenium) to render JavaScript and return page HTML.
+    Uses Chrome (via Selenium) to render JavaScript and return page HTML.
     Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
     """
     ua = UserAgent()
     options = Options()
     options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
-    options.set_preference("general.useragent.override", ua.random)
-    options.set_preference("dom.webnotifications.enabled", False)
-    options.set_preference("permissions.default.desktop-notification", 2)
-    options.set_preference("dom.webdriver.enabled", False)  # Anti-bot
-    options.set_preference("useAutomationExtension", False)
+    options.add_argument(f"user-agent={ua.random}")
+    options.add_argument("--disable-notifications")
+    options.add_argument("--disable-web-security")
+    options.add_argument("--allow-running-insecure-content")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-infobars")
-    options.add_argument("--width=1280")  # Reduced size for CI
-    options.add_argument("--height=720")
+    options.add_argument("--window-size=1280,720")  # Reduced size for CI
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option("useAutomationExtension", False)
 
-    # Use manually installed geckodriver in CI, fallback to webdriver-manager locally
-    geckodriver_path = "/usr/local/bin/geckodriver" if os.getenv("CI") else GeckoDriverManager().install()
-    service = Service(executable_path=geckodriver_path)
-    service.log_path = "geckodriver.log"
-    service.log_level = "DEBUG"
+    # Use manually installed chromedriver in CI, fallback to webdriver-manager locally
+    chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
+    service = Service(executable_path=chromedriver_path)
 
     for attempt in range(max_retries):
         driver = None
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
-            logging.info(f"Using geckodriver at {service.path}")
+            logging.info(f"Using chromedriver at {service.path}")
 
             # Add retry logic for WebDriver initialization
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:
                     logging.info(f"Initializing WebDriver (Attempt {driver_attempt + 1})")
-                    driver = webdriver.Firefox(service=service, options=options)
+                    driver = webdriver.Chrome(service=service, options=options)
                     logging.info("WebDriver initialized successfully")
                     break
                 except TimeoutException as e:

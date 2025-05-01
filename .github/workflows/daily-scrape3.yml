@@ -1,55 +1,117 @@
-name: Run Web Scraper 3
+def fetch_page(url, max_retries=3, timeout=30):  # Increased timeout
+    """
+    Uses Firefox (via Selenium) to render JavaScript and return page HTML.
+    Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
+    """
+    ua = UserAgent()
+    options = Options()
+    options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
+    options.set_preference("general.useragent.override", ua.random)
+    options.set_preference("dom.webnotifications.enabled", False)
+    options.set_preference("permissions.default.desktop-notification", 2)
+    options.set_preference("dom.webdriver.enabled", False)  # Anti-bot
+    options.set_preference("useAutomationExtension", False)
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--width=1920")
+    options.add_argument("--height=1080")
 
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 0 * * *' # Run daily at midnight UTC
-  workflow_dispatch: # Allow manual triggering
+    service = Service(executable_path="/usr/local/bin/geckodriver")  # Use manually installed geckodriver
+    service.log_path = "geckodriver.log"  # Save geckodriver logs
+    service.log_level = "DEBUG"
 
-jobs:
-  scrape:
-    runs-on: ubuntu-latest
+    for attempt in range(max_retries):
+        driver = None
+        try:
+            logging.info(f"Fetching {url} (Attempt {attempt + 1})")
+            logging.info(f"Using geckodriver at {service.path}")
+            driver = webdriver.Firefox(service=service, options=options)
+            logging.info("WebDriver initialized successfully")
+            driver.set_page_load_timeout(timeout)
+            driver.get(url)
+            WebDriverWait(driver, timeout).until(
+                lambda d: d.execute_script("return document.readyState") == "complete"
+            )
 
-    steps:
-      # Check out the repository
-      - name: Checkout code
-        uses: actions/checkout@v4
+            # Zumiez: handle dynamic loading and infinite scroll
+            if "zumiez.com" in url:
+                time.sleep(random.uniform(3, 5))  # Reduced wait
+                logging.info("Initial wait for dynamic content")
 
-      # Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9' # Adjust to your Python version
+                current_url = driver.current_url
+                if "stash" in current_url.lower():
+                    logging.error("Redirected to Stash page, retrying")
+                    driver.quit()
+                    continue
 
-      # Install Firefox and dependencies
-      - name: Install Firefox and dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y firefox xvfb libx11-xcb1 libdbus-glib-1-2 libxt6
+                logging.info("Attempting infinite scroll")
+                max_scroll_attempts = 10  # Reduced from 20
+                scroll_attempts = 0
+                previous_item_count = 0
 
-      # Install Python dependencies
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
+                while scroll_attempts < max_scroll_attempts:
+                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                    time.sleep(random.uniform(2, 4))  # Reduced wait
+                    current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard"))
+                    logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
-      # Run the scraper with Xvfb for headless Firefox
-      - name: Run scraper
-        run: |
-          Xvfb :99 -screen 0 1920x1080x24 &
-          export DISPLAY=:99
-          python sales_scraper2.py
-        env:
-          PYTHONUNBUFFERED: 1 # Ensure logs are printed in real-time
+                    current_url = driver.current_url
+                    if "stash" in current_url.lower():
+                        logging.error("Redirected to Stash page during scrolling")
+                        driver.quit()
+                        return None
 
-      # Upload artifacts (debug HTML, JSON, and chart)
-      - name: Upload artifacts
-        if: always() # Upload even if the job fails
-        uses: actions/upload-artifact@v4
-        with:
-          name: scraper-output
-          path: |
-            *.html
-            *.json
+                    if current_items == previous_item_count and current_items > 0:
+                        logging.info("No more items to load")
+                        break
+
+                    previous_item_count = current_items
+                    scroll_attempts += 1
+
+                time.sleep(random.uniform(2, 3))
+                logging.info("Final wait for AJAX content")
+
+                try:
+                    driver.execute_script("window.scrollTo(0, 0);")
+                    time.sleep(1)
+                    count_element = WebDriverWait(driver, 15).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
+                    )
+                    WebDriverWait(driver, 15).until(
+                        EC.visibility_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
+                    )
+                    total_items_text = count_element.text
+                    total_items = int(re.search(r'\d+', total_items_text).group())
+                    logging.info(f"Page reports {total_items} items")
+                except Exception as e:
+                    logging.warning(f"Could not find total item count: {e}")
+                    debug_html = driver.page_source
+                    save_debug_file("zumiez_debug_item_count.html", debug_html)
+                    logging.info("Saved page source for debugging")
+
+            html = driver.page_source
+            logging.info(f"Successfully fetched {url}")
+            return html
+
+        except Exception as e:
+            logging.error(f"Failed to fetch {url}: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)
+            else:
+                logging.error(f"Max retries reached for {url}")
+                return None
+        finally:
+            if driver:
+                try:
+                    driver.quit()
+                except Exception as e:
+                    logging.warning(f"Error quitting driver: {e}")
+
+def save_debug_file(filename, content):
+    """Safely save debug files."""
+    try:
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(content)
+    except Exception as e:
+        logging.error(f"Failed to save debug file {filename}: {e}")

@@ -23,29 +23,38 @@ from fake_useragent import UserAgent
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def fetch_page(url, max_retries=3, timeout=10):
+def fetch_page(url, max_retries=3, timeout=30):
     """
     Uses Firefox (via Selenium) to render JavaScript and return page HTML.
     Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
     """
     ua = UserAgent()
     options = Options()
-    options.headless = False  # Disable headless mode to avoid detection
-    options.set_preference("permissions.default.geo", 2)
+    options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
+    options.set_preference("general.useragent.override", ua.random)
     options.set_preference("dom.webnotifications.enabled", False)
     options.set_preference("permissions.default.desktop-notification", 2)
-    options.add_argument(f'--user-agent={ua.random}')
-    options.add_argument('--width=1920')  # Set window size to mimic real browser
-    options.add_argument('--height=1080')
+    options.set_preference("dom.webdriver.enabled", False)  # Anti-bot
+    options.set_preference("useAutomationExtension", False)
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--width=1280")  # Reduced size for CI
+    options.add_argument("--height=720")
 
-    service = Service(GeckoDriverManager().install())
-    
+    # Use manually installed geckodriver in CI, fallback to webdriver-manager locally
+    geckodriver_path = "/usr/local/bin/geckodriver" if os.getenv("CI") else GeckoDriverManager().install()
+    service = Service(executable_path=geckodriver_path)
+    service.log_path = "geckodriver.log"
+    service.log_level = "DEBUG"
+
     for attempt in range(max_retries):
         driver = None
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
+            logging.info(f"Using geckodriver at {service.path}")
             driver = webdriver.Firefox(service=service, options=options)
-            driver.set_page_load_timeout(timeout)  # Set timeout to avoid long waits
+            logging.info("WebDriver initialized successfully")
+            driver.set_page_load_timeout(timeout)
             driver.get(url)
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
@@ -53,79 +62,59 @@ def fetch_page(url, max_retries=3, timeout=10):
 
             # Zumiez: handle dynamic loading and infinite scroll
             if "zumiez.com" in url:
-                # Initial wait for dynamic content to load
-                time.sleep(random.uniform(5, 7))
+                time.sleep(random.uniform(2, 4))
                 logging.info("Initial wait for dynamic content")
 
-                # Check if redirected to an unexpected page (e.g., "Stash")
                 current_url = driver.current_url
                 if "stash" in current_url.lower():
-                    logging.error("Redirected to Stash page, likely due to anti-bot protection")
-                    return None
+                    logging.error("Redirected to Stash page, retrying")
+                    driver.quit()
+                    continue
 
-                # Infinite scroll to load all items
                 logging.info("Attempting infinite scroll")
-                max_scroll_attempts = 20
+                max_scroll_attempts = 5  # Reduced for CI
                 scroll_attempts = 0
                 previous_item_count = 0
-                total_items = None
 
                 while scroll_attempts < max_scroll_attempts:
-                    # Scroll to the bottom
                     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                    time.sleep(random.uniform(6, 9))  # Increased wait time with randomness
-
-                    # Check current number of product containers
+                    time.sleep(random.uniform(1, 2))
                     current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard"))
                     logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
-                    # Check if redirected during scrolling
                     current_url = driver.current_url
                     if "stash" in current_url.lower():
                         logging.error("Redirected to Stash page during scrolling")
+                        driver.quit()
                         return None
 
-                    # If no new items loaded, stop
                     if current_items == previous_item_count and current_items > 0:
-                        logging.info("No more items to load (infinite scroll)")
+                        logging.info("No more items to load")
                         break
 
                     previous_item_count = current_items
                     scroll_attempts += 1
 
-                # Final wait for any remaining AJAX content
-                time.sleep(random.uniform(3, 5))
+                time.sleep(random.uniform(1, 2))
                 logging.info("Final wait for AJAX content")
 
-                # Try to get the total item count from the page (e.g., "20 items found")
                 try:
-                    # Scroll to the top to ensure the element is in the viewport
                     driver.execute_script("window.scrollTo(0, 0);")
-                    time.sleep(1)  # Brief wait after scrolling
-
-                    # Wait for the item count element to be present in the DOM
+                    time.sleep(1)
                     count_element = WebDriverWait(driver, 15).until(
                         EC.presence_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
                     )
-                    # Ensure the element is visible
                     WebDriverWait(driver, 15).until(
                         EC.visibility_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
                     )
                     total_items_text = count_element.text
                     total_items = int(re.search(r'\d+', total_items_text).group())
                     logging.info(f"Page reports {total_items} items")
-
-                    # If we have a total item count, verify it matches the scraped items
-                    if total_items and current_items >= total_items:
-                        logging.info(f"Reached target item count: {current_items}/{total_items}")
                 except Exception as e:
-                    total_items = None
-                    logging.warning(f"Could not find total item count on page: {e}")
-                    # Debug: Save the page source to see if the element is present
+                    logging.warning(f"Could not find total item count: {e}")
                     debug_html = driver.page_source
-                    with open("zumiez_debug_item_count.html", "w", encoding="utf-8") as f:
-                        f.write(debug_html)
-                    logging.info("Saved page source to zumiez_debug_item_count.html for debugging")
+                    save_debug_file("zumiez_debug_item_count.html", debug_html)
+                    logging.info("Saved page source for debugging")
 
             html = driver.page_source
             logging.info(f"Successfully fetched {url}")
@@ -134,19 +123,31 @@ def fetch_page(url, max_retries=3, timeout=10):
         except Exception as e:
             logging.error(f"Failed to fetch {url}: {e}")
             if attempt < max_retries - 1:
-                time.sleep(2 ** attempt)  # Exponential backoff
+                time.sleep(2 ** attempt)
             else:
                 logging.error(f"Max retries reached for {url}")
                 return None
         finally:
             if driver:
-                driver.quit()
+                try:
+                    driver.quit()
+                except Exception as e:
+                    logging.warning(f"Error quitting driver: {e}")
+
+def save_debug_file(filename, content):
+    """Safely save debug files."""
+    try:
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(content)
+    except Exception as e:
+        logging.error(f"Failed to save debug file {filename}: {e}")
 
 class Scraper:
     def __init__(self, name, url, part):
         self.name = name
         self.url = url
-        self.part = part  # Add part identifier (e.g., "Wheels", "Trucks", "Bearings")
+        self.part = part
 
     def scrape(self):
         html = fetch_page(self.url)
@@ -157,10 +158,6 @@ class Scraper:
 
 class ZumiezScraper(Scraper):
     def parse(self, html):
-        """
-        Parse Zumiez sale items using specific selectors for products, names, and prices.
-        Product page fetching is disabled for speed.
-        """
         if not html:
             logging.error("No HTML to parse")
             return []
@@ -169,17 +166,12 @@ class ZumiezScraper(Scraper):
         products = []
         seen = set()
 
-        # Save raw HTML for debugging
-        with open(f"zumiez_debug_{self.part.lower()}.html", "w", encoding="utf-8") as f:
-            f.write(html)
-
-        # Product container selector
+        save_debug_file(f"zumiez_debug_{self.part.lower()}.html", html)
         product_grid = soup.select("li.ProductCard")
         logging.info(f"Found {len(product_grid)} product containers")
 
         for product in product_grid:
             try:
-                # Find product link
                 link = product.select_one("a.ProductCard-Link")
                 if not link:
                     logging.warning("No link found for product")
@@ -192,21 +184,17 @@ class ZumiezScraper(Scraper):
                     continue
                 seen.add(href)
 
-                # Extract name
                 name_el = product.select_one(".ProductCard-Name")
                 name = name_el.get_text(strip=True) if name_el else link.find("img", alt=True).get("alt", "").strip()
                 if not name:
                     logging.warning(f"No name found for {href}")
                     continue
 
-                # For wheels, filter by brand (Bones, Powell, Spitfire, OJ)
                 if self.part == "Wheels":
                     if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
                         logging.info(f"Skipping product not from Bones, Powell, Spitfire, or OJ: {name}")
                         continue
-                # For trucks, the URL already filters for Ace Trucks and Independent, so no additional filtering needed
 
-                # Extract prices
                 sale_price_el = product.select_one(".ProductPrice-PriceValue")
                 original_price_el = product.select_one(".ProductCardPrice-HighPrice")
                 sale_price = sale_price_el.get_text(strip=True).replace("$", "") if sale_price_el else None
@@ -216,16 +204,14 @@ class ZumiezScraper(Scraper):
                     logging.warning(f"No sale price found for {href}")
                     continue
 
-                # Check store availability (disabled for now to speed up the script)
                 availability = "Check store"
-
                 products.append({
                     "name": name,
                     "url": href,
                     "price_new": sale_price,
                     "price_old": original_price,
                     "availability": availability,
-                    "part": self.part  # Add part to the product data
+                    "part": self.part
                 })
                 logging.info(f"Parsed product: {name}")
 
@@ -238,30 +224,20 @@ class ZumiezScraper(Scraper):
 
 class SkateWarehouseScraper(Scraper):
     def parse(self, html):
-        """
-        Parse SkateWarehouse sale items.
-        For trucks, filter to Independent and Ace Trucks.
-        For bearings, filter to items containing "Bearings" in the name.
-        """
         soup = BeautifulSoup(html, "html.parser")
         products = []
         seen = set()
 
-        # Save raw HTML for debugging
-        with open(f"skatewarehouse_debug_{self.part.lower()}.html", "w", encoding="utf-8") as f:
-            f.write(html)
+        save_debug_file(f"skatewarehouse_debug_{self.part.lower()}.html", html)
 
         for a in soup.find_all("a", href=True):
             text = a.get_text(strip=True)
-            # Log all items before filtering for debugging
             logging.info(f"Found item: {text}")
 
-            # Filter based on part type
             if self.part == "Wheels" and "Wheels" not in text:
                 continue
             if self.part == "Bearings" and "Bearings" not in text:
                 continue
-            # For trucks, rely on the URL to ensure we're on the trucks page; don't require "Trucks" in name
 
             href = a["href"]
             if href.startswith("/"):
@@ -274,17 +250,14 @@ class SkateWarehouseScraper(Scraper):
             name = text.split(f"${prices[0]}")[0].strip()
             price_old = prices[1] if len(prices) > 1 else None
 
-            # For wheels, filter by brand (Bones, Powell, Spitfire, OJ)
             if self.part == "Wheels":
                 if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
                     logging.info(f"Skipping product not from Bones, Powell, Spitfire, or OJ: {name}")
                     continue
-            # For trucks, filter by Independent and Ace Trucks (more flexible matching)
             elif self.part == "Trucks":
                 if not any(brand in name for brand in ["Independent", "Indy", "Ace"]):
                     logging.info(f"Skipping product not from Independent or Ace Trucks: {name}")
                     continue
-            # For bearings, already filtered by "Bearings" in name, no additional brand filter
 
             seen.add(href)
             products.append({
@@ -293,15 +266,12 @@ class SkateWarehouseScraper(Scraper):
                 "price_new": prices[0],
                 "price_old": price_old,
                 "availability": "Check store",
-                "part": self.part  # Add part to the product data
+                "part": self.part
             })
         return products
 
 class CCSScraper(Scraper):
     def parse(self, html):
-        """
-        Parse CCS sale items.
-        """
         soup = BeautifulSoup(html, "html.parser")
         products = []
         seen = set()
@@ -319,7 +289,6 @@ class CCSScraper(Scraper):
                 continue
             name = title_el.get_text(strip=True)
 
-            # For wheels, filter by brand (Bones, Powell, Spitfire, OJ)
             if self.part == "Wheels":
                 if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
                     logging.info(f"Skipping product not from Bones, Powell, Spitfire, or OJ: {name}")
@@ -333,11 +302,10 @@ class CCSScraper(Scraper):
                 "price_new": sale_el.get_text(strip=True),
                 "price_old": old_el.get_text(strip=True) if old_el else None,
                 "availability": "Check store",
-                "part": self.part  # Add part to the product data
+                "part": self.part
             })
         return products
 
-# Utility functions
 def load_previous(path="previous_data.json"):
     return json.load(open(path)) if os.path.exists(path) else {}
 
@@ -371,10 +339,6 @@ def compare(prev, curr):
     return changes
 
 def calculate_percent_off(price_new, price_old):
-    """
-    Calculate the percentage off based on new and old prices.
-    Returns 'N/A' if old price is not available or invalid.
-    """
     try:
         new = float(price_new)
         old = float(price_old)
@@ -640,14 +604,11 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
 def main():
     # List of scrapers for all parts
     scrapers = [
-        # Wheels (existing)
         ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/wheels.html?customFilters=brand:Bones,OJ%20Wheels,Powell,Spitfire;promotion_flag:Sale", "Wheels"),
         SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/searchresults.html?filter_cat=SALEWHEELS&filter_type=Wheels#filter_cat=SALEWHEELS&filter_type=Wheels&brand_str%5B%5D=Bones%20Wheels&brand_str%5B%5D=Spitfire&opt_page=1&opt_sort=alphaAtoZ&opt_perpage=20", "Wheels"),
         CCSScraper("CCS", "https://shop.ccs.com/collections/clearance/skateboard-wheels", "Wheels"),
-        # Trucks (existing)
         ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/trucks.html?customFilters=brand:Ace%20Trucks,Independent;promotion_flag:Sale", "Trucks"),
         SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Trucks/catpage-SALETRUCKS.html", "Trucks"),
-        # Bearings (existing)
         SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Parts/catpage-BOXLSHOES.html", "Bearings")
     ]
 
@@ -664,7 +625,7 @@ def main():
         store, part = site_key.split("_")
         combined_items = []
         for item in items:
-            item["store"] = store  # Add store name to each item for the chart
+            item["store"] = store
         combined_items.extend(items)
         combined_data[site_key] = combined_items
 

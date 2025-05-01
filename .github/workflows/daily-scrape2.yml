@@ -1,4 +1,4 @@
-name: Daily Skate Deals Scrape
+name: Daily Skate Deals Scrape 2
 
 on:
   schedule:

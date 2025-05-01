@@ -27,14 +27,18 @@ jobs:
       - name: Install Firefox and dependencies
         run: |
           sudo apt-get update
-          # Pin Firefox to a specific version (e.g., 126.0) for compatibility
-          sudo apt-get install -y firefox=126.0* xvfb libx11-xcb1 libdbus-glib-1-2 libxt6 libgtk-3-0 libasound2t64
+          # Install dependencies for Firefox and Xvfb
+          sudo apt-get install -y snapd xvfb libx11-xcb1 libdbus-glib-1-2 libxt6 libgtk-3-0 libasound2t64
+          # Install Firefox via snap
+          sudo snap install firefox
+          # Create a symbolic link to make Firefox accessible in PATH
+          sudo ln -sf /snap/bin/firefox /usr/local/bin/firefox
           firefox --version
 
-      # Install geckodriver manually (pin to a compatible version with Firefox 126.0)
+      # Install geckodriver manually
       - name: Install geckodriver
         run: |
-          # Use geckodriver 0.34.0, which is compatible with Firefox 126.0
+          # Use geckodriver 0.34.0, compatible with a wide range of Firefox versions
           wget https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-linux64.tar.gz
           tar -xzf geckodriver-v0.34.0-linux64.tar.gz
           sudo mv geckodriver /usr/local/bin/

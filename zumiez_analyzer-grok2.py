@@ -249,61 +249,76 @@ class SkateWarehouseScraper(Scraper):
 
         save_debug_file(f"skatewarehouse_debug_{self.part.lower()}.html", html)
 
-        for a in soup.find_all("a", href=True):
-            text = a.get_text(strip=True)
-            href = a["href"]
+        # Target product containers (adjust selector based on actual HTML structure)
+        product_containers = soup.select("div.product-grid-item")  # Placeholder selector
+        logging.info(f"Found {len(product_containers)} product containers")
 
-            # Skip non-product links
-            if not href.startswith("/products/") and not href.startswith("/product/"):
-                continue
-
-            # Filter based on part type
-            if self.part == "Wheels" and "Wheels" not in text:
-                continue
-            if self.part == "Trucks" and "Truck" not in text:
-                continue
-            if self.part == "Bearings" and "Bearings" not in text:
-                continue
-
-            if href.startswith("/"):
-                href = "https://www.skatewarehouse.com" + href
-            if href in seen:
-                logging.info(f"Duplicate URL skipped: {href}")
-                continue
-
-            prices = re.findall(r"\$(\d+\.\d{2})", text)
-            if not prices:
-                continue
-
-            name = text.split(f"${prices[0]}")[0].strip()
-            if not name:
-                logging.warning(f"No name found for {href}")
-                continue
-
-            if self.part == "Wheels":
-                if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
-                    logging.info(f"Skipping product not from Bones, Powell, Spitfire, or OJ: {name}")
+        for container in product_containers:
+            try:
+                # Find the product link
+                link = container.select_one("a[href]")
+                if not link:
+                    logging.warning("No link found in product container")
                     continue
-            elif self.part == "Trucks":
-                if not any(brand in name for brand in ["Independent", "Indy", "Ace"]):
-                    logging.info(f"Skipping product not from Independent or Ace Trucks: {name}")
+                href = link["href"]
+                if href.startswith("/"):
+                    href = "https://www.skatewarehouse.com" + href
+                if href in seen:
+                    logging.info(f"Duplicate URL skipped: {href}")
+                    continue
+                seen.add(href)
+
+                # Extract product name
+                name_el = container.select_one(".product-name")  # Placeholder selector
+                name = name_el.get_text(strip=True) if name_el else link.get_text(strip=True)
+                if not name:
+                    logging.warning(f"No name found for {href}")
                     continue
 
-            seen.add(href)
-            price_old = prices[1] if len(prices) > 1 else None
-            products.append({
-                "name": name,
-                "url": href,
-                "price_new": prices[0],
-                "price_old": price_old,
-                "availability": "Check store",
-                "part": self.part
-            })
-            logging.info(f"Parsed product: {name}")
+                # Filter based on part type
+                if self.part == "Wheels":
+                    if "Wheels" not in name:
+                        continue
+                    if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
+                        logging.info(f"Skipping product not from Bones, Powell, Spitfire, or OJ: {name}")
+                        continue
+                elif self.part == "Trucks":
+                    if "Truck" not in name:
+                        continue
+                    if not any(brand in name for brand in ["Independent", "Indy", "Ace"]):
+                        logging.info(f"Skipping product not from Independent or Ace Trucks: {name}")
+                        continue
+                elif self.part == "Bearings":
+                    if "Bearings" not in name:
+                        continue
+
+                # Extract price
+                price_el = container.select_one(".product-price")  # Placeholder selector
+                price_text = price_el.get_text(strip=True) if price_el else ""
+                prices = re.findall(r"\$(\d+\.\d{2})", price_text)
+                if not prices:
+                    logging.warning(f"No price found for {href}")
+                    continue
+                price_new = prices[0]
+                price_old = prices[1] if len(prices) > 1 else None
+
+                products.append({
+                    "name": name,
+                    "url": href,
+                    "price_new": price_new,
+                    "price_old": price_old,
+                    "availability": "Check store",
+                    "part": self.part
+                })
+                logging.info(f"Parsed product: {name}")
+
+            except Exception as e:
+                logging.error(f"Error parsing product: {e}")
+                continue
 
         logging.info(f"Parsed {len(products)} products")
         return products
-
+    
 class CCSScraper(Scraper):
     def parse(self, html):
         soup = BeautifulSoup(html, "html.parser")

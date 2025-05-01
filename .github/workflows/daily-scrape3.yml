@@ -60,7 +60,7 @@ jobs:
           export DISPLAY=:99
           # Verify Xvfb is running
           xdpyinfo -display :99 || echo "Xvfb failed to start"
-          python sales_scraper2.py
+          python zumiez_analyzer-grok2.py
         env:
           PYTHONUNBUFFERED: 1
           GECKODRIVER_LOG_LEVEL: debug

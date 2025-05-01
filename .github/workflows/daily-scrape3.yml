@@ -27,15 +27,16 @@ jobs:
       - name: Install Firefox and dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y firefox xvfb libx11-xcb1 libdbus-glib-1-2 libxt6 libgtk-3-0 libasound2t64
+          # Pin Firefox to a specific version (e.g., 126.0) for compatibility
+          sudo apt-get install -y firefox=126.0* xvfb libx11-xcb1 libdbus-glib-1-2 libxt6 libgtk-3-0 libasound2t64
           firefox --version
 
-      # Install geckodriver manually
+      # Install geckodriver manually (pin to a compatible version with Firefox 126.0)
       - name: Install geckodriver
         run: |
-          GECKODRIVER_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep tag_name | cut -d '"' -f 4)
-          wget https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
-          tar -xzf geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
+          # Use geckodriver 0.34.0, which is compatible with Firefox 126.0
+          wget https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-linux64.tar.gz
+          tar -xzf geckodriver-v0.34.0-linux64.tar.gz
           sudo mv geckodriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/geckodriver
           geckodriver --version
@@ -50,7 +51,11 @@ jobs:
       - name: Run scraper
         run: |
           Xvfb :99 -screen 0 1920x1080x24 -ac -noreset &
+          # Add a small delay to ensure Xvfb is fully initialized
+          sleep 2
           export DISPLAY=:99
+          # Verify Xvfb is running
+          xdpyinfo -display :99 || echo "Xvfb failed to start"
           python sales_scraper2.py
         env:
           PYTHONUNBUFFERED: 1
@@ -66,4 +71,3 @@ jobs:
             *.html
             *.json
             geckodriver.log
-            

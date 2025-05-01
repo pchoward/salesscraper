@@ -19,6 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.firefox import GeckoDriverManager
 from fake_useragent import UserAgent
+from selenium.common.exceptions import TimeoutException, WebDriverException
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -52,8 +53,23 @@ def fetch_page(url, max_retries=3, timeout=30):
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
             logging.info(f"Using geckodriver at {service.path}")
-            driver = webdriver.Firefox(service=service, options=options)
-            logging.info("WebDriver initialized successfully")
+
+            # Add retry logic for WebDriver initialization
+            driver_attempts = 3
+            for driver_attempt in range(driver_attempts):
+                try:
+                    logging.info(f"Initializing WebDriver (Attempt {driver_attempt + 1})")
+                    driver = webdriver.Firefox(service=service, options=options)
+                    logging.info("WebDriver initialized successfully")
+                    break
+                except TimeoutException as e:
+                    logging.error(f"TimeoutException during WebDriver init: {e}")
+                    if driver_attempt < driver_attempts - 1:
+                        time.sleep(5)  # Wait before retrying
+                        continue
+                    else:
+                        raise
+
             driver.set_page_load_timeout(timeout)
             driver.get(url)
             WebDriverWait(driver, timeout).until(
@@ -387,7 +403,7 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                 border-bottom: 1px solid #ddd;
             }
             th {
-                background-color #007bff;
+                background-color: #007bff;
                 color: white;
                 cursor: pointer;
             }

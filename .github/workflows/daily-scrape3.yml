@@ -33,15 +33,18 @@ jobs:
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
           sudo apt-get update
-          # Install a specific version of Chrome (e.g., 126.0.6478.126)
-          sudo apt-get install -y google-chrome-stable=126.0.6478.126-1
-          google-chrome --version
+          # Install the latest stable version of Chrome
+          sudo apt-get install -y google-chrome-stable
+          # Get the installed Chrome version
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          echo "Installed Chrome version: $CHROME_VERSION"
 
       # Install chromedriver
       - name: Install chromedriver
         run: |
-          # Install chromedriver version matching Chrome 126.0.6478.126
-          wget https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/linux64/chromedriver-linux64.zip
+          # Fetch the matching chromedriver version for the installed Chrome version
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          wget https://storage.googleapis.com/chrome-for-testing-public/$CHROME_VERSION/linux64/chromedriver-linux64.zip
           unzip chromedriver-linux64.zip
           sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver

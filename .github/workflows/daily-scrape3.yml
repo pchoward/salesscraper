@@ -1,0 +1,55 @@
+name: Run Web Scraper 3
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9' # Adjust to your Python version
+
+      # Install Firefox and dependencies
+      - name: Install Firefox and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y firefox xvfb libx11-xcb1 libdbus-glib-1-2 libxt6
+
+      # Install Python dependencies
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
+
+      # Run the scraper with Xvfb for headless Firefox
+      - name: Run scraper
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          export DISPLAY=:99
+          python scraper.py
+        env:
+          PYTHONUNBUFFERED: 1 # Ensure logs are printed in real-time
+
+      # Upload artifacts (debug HTML, JSON, and chart)
+      - name: Upload artifacts
+        if: always() # Upload even if the job fails
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-output
+          path: |
+            *.html
+            *.json

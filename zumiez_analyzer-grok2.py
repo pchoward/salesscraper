@@ -387,7 +387,7 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                 border-bottom: 1px solid #ddd;
             }
             th {
-                background-color: #007bff;
+                background-color #007bff;
                 color: white;
                 cursor: pointer;
             }

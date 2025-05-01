@@ -1,2 +1,5 @@
 requests
 beautifulsoup4
+selenium==4.17.2
+webdriver-manager
+fake-useragent

@@ -40,7 +40,7 @@ jobs:
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           export DISPLAY=:99
-          python scraper.py
+          python sales_scraper2.py
         env:
           PYTHONUNBUFFERED: 1 # Ensure logs are printed in real-time
 

@@ -69,6 +69,17 @@ jobs:
         env:
           PYTHONUNBUFFERED: 1
 
+      # Commit and push the updated HTML file
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add sale_items_chart.html
+          git commit -m "Update sale_items_chart.html with latest scrape data" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # Upload artifacts
       - name: Upload artifacts
         if: always()

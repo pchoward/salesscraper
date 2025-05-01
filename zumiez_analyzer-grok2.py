@@ -30,29 +30,30 @@ def fetch_page(url, max_retries=3, timeout=30):
     Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
     """
     ua = UserAgent()
-    options = Options()
-    options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
-    options.add_argument(f"user-agent={ua.random}")
-    options.add_argument("--disable-notifications")
-    options.add_argument("--disable-web-security")
-    options.add_argument("--allow-running-insecure-content")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--disable-infobars")
-    options.add_argument("--window-size=1280,720")  # Reduced size for CI
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option("useAutomationExtension", False)
-
-    # Use manually installed chromedriver in CI, fallback to webdriver-manager locally
-    chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
-    service = Service(executable_path=chromedriver_path)
-
     for attempt in range(max_retries):
+        user_agent = ua.random
+        logging.info(f"Using user agent: {user_agent}")
+
+        options = Options()
+        options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
+        options.add_argument(f"user-agent={user_agent}")
+        options.add_argument("--disable-notifications")
+        options.add_argument("--disable-web-security")
+        options.add_argument("--allow-running-insecure-content")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--disable-infobars")
+        options.add_argument("--window-size=1920,1080")
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        options.add_experimental_option("useAutomationExtension", False)
+
+        chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
+        service = Service(executable_path=chromedriver_path)
+
         driver = None
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
             logging.info(f"Using chromedriver at {service.path}")
 
-            # Add retry logic for WebDriver initialization
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:
@@ -63,20 +64,20 @@ def fetch_page(url, max_retries=3, timeout=30):
                 except TimeoutException as e:
                     logging.error(f"TimeoutException during WebDriver init: {e}")
                     if driver_attempt < driver_attempts - 1:
-                        time.sleep(5)  # Wait before retrying
+                        time.sleep(5)
                         continue
                     else:
                         raise
 
             driver.set_page_load_timeout(timeout)
+            time.sleep(random.uniform(1, 3))
             driver.get(url)
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
 
-            # Zumiez: handle dynamic loading and infinite scroll
             if "zumiez.com" in url:
-                time.sleep(random.uniform(2, 4))
+                time.sleep(random.uniform(3, 5))
                 logging.info("Initial wait for dynamic content")
 
                 current_url = driver.current_url
@@ -86,13 +87,13 @@ def fetch_page(url, max_retries=3, timeout=30):
                     continue
 
                 logging.info("Attempting infinite scroll")
-                max_scroll_attempts = 5  # Reduced for CI
+                max_scroll_attempts = 5
                 scroll_attempts = 0
                 previous_item_count = 0
 
                 while scroll_attempts < max_scroll_attempts:
                     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                    time.sleep(random.uniform(1, 2))
+                    time.sleep(random.uniform(2, 4))
                     current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard"))
                     logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
@@ -109,12 +110,12 @@ def fetch_page(url, max_retries=3, timeout=30):
                     previous_item_count = current_items
                     scroll_attempts += 1
 
-                time.sleep(random.uniform(1, 2))
+                time.sleep(random.uniform(2, 4))
                 logging.info("Final wait for AJAX content")
 
                 try:
                     driver.execute_script("window.scrollTo(0, 0);")
-                    time.sleep(1)
+                    time.sleep(random.uniform(1, 2))
                     count_element = WebDriverWait(driver, 15).until(
                         EC.presence_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
                     )
@@ -149,11 +150,11 @@ def fetch_page(url, max_retries=3, timeout=30):
                     logging.warning(f"Error quitting driver: {e}")
 
 def save_debug_file(filename, content):
-    """Safely save debug files."""
+    """Safely save debug files to the current working directory."""
     try:
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, "w", encoding="utf-8") as f:
             f.write(content)
+        logging.info(f"Debug file saved: {filename}")
     except Exception as e:
         logging.error(f"Failed to save debug file {filename}: {e}")
 
@@ -238,6 +239,10 @@ class ZumiezScraper(Scraper):
 
 class SkateWarehouseScraper(Scraper):
     def parse(self, html):
+        if not html:
+            logging.error("No HTML to parse")
+            return []
+
         soup = BeautifulSoup(html, "html.parser")
         products = []
         seen = set()
@@ -246,23 +251,34 @@ class SkateWarehouseScraper(Scraper):
 
         for a in soup.find_all("a", href=True):
             text = a.get_text(strip=True)
-            logging.info(f"Found item: {text}")
+            href = a["href"]
 
+            # Skip non-product links
+            if not href.startswith("/products/") and not href.startswith("/product/"):
+                continue
+
+            # Filter based on part type
             if self.part == "Wheels" and "Wheels" not in text:
+                continue
+            if self.part == "Trucks" and "Truck" not in text:
                 continue
             if self.part == "Bearings" and "Bearings" not in text:
                 continue
 
-            href = a["href"]
             if href.startswith("/"):
                 href = "https://www.skatewarehouse.com" + href
             if href in seen:
+                logging.info(f"Duplicate URL skipped: {href}")
                 continue
+
             prices = re.findall(r"\$(\d+\.\d{2})", text)
             if not prices:
                 continue
+
             name = text.split(f"${prices[0]}")[0].strip()
-            price_old = prices[1] if len(prices) > 1 else None
+            if not name:
+                logging.warning(f"No name found for {href}")
+                continue
 
             if self.part == "Wheels":
                 if not any(brand in name for brand in ["Bones", "Powell", "Spitfire", "OJ"]):
@@ -274,6 +290,7 @@ class SkateWarehouseScraper(Scraper):
                     continue
 
             seen.add(href)
+            price_old = prices[1] if len(prices) > 1 else None
             products.append({
                 "name": name,
                 "url": href,
@@ -282,6 +299,9 @@ class SkateWarehouseScraper(Scraper):
                 "availability": "Check store",
                 "part": self.part
             })
+            logging.info(f"Parsed product: {name}")
+
+        logging.info(f"Parsed {len(products)} products")
         return products
 
 class CCSScraper(Scraper):
@@ -610,13 +630,11 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
     </html>
     """
 
-    # Write the HTML content to a file
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(html_content)
     logging.info(f"Generated HTML chart at {output_file}")
 
 def main():
-    # List of scrapers for all parts
     scrapers = [
         ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/wheels.html?customFilters=brand:Bones,OJ%20Wheels,Powell,Spitfire;promotion_flag:Sale", "Wheels"),
         SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/searchresults.html?filter_cat=SALEWHEELS&filter_type=Wheels#filter_cat=SALEWHEELS&filter_type=Wheels&brand_str%5B%5D=Bones%20Wheels&brand_str%5B%5D=Spitfire&opt_page=1&opt_sort=alphaAtoZ&opt_perpage=20", "Wheels"),
@@ -626,14 +644,11 @@ def main():
         SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Parts/catpage-BOXLSHOES.html", "Bearings")
     ]
 
-    # Scrape all items
     current = {f"{s.name}_{s.part}": s.scrape() for s in scrapers}
 
-    # Print summary
     for site, items in current.items():
         print(f"{site}: {len(items)} items scraped")
 
-    # Combine items for the chart
     combined_data = {}
     for site_key, items in current.items():
         store, part = site_key.split("_")
@@ -659,9 +674,7 @@ def main():
     else:
         print("No changes detected.")
 
-    # Generate the HTML chart
     generate_html_chart(combined_data, diffs)
-
     save_current(combined_data)
 
 if __name__ == "__main__":

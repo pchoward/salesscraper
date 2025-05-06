@@ -49,10 +49,12 @@ def fetch_page(url, max_retries=3, timeout=45):
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--disable-gpu")
+            options.add_argument(f"--user-data-dir=/tmp/chrome_user_data_{os.environ.get('GITHUB_RUN_ID')}")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
+        options.add_argument("--remote-debugging-pipe")
 
-        chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
+        chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
 
         driver = None

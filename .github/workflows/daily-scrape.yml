@@ -28,21 +28,55 @@ jobs:
 
     - name: Install Chrome and Chromedriver
       run: |
+        # Update package lists
         sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
+        
+        # Install dependencies for Chrome
+        sudo apt-get install -y \
+          google-chrome-stable \
+          libxss1 \
+          libappindicator3-1 \
+          libindicator3-7 \
+          fonts-liberation \
+          libgbm1 \
+          libnspr4 \
+          libnss3 \
+          libu2f-udev \
+          xdg-utils
+        
+        # Verify Chrome installation
+        if ! command -v google-chrome &> /dev/null; then
+          echo "Error: google-chrome not found after installation"
+          exit 1
+        fi
+        
         # Get the installed Chrome version
-        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+' || echo "")
+        if [ -z "$CHROME_VERSION" ]; then
+          echo "Error: Could not determine Chrome version"
+          exit 1
+        fi
+        echo "Installed Chrome version: $CHROME_VERSION"
+        
         # Fetch the Chromedriver version compatible with the installed Chrome version
-        CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+        CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION" || echo "")
         if [ -z "$CHROMEDRIVER_VERSION" ]; then
           echo "Falling back to latest Chromedriver version"
           CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
         fi
-        wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
-        unzip chromedriver_linux64.zip
+        if [ -z "$CHROMEDRIVER_VERSION" ]; then
+          echo "Error: Could not determine Chromedriver version"
+          exit 1
+        fi
+        echo "Using Chromedriver version: $CHROMEDRIVER_VERSION"
+        
+        # Download and install Chromedriver
+        wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" || { echo "Failed to download Chromedriver"; exit 1; }
+        unzip chromedriver_linux64.zip || { echo "Failed to unzip Chromedriver"; exit 1; }
         sudo mv chromedriver /usr/local/bin/chromedriver
         sudo chmod +x /usr/local/bin/chromedriver
         rm chromedriver_linux64.zip
+        
         # Verify Chrome and Chromedriver versions
         google-chrome --version
         chromedriver --version
@@ -61,3 +95,4 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        

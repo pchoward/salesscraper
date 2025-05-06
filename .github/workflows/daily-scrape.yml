@@ -27,78 +27,79 @@ jobs:
         pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
 
     - name: Install Chrome and Chromedriver
-      run: |
-        # Update package lists
-        sudo apt-get update
-        
-        # Install Chrome and dependencies
-        sudo apt-get install -y \
-          google-chrome-stable \
-          libxss1 \
-          libappindicator3-1 \
-          libindicator3-7 \
-          fonts-liberation \
-          libgbm1 \
-          libnspr4 \
-          libnss3 \
-          libu2f-udev \
-          xdg-utils
-        
-        # Verify Chrome installation
-        if ! command -v google-chrome &> /dev/null; then
-          echo "Error: google-chrome not found after installation"
-          exit 1
-        fi
-        
-        # Get installed Chrome version
-        CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+' || echo "")
-        if [ -z "$CHROME_VERSION" ]; then
-          echo "Error: Could not determine Chrome version"
-          exit 1
-        fi
-        CHROME_MAJOR_VERSION=$(echo $CHROME_VERSION | cut -d. -f1)
-        echo "Installed Chrome version: $CHROME_VERSION (Major: $CHROME_MAJOR_VERSION)"
-        
-        # Try to fetch Chromedriver for the exact Chrome version
-        CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION" || echo "")
-        
-        # If not found, try the major version
-        if [ -z "$CHROMEDRIVER_VERSION" ]; then
-          echo "Exact Chromedriver version not found, trying major version ($CHROME_MAJOR_VERSION)..."
-          CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAJOR_VERSION" || echo "")
-        fi
-        
-        # If still not found, fall back to the latest Chromedriver version
-        if [ -z "$CHROMEDRIVER_VERSION" ]; then
-          echo "Major version not found, falling back to latest Chromedriver version..."
-          CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE" || echo "")
-        fi
-        
-        # Validate Chromedriver version
-        if [ -z "$CHROMEDRIVER_VERSION" ]; then
-          echo "Error: Could not determine Chromedriver version"
-          exit 1
-        fi
-        echo "Using Chromedriver version: $CHROMEDRIVER_VERSION"
-        
-        # Download and install Chromedriver with retry logic
-        for i in {1..3}; do
-          wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" && break
-          echo "Download attempt $i failed, retrying..."
-          sleep 5
-        done || { echo "Error: Failed to download Chromedriver after 3 attempts"; exit 1; }
-        
-        # Unzip and install Chromedriver
-        unzip chromedriver_linux64.zip || { echo "Error: Failed to unzip Chromedriver"; exit 1; }
-        sudo mv chromedriver /usr/local/bin/chromedriver
-        sudo chmod +x /usr/local/bin/chromedriver
-        rm chromedriver_linux64.zip
-        
-        # Verify versions
-        echo "Chrome version:"
-        google-chrome --version
-        echo "Chromedriver version:"
-        chromedriver --version
+  run: |
+    # Update package lists
+    sudo apt-get update
+    
+    # Install Chrome and dependencies
+    sudo apt-get install -y \
+      google-chrome-stable \
+      libxss1 \
+      libappindicator3-1 \
+      libindicator3-7 \
+      fonts-liberation \
+      libgbm1 \
+      libnspr4 \
+      libnss3 \
+      libu2f-udev \
+      xdg-utils
+    
+    # Verify Chrome installation
+    if ! command -v google-chrome &> /dev/null; then
+      echo "Error: google-chrome not found after installation"
+      exit 1
+    fi
+    
+    # Get installed Chrome version
+    CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+' || echo "")
+    if [ -z "$CHROME_VERSION" ]; then
+      echo "Error: Could not determine Chrome version"
+      exit 1
+    fi
+    CHROME_MAJOR_VERSION=$(echo $CHROME_VERSION | cut -d. -f1)
+    echo "Installed Chrome version: $CHROME_VERSION (Major: $CHROME_MAJOR_VERSION)"
+    
+    # Try to fetch Chromedriver for the exact Chrome version
+    CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION" 2>/dev/null | grep -v "<?xml" || echo "")
+    
+    # If not found, try the major version
+    if [ -z "$CHROMEDRIVER_VERSION" ]; then
+      echo "Exact Chromedriver version not found, trying major version ($CHROME_MAJOR_VERSION)..."
+      CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAJOR_VERSION" 2>/dev/null | grep -v "<?xml" || echo "")
+    fi
+    
+    # If still not found, fall back to a known compatible version (e.g., Chrome 134)
+    if [ -z "$CHROMEDRIVER_VERSION" ]; then
+      echo "Major version not found, falling back to Chrome 134 compatible version..."
+      CHROMEDRIVER_VERSION="134.0.6922.108"
+    fi
+    
+    # Validate Chromedriver version (must be a valid version number)
+    if echo "$CHROMEDRIVER_VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+'; then
+      echo "Using Chromedriver version: $CHROMEDRIVER_VERSION"
+    else
+      echo "Error: Invalid Chromedriver version: $CHROMEDRIVER_VERSION"
+      exit 1
+    fi
+    
+    # Download and install Chromedriver with retry logic
+    for i in {1..3}; do
+      wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" && break
+      echo "Download attempt $i failed, retrying..."
+      sleep 5
+    done || { echo "Error: Failed to download Chromedriver after 3 attempts"; exit 1; }
+    
+    # Unzip and install Chromedriver
+    unzip chromedriver_linux64.zip || { echo "Error: Failed to unzip Chromedriver"; exit 1; }
+    sudo mv chromedriver /usr/local/bin/chromedriver
+    sudo chmod +x /usr/local/bin/chromedriver
+    rm chromedriver_linux64.zip
+    
+    # Verify versions
+    echo "Chrome version:"
+    google-chrome --version
+    echo "Chromedriver version:"
+    chromedriver --version
 
     - name: Run scraper
       run: python zumiez_analyzer-grok3.py

@@ -50,7 +50,7 @@ jobs:
           exit 1
         fi
         
-        # Get the installed Chrome version
+        # Get the installed Chrome version (major version only)
         CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+' || echo "")
         if [ -z "$CHROME_VERSION" ]; then
           echo "Error: Could not determine Chrome version"
@@ -58,12 +58,23 @@ jobs:
         fi
         echo "Installed Chrome version: $CHROME_VERSION"
         
-        # Fetch the Chromedriver version compatible with the installed Chrome version
+        # Try to fetch the exact Chromedriver version
         CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION" || echo "")
+        
+        # If exact version not found, try the major version
+        if [ -z "$CHROMEDRIVER_VERSION" ]; then
+          echo "Exact Chromedriver version not found, trying major version..."
+          CHROME_MAJOR_VERSION=$(echo $CHROME_VERSION | cut -d. -f1)
+          CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAJOR_VERSION" || echo "")
+        fi
+        
+        # If still not found, fall back to the latest Chromedriver version
         if [ -z "$CHROMEDRIVER_VERSION" ]; then
           echo "Falling back to latest Chromedriver version"
-          CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          CHROMEDRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE || echo "")
         fi
+        
+        # Validate Chromedriver version
         if [ -z "$CHROMEDRIVER_VERSION" ]; then
           echo "Error: Could not determine Chromedriver version"
           exit 1
@@ -95,4 +106,3 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        

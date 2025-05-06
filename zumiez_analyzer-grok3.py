@@ -36,23 +36,23 @@ def fetch_page(url, max_retries=3, timeout=45):
         logging.info(f"Using user agent: {user_agent}")
 
         options = Options()
-        options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
-        options.add_argument(f"user-agent={user_agent}")
-        options.add_argument("--disable-notifications")
-        options.add_argument("--disable-web-security")
-        options.add_argument("--allow-running-insecure-content")
-        options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("--disable-infobars")
-        options.add_argument("--window-size=1920,1080")
-        # Add arguments for headless mode in CI
-        if options.headless:
-            options.add_argument("--no-sandbox")
-            options.add_argument("--disable-dev-shm-usage")
-            options.add_argument("--disable-gpu")
-            options.add_argument(f"--user-data-dir=/tmp/chrome_user_data_{os.environ.get('GITHUB_RUN_ID')}")
-        options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        options.add_experimental_option("useAutomationExtension", False)
-        options.add_argument("--remote-debugging-pipe")
+            options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
+            options.add_argument(f"user-agent={user_agent}")
+            options.add_argument("--disable-notifications")
+            options.add_argument("--disable-web-security")
+            options.add_argument("--allow-running-insecure-content")
+            options.add_argument("--disable-blink-features=AutomationControlled")
+            options.add_argument("--disable-infobars")
+            options.add_argument("--window-size=1920,1080")
+            options.add_experimental_option("excludeSwitches", ["enable-automation"])
+            options.add_experimental_option("useAutomationExtension", False)
+
+            if options.headless:
+                options.add_argument("--no-sandbox")
+                options.add_argument("--disable-dev-shm-usage")
+                options.add_argument("--disable-gpu")
+                # Try a more basic user data dir path for testing
+                options.add_argument("--user-data-dir=/tmp/chrome_user_data"))
 
         chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)

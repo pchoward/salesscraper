@@ -25,7 +25,7 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def fetch_page(url, max_retries=3, timeout=30):
+def fetch_page(url, max_retries=3, timeout=45):
     """
     Uses Chrome (via Selenium) to render JavaScript and return page HTML.
     Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
@@ -71,66 +71,63 @@ def fetch_page(url, max_retries=3, timeout=30):
                         raise
 
             driver.set_page_load_timeout(timeout)
-            time.sleep(random.uniform(1, 3))
+            time.sleep(random.uniform(2, 5))  # Increased initial delay
             driver.get(url)
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
 
-            if "zumiez.com" in url:
-                time.sleep(random.uniform(3, 5))
-                logging.info("Initial wait for dynamic content")
+            # Wait for dynamic content to load
+            time.sleep(random.uniform(5, 8))  # Increased delay for dynamic content
+            logging.info("Initial wait for dynamic content")
+
+            current_url = driver.current_url
+            if "stash" in current_url.lower():
+                logging.error("Redirected to Stash page, retrying")
+                driver.quit()
+                time.sleep(random.uniform(5, 10))  # Delay before retry
+                continue
+
+            # Wait for product listings to appear (generic selector for all sites)
+            try:
+                WebDriverWait(driver, 15).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
+                )
+                logging.info("Product listings detected")
+            except Exception as e:
+                logging.warning(f"Could not detect product listings: {e}")
+
+            # Handle infinite scroll for sites like Zumiez and Tactics
+            logging.info("Attempting infinite scroll")
+            max_scroll_attempts = 8  # Increased scroll attempts
+            scroll_attempts = 0
+            previous_item_count = 0
+
+            while scroll_attempts < max_scroll_attempts:
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(random.uniform(3, 6))  # Increased scroll delay
+                current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
+                logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
                 current_url = driver.current_url
                 if "stash" in current_url.lower():
-                    logging.error("Redirected to Stash page, retrying")
+                    logging.error("Redirected to Stash page during scrolling")
                     driver.quit()
-                    continue
+                    return None
 
-                logging.info("Attempting infinite scroll")
-                max_scroll_attempts = 5
-                scroll_attempts = 0
-                previous_item_count = 0
+                if current_items == previous_item_count and current_items > 0:
+                    logging.info("No more items to load")
+                    break
 
-                while scroll_attempts < max_scroll_attempts:
-                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                    time.sleep(random.uniform(2, 4))
-                    current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard"))
-                    logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
+                previous_item_count = current_items
+                scroll_attempts += 1
 
-                    current_url = driver.current_url
-                    if "stash" in current_url.lower():
-                        logging.error("Redirected to Stash page during scrolling")
-                        driver.quit()
-                        return None
+            time.sleep(random.uniform(3, 6))  # Increased final delay
+            logging.info("Final wait for AJAX content")
 
-                    if current_items == previous_item_count and current_items > 0:
-                        logging.info("No more items to load")
-                        break
-
-                    previous_item_count = current_items
-                    scroll_attempts += 1
-
-                time.sleep(random.uniform(2, 4))
-                logging.info("Final wait for AJAX content")
-
-                try:
-                    driver.execute_script("window.scrollTo(0, 0);")
-                    time.sleep(random.uniform(1, 2))
-                    count_element = WebDriverWait(driver, 15).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
-                    )
-                    WebDriverWait(driver, 15).until(
-                        EC.visibility_of_element_located((By.CSS_SELECTOR, ".CategoryPage-ItemsCount"))
-                    )
-                    total_items_text = count_element.text
-                    total_items = int(re.search(r'\d+', total_items_text).group())
-                    logging.info(f"Page reports {total_items} items")
-                except Exception as e:
-                    logging.warning(f"Could not find total item count: {e}")
-                    debug_html = driver.page_source
-                    save_debug_file("zumiez_debug_item_count.html", debug_html)
-                    logging.info("Saved page source for debugging")
+            # Scroll back to top to ensure all content is loaded
+            driver.execute_script("window.scrollTo(0, 0);")
+            time.sleep(random.uniform(2, 4))
 
             html = driver.page_source
             logging.info(f"Successfully fetched {url}")
@@ -139,7 +136,7 @@ def fetch_page(url, max_retries=3, timeout=30):
         except Exception as e:
             logging.error(f"Failed to fetch {url}: {e}")
             if attempt < max_retries - 1:
-                time.sleep(2 ** attempt)
+                time.sleep(2 ** attempt + random.uniform(5, 10))  # Increased retry delay
             else:
                 logging.error(f"Max retries reached for {url}")
                 return None
@@ -220,6 +217,19 @@ class ZumiezScraper(Scraper):
                     logging.warning(f"No sale price found for {href}")
                     continue
 
+                # Log discount percentage for decks
+                if self.part == "Decks":
+                    percent_off = calculate_percent_off(sale_price, original_price)
+                    logging.info(f"Deck {name}: {percent_off} off")
+                    try:
+                        percent_off_value = float(percent_off.strip("%"))
+                        if percent_off_value < 30:
+                            logging.info(f"Skipping deck with less than 30% off: {name} ({percent_off})")
+                            continue
+                    except (ValueError, TypeError):
+                        logging.info(f"Skipping deck with invalid % off: {name} ({percent_off})")
+                        continue
+
                 availability = "Check store"
                 products.append({
                     "name": name,
@@ -296,6 +306,7 @@ class SkateWarehouseScraper(Scraper):
                 price_new = prices[0]
                 price_old = prices[1] if len(prices) > 1 else None
                 percent_off = calculate_percent_off(price_new, price_old)
+                logging.info(f"Deck {name}: {percent_off} off")
                 try:
                     percent_off_value = float(percent_off.strip("%"))
                     if percent_off_value < 30:
@@ -338,22 +349,26 @@ class CCSScraper(Scraper):
                 sale_el = prod.select_one(".product-price--sale") or prod.select_one(".product-price")
                 link_el = prod.select_one("a")
                 if not (title_el and sale_el and link_el):
+                    logging.warning("Missing title, price, or link for product")
                     continue
 
                 name = title_el.get_text(strip=True)
                 if not name:
+                    logging.warning("No name found for product")
                     continue
 
                 href = link_el.get("href")
                 if href.startswith("/"):
                     href = "https://shop.ccs.com" + href
                 if href in seen:
+                    logging.info(f"Duplicate URL skipped: {href}")
                     continue
                 seen.add(href)
 
                 price_text = sale_el.get_text(strip=True)
                 prices = re.findall(r"\$(\d+\.\d{2})", price_text)
                 if not prices:
+                    logging.warning(f"No prices found for {href}")
                     continue
                 price_new = prices[0]
                 price_old = prices[1] if len(prices) > 1 else None
@@ -361,6 +376,7 @@ class CCSScraper(Scraper):
                 # For decks, filter for 30%+ discount
                 if self.part == "Decks":
                     percent_off = calculate_percent_off(price_new, price_old)
+                    logging.info(f"Deck {name}: {percent_off} off")
                     try:
                         percent_off_value = float(percent_off.strip("%"))
                         if percent_off_value < 30:
@@ -396,77 +412,6 @@ class ZumiezDecksScraper(ZumiezScraper):
     def __init__(self):
         super().__init__("Zumiez", "https://www.zumiez.com/skate/skateboard-decks.html?customFilters=promotion_flag:Sale", "Decks")
 
-    def parse(self, html):
-        if not html:
-            logging.error("No HTML to parse")
-            return []
-
-        soup = BeautifulSoup(html, "html.parser")
-        products = []
-        seen = set()
-
-        save_debug_file(f"zumiez_debug_decks.html", html)
-        product_grid = soup.select("li.ProductCard")
-        logging.info(f"Found {len(product_grid)} product containers")
-
-        for product in product_grid:
-            try:
-                link = product.select_one("a.ProductCard-Link")
-                if not link:
-                    logging.warning("No link found for product")
-                    continue
-                href = link["href"]
-                if href.startswith("/"):
-                    href = "https://www.zumiez.com" + href
-                if href in seen:
-                    logging.info(f"Duplicate URL skipped: {href}")
-                    continue
-                seen.add(href)
-
-                name_el = product.select_one(".ProductCard-Name")
-                name = name_el.get_text(strip=True) if name_el else link.find("img", alt=True).get("alt", "").strip()
-                if not name:
-                    logging.warning(f"No name found for {href}")
-                    continue
-
-                sale_price_el = product.select_one(".ProductPrice-PriceValue")
-                original_price_el = product.select_one(".ProductCardPrice-HighPrice")
-                sale_price = sale_price_el.get_text(strip=True).replace("$", "") if sale_price_el else None
-                original_price = original_price_el.get_text(strip=True).replace("$", "") if original_price_el else None
-
-                if not sale_price:
-                    logging.warning(f"No sale price found for {href}")
-                    continue
-
-                # Calculate % off and filter for 30%+ discount
-                percent_off = calculate_percent_off(sale_price, original_price)
-                try:
-                    percent_off_value = float(percent_off.strip("%"))
-                    if percent_off_value < 30:
-                        logging.info(f"Skipping deck with less than 30% off: {name} ({percent_off})")
-                        continue
-                except (ValueError, TypeError):
-                    logging.info(f"Skipping deck with invalid % off: {name} ({percent_off})")
-                    continue
-
-                availability = "Check store"
-                products.append({
-                    "name": name,
-                    "url": href,
-                    "price_new": sale_price,
-                    "price_old": original_price,
-                    "availability": availability,
-                    "part": self.part
-                })
-                logging.info(f"Parsed product: {name}")
-
-            except Exception as e:
-                logging.error(f"Error parsing product: {e}")
-                continue
-
-        logging.info(f"Parsed {len(products)} products")
-        return products
-
 class TacticsDecksScraper(Scraper):
     def __init__(self):
         super().__init__("Tactics", "https://www.tactics.com/skateboard-decks/sale", "Decks")
@@ -489,17 +434,20 @@ class TacticsDecksScraper(Scraper):
             try:
                 link = container.select_one("a[href]")
                 if not link:
+                    logging.warning("No link found for product")
                     continue
                 href = link["href"]
                 if href.startswith("/"):
                     href = "https://www.tactics.com" + href
                 if href in seen:
+                    logging.info(f"Duplicate URL skipped: {href}")
                     continue
                 seen.add(href)
 
                 name_el = container.select_one(".product-card__title")
                 name = name_el.get_text(strip=True) if name_el else ""
                 if not name:
+                    logging.warning(f"No name found for {href}")
                     continue
 
                 price_new_el = container.select_one(".product-card__price--sale")
@@ -508,10 +456,12 @@ class TacticsDecksScraper(Scraper):
                 price_old = price_old_el.get_text(strip=True).replace("$", "") if price_old_el else None
 
                 if not (price_new and price_old):
+                    logging.warning(f"No prices found for {href}")
                     continue
 
                 # Calculate % off and filter for 30%+ discount
                 percent_off = calculate_percent_off(price_new, price_old)
+                logging.info(f"Deck {name}: {percent_off} off")
                 try:
                     percent_off_value = float(percent_off.strip("%"))
                     if percent_off_value < 30:
@@ -929,7 +879,6 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     <tbody>
                 """
                 for change in price_changes:
-                    # Extract part type from site name (e.g., SkateWarehouse_Wheels -> Wheels)
                     part = site.split("_")[1]
                     html_content += f"""
                         <tr class="price-change">

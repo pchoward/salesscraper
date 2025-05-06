@@ -44,14 +44,12 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
-        # CI-specific options
+        # CI-specific options, skip --user-data-dir
         if os.getenv("CI"):
-            unique_dir = f"/tmp/chrome_user_data_{int(time.time())}_{''.join(random.choices(string.ascii_lowercase + string.digits, k=8))}"
-            options.add_argument(f"--user-data-dir={unique_dir}")
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--disable-gpu")
-            logging.info(f"Using unique user data directory: {unique_dir}")
+            logging.info("Skipping user-data-dir in CI environment to avoid conflicts")
 
         chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
@@ -85,7 +83,7 @@ def fetch_page(url, max_retries=3, timeout=45):
 
             time.sleep(random.uniform(5, 8))
             logging.info("Initial wait for dynamic content")
-            
+                            
             current_url = driver.current_url
             if "stash" in current_url.lower():
                 logging.error("Redirected to Stash page, retrying")

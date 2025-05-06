@@ -5,38 +5,98 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sale Items and Changes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
             body {
-                font-family: Arial, sans-serif;
+                font-family: 'Roboto', sans-serif;
                 margin: 20px;
-                background-color: #f4f4f4;
-            }
-            h1, h2 {
-                text-align: center;
+                background-color: #f5f7fa;
                 color: #333;
             }
+            h1, h2, h3 {
+                text-align: center;
+                color: #2c3e50;
+            }
+            h1 {
+                font-size: 2.2em;
+                margin-bottom: 20px;
+            }
             h2 {
+                font-size: 1.8em;
                 margin-top: 40px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin: 20px 0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            h3::before {
+                content: '▼';
+                font-size: 0.8em;
+                transition: transform 0.3s;
+            }
+            h3.collapsed::before {
+                content: '▶';
+                transform: rotate(0deg);
+            }
+            .summary {
+                background-color: #ffffff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .search-container {
+                margin: 20px 0;
+                text-align: center;
+            }
+            .search-container input {
+                padding: 10px;
+                width: 300px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1em;
             }
             table {
                 width: 100%;
                 border-collapse: collapse;
                 margin: 20px 0;
-                background-color: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
             }
             th, td {
                 padding: 12px;
                 text-align: left;
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #e0e0e0;
             }
             th {
-                background-color: #007bff;
+                background: linear-gradient(135deg, #3498db, #2980b9);
                 color: white;
+                position: sticky;
+                top: 0;
+                z-index: 1;
                 cursor: pointer;
+                font-weight: 500;
             }
             th:hover {
-                background-color: #0056b3;
+                background: linear-gradient(135deg, #2980b9, #1c5f8a);
+            }
+            th::after {
+                content: '';
+                margin-left: 5px;
+                font-size: 0.8em;
+            }
+            th.asc::after {
+                content: '↑';
+            }
+            th.desc::after {
+                content: '↓';
             }
             tr:nth-child(even) {
                 background-color: #f9f9f9;
@@ -45,17 +105,17 @@
                 background-color: #f1f1f1;
             }
             a {
-                color: #007bff;
+                color: #3498db;
                 text-decoration: none;
             }
             a:hover {
                 text-decoration: underline;
             }
             .new {
-                background-color: #e6ffe6;
+                background-color: #e6f7e6;
             }
             .price-change {
-                background-color: #fff3cd;
+                background-color: #fff4e1;
             }
             .removed {
                 background-color: #ffe6e6;
@@ -63,11 +123,28 @@
             .section {
                 margin-bottom: 40px;
             }
+            .collapsible-content {
+                display: block;
+                transition: max-height 0.3s ease-out;
+                overflow: hidden;
+            }
+            .collapsible-content.collapsed {
+                display: none;
+            }
+            @media (max-width: 768px) {
+                table {
+                    display: block;
+                    overflow-x: auto;
+                }
+                th, td {
+                    min-width: 120px;
+                }
+            }
         </style>
         <script>
             function sortTable(tableId, colIndex, isNumeric = false) {
                 const table = document.getElementById(tableId);
-                let rows = Array.from(table.rows).slice(1); // Skip header row
+                let rows = Array.from(table.rows).slice(1);
                 const isAsc = table.rows[0].cells[colIndex].getAttribute('data-sort') !== 'asc';
                 
                 rows.sort((a, b) => {
@@ -75,235 +152,72 @@
                     let bValue = b.cells[colIndex].innerText.trim();
                     
                     if (isNumeric) {
-                        aValue = parseFloat(aValue.replace('%', '')) || 0;
-                        bValue = parseFloat(bValue.replace('%', '')) || 0;
+                        aValue = parseFloat(aValue.replace('$', '').replace('%', '')) || 0;
+                        bValue = parseFloat(bValue.replace('$', '').replace('%', '')) || 0;
                         return isAsc ? aValue - bValue : bValue - aValue;
                     } else {
                         return isAsc ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
                     }
                 });
                 
-                // Update sort direction
                 table.rows[0].cells[colIndex].setAttribute('data-sort', isAsc ? 'asc' : 'desc');
+                for (let i = 0; i < table.rows[0].cells.length; i++) {
+                    table.rows[0].cells[i].classList.remove('asc', 'desc');
+                }
+                table.rows[0].cells[colIndex].classList.add(isAsc ? 'asc' : 'desc');
                 
-                // Re-append sorted rows
                 const tbody = table.getElementsByTagName('tbody')[0];
                 tbody.innerHTML = '';
                 rows.forEach(row => tbody.appendChild(row));
             }
+
+            function searchTable() {
+                const input = document.getElementById('searchInput').value.toLowerCase();
+                const tables = document.getElementsByTagName('table');
+                
+                for (let table of tables) {
+                    const rows = table.getElementsByTagName('tr');
+                    for (let i = 1; i < rows.length; i++) {
+                        const cells = rows[i].getElementsByTagName('td');
+                        let match = false;
+                        for (let cell of cells) {
+                            if (cell.innerText.toLowerCase().includes(input)) {
+                                match = true;
+                                break;
+                            }
+                        }
+                        rows[i].style.display = match ? '' : 'none';
+                    }
+                }
+            }
+
+            function toggleSection(element) {
+                const content = element.nextElementSibling;
+                element.classList.toggle('collapsed');
+                content.classList.toggle('collapsed');
+            }
         </script>
     </head>
     <body>
-        <h1>Sale Items and Changes</h1>
-    
-        <div class="section">
-            <h2>Current Sale Items</h2>
-            <table id="table-all">
-                <thead>
-                    <tr>
-                        <th onclick="sortTable('table-all', 0)">Store</th>
-                        <th onclick="sortTable('table-all', 1)">Part</th>
-                        <th onclick="sortTable('table-all', 2)">Product Name</th>
-                        <th onclick="sortTable('table-all', 3, true)">New Price ($)</th>
-                        <th onclick="sortTable('table-all', 4, true)">Old Price ($)</th>
-                        <th onclick="sortTable('table-all', 5, true)">% Off</th>
-                        <th onclick="sortTable('table-all', 6)">Availability</th>
-                    </tr>
-                </thead>
-                <tbody>
-    
+        <h1>Skateboard Sale Items and Changes</h1>
+    <div class='summary'><h2>Summary</h2><p><strong>Zumiez</strong>: 25 items (17 Wheels, 8 Trucks)</p><p><strong>SkateWarehouse</strong>: 30 items (14 Wheels, 8 Trucks, 8 Bearings)</p><p><strong>CCS</strong>: 0 items (0 Wheels)</p></div>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search items...">
+        </div>
+    <div class='section'><h2>Current Sale Items</h2><h3>SkateWarehouse</h3><table id='table-skatewarehouse'>
+            <thead>
                 <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-superwide-hd-80hd-58mm-orange-skateboard-wheels.html" target="_blank">Spitfire Superwide 80HD 58mm Orange Skateboard Wheels</a></td>
-                    <td>24.99</td>
-                    <td>49.95</td>
-                    <td>49.97%</td>
-                    <td>Check store</td>
+                    <th onclick="sortTable('table-skatewarehouse', 0)">Part</th>
+                    <th onclick="sortTable('table-skatewarehouse', 1)">Product Name</th>
+                    <th onclick="sortTable('table-skatewarehouse', 2, true)">New Price ($)</th>
+                    <th onclick="sortTable('table-skatewarehouse', 3, true)">Old Price ($)</th>
+                    <th onclick="sortTable('table-skatewarehouse', 4, true)">% Off</th>
+                    <th onclick="sortTable('table-skatewarehouse', 5)">Availability</th>
                 </tr>
+            </thead>
+            <tbody>
         
                 <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html" target="_blank">Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels</a></td>
-                    <td>39.99</td>
-                    <td>49.95</td>
-                    <td>19.94%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html" target="_blank">Powell Peralta Dragons 93a 56mm Skateboard Wheels</a></td>
-                    <td>34.99</td>
-                    <td>42.95</td>
-                    <td>18.53%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html" target="_blank">OJ Thunderjuice 75mm 78a Orange Cruiser Wheels</a></td>
-                    <td>44.99</td>
-                    <td>54.95</td>
-                    <td>18.13%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ From Concentrate 53mm 101a Orange Skateboard Wheels</a></td>
-                    <td>19.99</td>
-                    <td>25.00</td>
-                    <td>20.04%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels</a></td>
-                    <td>44.99</td>
-                    <td>56.95</td>
-                    <td>21.00%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels</a></td>
-                    <td>39.99</td>
-                    <td>49.95</td>
-                    <td>19.94%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels</a></td>
-                    <td>39.99</td>
-                    <td>49.95</td>
-                    <td>19.94%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html" target="_blank">Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels</a></td>
-                    <td>34.99</td>
-                    <td>54.95</td>
-                    <td>36.32%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels</a></td>
-                    <td>29.99</td>
-                    <td>39.95</td>
-                    <td>24.93%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html" target="_blank">Spitfire Firebolt 51mm 99a Red Skateboard Wheels</a></td>
-                    <td>29.99</td>
-                    <td>37.95</td>
-                    <td>20.97%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html" target="_blank">Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels</a></td>
-                    <td>39.99</td>
-                    <td>49.95</td>
-                    <td>19.94%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html" target="_blank">Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels</a></td>
-                    <td>39.99</td>
-                    <td>49.95</td>
-                    <td>19.94%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html" target="_blank">Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels</a></td>
-                    <td>34.99</td>
-                    <td>42.95</td>
-                    <td>18.53%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-double-duro-53mm-101a-pastel-orange-skateboard-wheels.html" target="_blank">OJ Double Duro 53mm 101a Pastel Orange Skateboard Wheels</a></td>
-                    <td>34.99</td>
-                    <td>56.95</td>
-                    <td>38.56%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels</a></td>
-                    <td>29.99</td>
-                    <td>38.95</td>
-                    <td>23.00%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html" target="_blank">OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels</a></td>
-                    <td>29.99</td>
-                    <td>39.95</td>
-                    <td>24.93%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html" target="_blank">OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels</a></td>
-                    <td>24.99</td>
-                    <td>39.95</td>
-                    <td>37.45%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Wheels</td>
-                    <td><a href="https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html" target="_blank">Bones Roughriders ATF 59mm 80a Red Cruiser Wheels</a></td>
-                    <td>34.99</td>
-                    <td>35.95</td>
-                    <td>2.67%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Runners_Wheels/descpage-BSRREWH.html?color=RD
@@ -313,9 +227,8 @@ https://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Runners_Wheels/descpage-BS
                     <td>11.85%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK4
@@ -325,9 +238,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-B
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSBWH.html?color=BK3
@@ -337,9 +249,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-B
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH3
@@ -349,9 +260,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-B
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-BSMSWWH.html?color=WH4
@@ -361,9 +271,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V4_Wide_Wheels/descpage-B
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK4
@@ -373,9 +282,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpag
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK3
@@ -385,9 +293,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpag
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSSWH.html?color=WH4
@@ -397,9 +304,8 @@ https://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpag
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNO4WH.html?color=OR
@@ -409,9 +315,8 @@ https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNO4WH
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNY4WH.html?color=YE
@@ -421,9 +326,8 @@ https://www.skatewarehouse.com/Bones_NEONderthal_100a_V4_Wheels/descpage-BSNY4WH
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Classic_101a_Wheels/descpage-SFLSCWH.html?color=WH
@@ -433,9 +337,8 @@ https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Classic_101a_Wheels/descp
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH
@@ -445,9 +348,8 @@ https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpa
                     <td>33.38%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH
@@ -457,9 +359,8 @@ https://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpag
                     <td>33.38%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Wheels</td>
                     <td><a href="
 https://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH
@@ -469,89 +370,8 @@ https://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-S
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html" target="_blank">Independent x Hockey Silver 149 Skateboard Truck</a></td>
-                    <td>14.99</td>
-                    <td>31.95</td>
-                    <td>53.08%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html" target="_blank">Ace 44 AF1 Gold Skateboard Truck</a></td>
-                    <td>19.99</td>
-                    <td>32.95</td>
-                    <td>39.33%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html" target="_blank">Ace 44 Classic Red & Silver Skateboard Truck</a></td>
-                    <td>14.99</td>
-                    <td>24.95</td>
-                    <td>39.92%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html" target="_blank">Independent 149 Justin Henry Stage 11 Skateboard Trucks</a></td>
-                    <td>29.99</td>
-                    <td>35.95</td>
-                    <td>16.58%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html" target="_blank">Ace Anderson 66 AF1 Black & White Skateboard Truck</a></td>
-                    <td>27.99</td>
-                    <td>34.95</td>
-                    <td>19.91%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html" target="_blank">Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck</a></td>
-                    <td>14.99</td>
-                    <td>30.95</td>
-                    <td>51.57%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html" target="_blank">Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck</a></td>
-                    <td>24.99</td>
-                    <td>31.95</td>
-                    <td>21.78%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>Zumiez</td>
-                    <td>Trucks</td>
-                    <td><a href="https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html" target="_blank">Independent Colbourn 139mm Skateboard Truck</a></td>
-                    <td>19.99</td>
-                    <td>30.95</td>
-                    <td>35.41%</td>
-                    <td>Check store</td>
-                </tr>
-        
-                <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI
@@ -561,9 +381,8 @@ https://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color
                     <td>30.98%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_S11_Hollow_Grant_Taylor_Barcode_Truck/descpage-INHGTTR.html?color=SI
@@ -573,9 +392,8 @@ https://www.skatewarehouse.com/Independent_S11_Hollow_Grant_Taylor_Barcode_Truck
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_S11_Louie_Lopez_IKP_Standard_Truck/descpage-INLLITR.html?color=BK
@@ -585,9 +403,8 @@ https://www.skatewarehouse.com/Independent_S11_Louie_Lopez_IKP_Standard_Truck/de
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTGTR.html?color=BL
@@ -597,9 +414,8 @@ https://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/des
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTBTR.html?color=RD
@@ -609,9 +425,8 @@ https://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/des
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Stage_11_Hollow_Delfino_Truck/descpage-INPDTR.html?color=SI
@@ -621,9 +436,8 @@ https://www.skatewarehouse.com/Independent_Stage_11_Hollow_Delfino_Truck/descpag
                     <td>16.59%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Stage_11_Santa_Cruz_Standard_Truck/descpage-INCZTR.html?color=BK
@@ -633,9 +447,8 @@ https://www.skatewarehouse.com/Independent_Stage_11_Santa_Cruz_Standard_Truck/de
                     <td>N/A</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Trucks</td>
                     <td><a href="
 https://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-INBRTR.html?color=BK
@@ -645,9 +458,8 @@ https://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-
                     <td>13.71%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Alex_Midler_Pro_G3_Bearings/descpage-BSAMBR.html
@@ -657,9 +469,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Alex_Midler_Pro_G3_Bearings/desc
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Alexis_Ramirez_Pro_G3_Bearings/descpage-BSARBR.html
@@ -669,9 +480,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Alexis_Ramirez_Pro_G3_Bearings/d
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_David_Gravette_Pro_G3_Bearings/descpage-BSDGBR.html
@@ -681,9 +491,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_David_Gravette_Pro_G3_Bearings/d
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Mason_Silva_Pro_G3_Bearings/descpage-BSMSBR.html
@@ -693,9 +502,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Mason_Silva_Pro_G3_Bearings/desc
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Pedro_Delfino_Pro_G3_Bearings/descpage-BSPDBR.html
@@ -705,9 +513,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Pedro_Delfino_Pro_G3_Bearings/de
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Fabiana_Delfino_Pro_G3_Bearings/descpage-BSFDBR.html
@@ -717,9 +524,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Fabiana_Delfino_Pro_G3_Bearings/
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Roman_Pabich_Pro_G3_Bearings/descpage-BSRPBR.html
@@ -729,9 +535,8 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Roman_Pabich_Pro_G3_Bearings/des
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
-        
+            
                 <tr>
-                    <td>SkateWarehouse</td>
                     <td>Bearings</td>
                     <td><a href="
 https://www.skatewarehouse.com/Bronson_Speed_Co_Samarria_Brevard_Pro_G3_Bearings/descpage-BSSBBR.html
@@ -741,88 +546,339 @@ https://www.skatewarehouse.com/Bronson_Speed_Co_Samarria_Brevard_Pro_G3_Bearings
                     <td>51.42%</td>
                     <td>Check store</td>
                 </tr>
+            </tbody></table><h3>Zumiez</h3><table id='table-zumiez'>
+            <thead>
+                <tr>
+                    <th onclick="sortTable('table-zumiez', 0)">Part</th>
+                    <th onclick="sortTable('table-zumiez', 1)">Product Name</th>
+                    <th onclick="sortTable('table-zumiez', 2, true)">New Price ($)</th>
+                    <th onclick="sortTable('table-zumiez', 3, true)">Old Price ($)</th>
+                    <th onclick="sortTable('table-zumiez', 4, true)">% Off</th>
+                    <th onclick="sortTable('table-zumiez', 5)">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
         
-                </tbody>
-            </table>
-        </div>
-    
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html" target="_blank">Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html" target="_blank">Powell Peralta Dragons 93a 56mm Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>42.95</td>
+                    <td>18.53%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html" target="_blank">OJ Thunderjuice 75mm 78a Orange Cruiser Wheels</a></td>
+                    <td>44.99</td>
+                    <td>54.95</td>
+                    <td>18.13%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ From Concentrate 53mm 101a Orange Skateboard Wheels</a></td>
+                    <td>19.99</td>
+                    <td>25.00</td>
+                    <td>20.04%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html" target="_blank">OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels</a></td>
+                    <td>44.99</td>
+                    <td>56.95</td>
+                    <td>21.00%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html" target="_blank">Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html" target="_blank">Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>54.95</td>
+                    <td>36.32%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>39.95</td>
+                    <td>24.93%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html" target="_blank">Spitfire Firebolt 51mm 99a Red Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>37.95</td>
+                    <td>20.97%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html" target="_blank">Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels</a></td>
+                    <td>39.99</td>
+                    <td>49.95</td>
+                    <td>19.94%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html" target="_blank">Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>42.95</td>
+                    <td>18.53%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-double-duro-53mm-101a-pastel-orange-skateboard-wheels.html" target="_blank">OJ Double Duro 53mm 101a Pastel Orange Skateboard Wheels</a></td>
+                    <td>34.99</td>
+                    <td>56.95</td>
+                    <td>38.56%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html" target="_blank">OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>38.95</td>
+                    <td>23.00%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html" target="_blank">OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels</a></td>
+                    <td>29.99</td>
+                    <td>39.95</td>
+                    <td>24.93%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html" target="_blank">OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels</a></td>
+                    <td>24.99</td>
+                    <td>39.95</td>
+                    <td>37.45%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Wheels</td>
+                    <td><a href="https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html" target="_blank">Bones Roughriders ATF 59mm 80a Red Cruiser Wheels</a></td>
+                    <td>34.99</td>
+                    <td>35.95</td>
+                    <td>2.67%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html" target="_blank">Independent x Hockey Silver 149 Skateboard Truck</a></td>
+                    <td>14.99</td>
+                    <td>31.95</td>
+                    <td>53.08%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html" target="_blank">Ace 44 AF1 Gold Skateboard Truck</a></td>
+                    <td>19.99</td>
+                    <td>32.95</td>
+                    <td>39.33%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html" target="_blank">Ace 44 Classic Red & Silver Skateboard Truck</a></td>
+                    <td>14.99</td>
+                    <td>24.95</td>
+                    <td>39.92%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html" target="_blank">Independent 149 Justin Henry Stage 11 Skateboard Trucks</a></td>
+                    <td>29.99</td>
+                    <td>35.95</td>
+                    <td>16.58%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html" target="_blank">Ace Anderson 66 AF1 Black & White Skateboard Truck</a></td>
+                    <td>27.99</td>
+                    <td>34.95</td>
+                    <td>19.91%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html" target="_blank">Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck</a></td>
+                    <td>14.99</td>
+                    <td>30.95</td>
+                    <td>51.57%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html" target="_blank">Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck</a></td>
+                    <td>24.99</td>
+                    <td>31.95</td>
+                    <td>21.78%</td>
+                    <td>Check store</td>
+                </tr>
+            
+                <tr>
+                    <td>Trucks</td>
+                    <td><a href="https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html" target="_blank">Independent Colbourn 139mm Skateboard Truck</a></td>
+                    <td>19.99</td>
+                    <td>30.95</td>
+                    <td>35.41%</td>
+                    <td>Check store</td>
+                </tr>
+            </tbody></table></div>
         <div class="section">
             <h2>Historical Changes</h2>
-    <h3>Zumiez_Wheels</h3>
+    <h3 onclick='toggleSection(this)'>Zumiez_Wheels (3 Removed)</h3><div class='collapsible-content'>
                 <h4>Removed Items</h4>
-                <table>
+                <table id="historical-removed-zumiez_wheels">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-zumiez_wheels', 0)">Part</th>
+                            <th onclick="sortTable('historical-removed-zumiez_wheels', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-removed-zumiez_wheels', 2, true)">Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-zumiez_wheels', 3)">Date Removed</th>
                         </tr>
                     </thead>
                     <tbody>
                 
                         <tr class="removed">
-                            <td>Spitfire x Skate Like A Girl Formula Four 54mm Full Conical 99d Skateboard Wheels</td>
-                            <td>34.99</td>
+                            <td>Wheels</td>
+                            <td>Spitfire Superwide 80HD 58mm Orange Skateboard Wheels</td>
+                            <td>24.99</td>
+                            <td>2025-05-06</td>
                         </tr>
                     
-                    </tbody>
-                </table>
-                <h3>SkateWarehouse_Wheels</h3>
+                        <tr class="removed">
+                            <td>Wheels</td>
+                            <td>Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels</td>
+                            <td>39.99</td>
+                            <td>2025-05-06</td>
+                        </tr>
+                    
+                        <tr class="removed">
+                            <td>Wheels</td>
+                            <td>Spitfire x Skate Like A Girl Formula Four 54mm Full Conical 99d Skateboard Wheels</td>
+                            <td>34.99</td>
+                            <td>2025-05-06</td>
+                        </tr>
+                    </tbody></table></div><h3 onclick='toggleSection(this)'>SkateWarehouse_Wheels (1 New, 1 Removed)</h3><div class='collapsible-content'>
                 <h4>New Items</h4>
-                <table>
+                <table id="historical-new-skatewarehouse_wheels">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>New Price ($)</th>
+                            <th onclick="sortTable('historical-new-skatewarehouse_wheels', 0)">Part</th>
+                            <th onclick="sortTable('historical-new-skatewarehouse_wheels', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-new-skatewarehouse_wheels', 2, true)">New Price ($)</th>
+                            <th onclick="sortTable('historical-new-skatewarehouse_wheels', 3)">Date Added</th>
                         </tr>
                     </thead>
                     <tbody>
                 
                         <tr class="new">
+                            <td>Wheels</td>
                             <td><a href="
 https://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Runners_Wheels/descpage-BSRREWH.html?color=RD
 " target="_blank">Clearance -11%Bones ATF Rough Riders Runners Wheels Red</a></td>
                             <td>36.98</td>
+                            <td>2025-05-06</td>
                         </tr>
-                    
-                    </tbody>
-                </table>
-                
+                    </tbody></table>
                 <h4>Removed Items</h4>
-                <table>
+                <table id="historical-removed-skatewarehouse_wheels">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_wheels', 0)">Part</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_wheels', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_wheels', 2, true)">Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_wheels', 3)">Date Removed</th>
                         </tr>
                     </thead>
                     <tbody>
                 
                         <tr class="removed">
+                            <td>Wheels</td>
                             <td>Bones Mummy Skulls 100a V5 Sidecut Wheels White</td>
                             <td>24.99</td>
+                            <td>2025-05-06</td>
                         </tr>
-                    
-                    </tbody>
-                </table>
-                <h3>SkateWarehouse_Bearings</h3>
+                    </tbody></table></div><h3 onclick='toggleSection(this)'>SkateWarehouse_Bearings (1 Removed)</h3><div class='collapsible-content'>
                 <h4>Removed Items</h4>
-                <table>
+                <table id="historical-removed-skatewarehouse_bearings">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_bearings', 0)">Part</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_bearings', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_bearings', 2, true)">Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-skatewarehouse_bearings', 3)">Date Removed</th>
                         </tr>
                     </thead>
                     <tbody>
                 
                         <tr class="removed">
+                            <td>Bearings</td>
                             <td>Clearance -51%Bronson Speed Co. Eric Dressen Pro G3 Bearings</td>
                             <td>16.98</td>
+                            <td>2025-05-06</td>
                         </tr>
-                    
-                    </tbody>
-                </table>
-                
+                    </tbody></table></div>
         </div>
     </body>
     </html>

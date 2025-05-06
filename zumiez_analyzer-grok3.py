@@ -11,6 +11,7 @@ import logging
 import random
 import requests
 import datetime
+import string  
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options

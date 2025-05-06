@@ -26,7 +26,7 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def fetch_page(url, max_retries=3, timeout=45):
+def fetch_page(url, max_retries=3, timeout=30):
     ua = UserAgent()
     for attempt in range(max_retries):
         user_agent = ua.random
@@ -44,25 +44,20 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
-        # CI-specific options
+        # Add minimal CI-specific options
         if os.getenv("CI"):
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
-            options.add_argument("--disable-gpu")
-            options.add_argument("--disable-extensions")
-            options.add_argument("--disable-setuid-sandbox")
-            options.add_argument("--remote-debugging-port=9222")
-            logging.info("Skipping user-data-dir in CI environment to avoid conflicts")
-            logging.info(f"Chrome options: {options.arguments}")
+            logging.info("Added minimal CI-specific options")
 
-        chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
+        chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
 
         driver = None
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
             logging.info(f"Using chromedriver at {service.path}")
-            
+
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:
@@ -79,20 +74,19 @@ def fetch_page(url, max_retries=3, timeout=45):
                         raise
 
             driver.set_page_load_timeout(timeout)
-            time.sleep(random.uniform(2, 5))
+            time.sleep(random.uniform(1, 3))
             driver.get(url)
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
 
-            time.sleep(random.uniform(5, 8))
+            time.sleep(random.uniform(3, 5))
             logging.info("Initial wait for dynamic content")
-                            
+
             current_url = driver.current_url
             if "stash" in current_url.lower():
                 logging.error("Redirected to Stash page, retrying")
                 driver.quit()
-                time.sleep(random.uniform(5, 10))
                 continue
 
             try:
@@ -110,7 +104,7 @@ def fetch_page(url, max_retries=3, timeout=45):
 
             while scroll_attempts < max_scroll_attempts:
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(random.uniform(3, 6))
+                time.sleep(random.uniform(2, 4))
                 current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
                 logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
@@ -127,11 +121,11 @@ def fetch_page(url, max_retries=3, timeout=45):
                 previous_item_count = current_items
                 scroll_attempts += 1
 
-            time.sleep(random.uniform(3, 6))
+            time.sleep(random.uniform(2, 4))
             logging.info("Final wait for AJAX content")
 
             driver.execute_script("window.scrollTo(0, 0);")
-            time.sleep(random.uniform(2, 4))
+            time.sleep(random.uniform(1, 2))
 
             html = driver.page_source
             logging.info(f"Successfully fetched {url}")
@@ -140,7 +134,7 @@ def fetch_page(url, max_retries=3, timeout=45):
         except Exception as e:
             logging.error(f"Failed to fetch {url}: {e}")
             if attempt < max_retries - 1:
-                time.sleep(2 ** attempt + random.uniform(5, 10))
+                time.sleep(2 ** attempt + random.uniform(2, 5))
             else:
                 logging.error(f"Max retries reached for {url}")
                 return None
@@ -949,7 +943,12 @@ def main():
         TacticsDecksScraper(),
     ]
 
-    current = {f"{s.name}_{s.part}": s.scrape() for s in scrapers}
+    current = {}
+    for s in scrapers:
+        site_key = f"{s.name}_{s.part}"
+        logging.info(f"Scraping {site_key}")
+        current[site_key] = s.scrape()
+        logging.info(f"Finished scraping {site_key}: {len(current[site_key])} items")
 
     for site, items in current.items():
         print(f"{site}: {len(items)} items scraped")

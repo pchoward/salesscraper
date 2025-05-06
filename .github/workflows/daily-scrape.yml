@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight UTC
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -30,22 +30,36 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable fonts-liberation libgbm1 libnss3 libu2f-udev xdg-utils \
-            libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 \
+            libatk1.0-0 libatk-bridge2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
             libfontconfig1 libgcc-s1 libgdk-pixbuf-2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 \
             libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 \
             libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates
 
-      - name: Set up Chromedriver using webdriver-manager
+      - name: Install Chromedriver
         run: |
-          python -c "from webdriver_manager.chrome import ChromeDriverManager; print(ChromeDriverManager().install())"
-          echo "CHROMEDRIVER_PATH=$(python -c 'from webdriver_manager.chrome import ChromeDriverManager; print(ChromeDriverManager().install())')" >> $GITHUB_ENV
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+          echo "Chrome version: $CHROME_VERSION"
+          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          echo "Installing Chromedriver version: $CHROMEDRIVER_VERSION"
+          wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
+          chromedriver --version
+
+      - name: Increase shared memory
+        run: |
+          sudo mount -o remount,size=2G /dev/shm
+          df -h /dev/shm
 
       - name: Clean up Chrome processes
         run: |
           pkill -9 chrome || true
           pkill -9 chromedriver || true
           rm -rf /tmp/chrome* || true
+          rm -rf /tmp/.com.google.Chrome* || true
           rm -rf ~/.cache/google-chrome || true
+          rm -rf ~/.config/google-chrome || true
 
       - name: Run scraper
         run: python zumiez_analyzer-grok3.py

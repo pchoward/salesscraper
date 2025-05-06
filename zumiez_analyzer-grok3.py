@@ -26,17 +26,13 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def fetch_page(url, max_retries=3, timeout=45):
-    """
-    Uses Chrome (via Selenium) to render JavaScript and return page HTML.
-    Handles dynamic loading and infinite scroll for Zumiez, with anti-bot bypass.
-    """
     ua = UserAgent()
     for attempt in range(max_retries):
         user_agent = ua.random
         logging.info(f"Using user agent: {user_agent}")
 
         options = Options()
-        options.headless = os.getenv("CI", "false").lower() == "true"  # Headless in CI
+        options.headless = os.getenv("CI", "false").lower() == "true"
         options.add_argument(f"user-agent={user_agent}")
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-web-security")
@@ -47,8 +43,14 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
+        # CI-specific options
         if os.getenv("CI"):
-            options.add_argument("--user-data-dir=/tmp/chrome_user_data")
+            unique_dir = f"/tmp/chrome_user_data_{int(time.time())}_{''.join(random.choices(string.ascii_lowercase + string.digits, k=8))}"
+            options.add_argument(f"--user-data-dir={unique_dir}")
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--disable-gpu")
+            logging.info(f"Using unique user data directory: {unique_dir}")
 
         chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
@@ -82,7 +84,7 @@ def fetch_page(url, max_retries=3, timeout=45):
 
             time.sleep(random.uniform(5, 8))
             logging.info("Initial wait for dynamic content")
-
+            
             current_url = driver.current_url
             if "stash" in current_url.lower():
                 logging.error("Redirected to Stash page, retrying")

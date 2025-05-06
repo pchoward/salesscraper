@@ -52,7 +52,7 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
-        chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
+        chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
 
         driver = None

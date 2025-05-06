@@ -10,6 +10,7 @@ import time
 import logging
 import random
 import requests
+import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -383,11 +384,25 @@ def calculate_percent_off(price_new, price_old):
     except (ValueError, TypeError):
         return "N/A"
 
+def calculate_percent_off(price_new, price_old):
+    try:
+        new = float(price_new)
+        old = float(price_old)
+        if old <= 0:
+            return "N/A"
+        percent_off = ((old - new) / old) * 100
+        return f"{percent_off:.2f}%"
+    except (ValueError, TypeError):
+        return "N/A"
+
 def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
     """
-    Generate an HTML chart with current sale items and historical changes for all sites.
-    Includes a Store column, Part column, % Off column, and sorting functionality.
+    Generate an improved HTML chart with enhanced historical changes section.
+    Enhancements: add part type and date to changes, show change summary in headers, enable sorting.
     """
+    # Get the current date for historical changes
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+
     html_content = """
     <!DOCTYPE html>
     <html lang="en">
@@ -395,38 +410,98 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sale Items and Changes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <style>
             body {
-                font-family: Arial, sans-serif;
+                font-family: 'Roboto', sans-serif;
                 margin: 20px;
-                background-color: #f4f4f4;
-            }
-            h1, h2 {
-                text-align: center;
+                background-color: #f5f7fa;
                 color: #333;
             }
+            h1, h2, h3 {
+                text-align: center;
+                color: #2c3e50;
+            }
+            h1 {
+                font-size: 2.2em;
+                margin-bottom: 20px;
+            }
             h2 {
+                font-size: 1.8em;
                 margin-top: 40px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin: 20px 0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            h3::before {
+                content: '▼';
+                font-size: 0.8em;
+                transition: transform 0.3s;
+            }
+            h3.collapsed::before {
+                content: '▶';
+                transform: rotate(0deg);
+            }
+            .summary {
+                background-color: #ffffff;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .search-container {
+                margin: 20px 0;
+                text-align: center;
+            }
+            .search-container input {
+                padding: 10px;
+                width: 300px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1em;
             }
             table {
                 width: 100%;
                 border-collapse: collapse;
                 margin: 20px 0;
-                background-color: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
             }
             th, td {
                 padding: 12px;
                 text-align: left;
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #e0e0e0;
             }
             th {
-                background-color: #007bff;
+                background: linear-gradient(135deg, #3498db, #2980b9);
                 color: white;
+                position: sticky;
+                top: 0;
+                z-index: 1;
                 cursor: pointer;
+                font-weight: 500;
             }
             th:hover {
-                background-color: #0056b3;
+                background: linear-gradient(135deg, #2980b9, #1c5f8a);
+            }
+            th::after {
+                content: '';
+                margin-left: 5px;
+                font-size: 0.8em;
+            }
+            th.asc::after {
+                content: '↑';
+            }
+            th.desc::after {
+                content: '↓';
             }
             tr:nth-child(even) {
                 background-color: #f9f9f9;
@@ -435,17 +510,17 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                 background-color: #f1f1f1;
             }
             a {
-                color: #007bff;
+                color: #3498db;
                 text-decoration: none;
             }
             a:hover {
                 text-decoration: underline;
             }
             .new {
-                background-color: #e6ffe6;
+                background-color: #e6f7e6;
             }
             .price-change {
-                background-color: #fff3cd;
+                background-color: #fff4e1;
             }
             .removed {
                 background-color: #ffe6e6;
@@ -453,11 +528,28 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
             .section {
                 margin-bottom: 40px;
             }
+            .collapsible-content {
+                display: block;
+                transition: max-height 0.3s ease-out;
+                overflow: hidden;
+            }
+            .collapsible-content.collapsed {
+                display: none;
+            }
+            @media (max-width: 768px) {
+                table {
+                    display: block;
+                    overflow-x: auto;
+                }
+                th, td {
+                    min-width: 120px;
+                }
+            }
         </style>
         <script>
             function sortTable(tableId, colIndex, isNumeric = false) {
                 const table = document.getElementById(tableId);
-                let rows = Array.from(table.rows).slice(1); // Skip header row
+                let rows = Array.from(table.rows).slice(1);
                 const isAsc = table.rows[0].cells[colIndex].getAttribute('data-sort') !== 'asc';
                 
                 rows.sort((a, b) => {
@@ -465,58 +557,109 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     let bValue = b.cells[colIndex].innerText.trim();
                     
                     if (isNumeric) {
-                        aValue = parseFloat(aValue.replace('%', '')) || 0;
-                        bValue = parseFloat(bValue.replace('%', '')) || 0;
+                        aValue = parseFloat(aValue.replace('$', '').replace('%', '')) || 0;
+                        bValue = parseFloat(bValue.replace('$', '').replace('%', '')) || 0;
                         return isAsc ? aValue - bValue : bValue - aValue;
                     } else {
                         return isAsc ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
                     }
                 });
                 
-                // Update sort direction
                 table.rows[0].cells[colIndex].setAttribute('data-sort', isAsc ? 'asc' : 'desc');
+                for (let i = 0; i < table.rows[0].cells.length; i++) {
+                    table.rows[0].cells[i].classList.remove('asc', 'desc');
+                }
+                table.rows[0].cells[colIndex].classList.add(isAsc ? 'asc' : 'desc');
                 
-                // Re-append sorted rows
                 const tbody = table.getElementsByTagName('tbody')[0];
                 tbody.innerHTML = '';
                 rows.forEach(row => tbody.appendChild(row));
             }
+
+            function searchTable() {
+                const input = document.getElementById('searchInput').value.toLowerCase();
+                const tables = document.getElementsByTagName('table');
+                
+                for (let table of tables) {
+                    const rows = table.getElementsByTagName('tr');
+                    for (let i = 1; i < rows.length; i++) {
+                        const cells = rows[i].getElementsByTagName('td');
+                        let match = false;
+                        for (let cell of cells) {
+                            if (cell.innerText.toLowerCase().includes(input)) {
+                                match = true;
+                                break;
+                            }
+                        }
+                        rows[i].style.display = match ? '' : 'none';
+                    }
+                }
+            }
+
+            function toggleSection(element) {
+                const content = element.nextElementSibling;
+                element.classList.toggle('collapsed');
+                content.classList.toggle('collapsed');
+            }
         </script>
     </head>
     <body>
-        <h1>Sale Items and Changes</h1>
+        <h1>Skateboard Sale Items and Changes</h1>
     """
 
-    # Current Sale Items - Single table with Store and Part columns
+    # Summary Statistics
+    summary = {}
+    for site_key, items in data.items():
+        store, part = site_key.split("_")
+        if store not in summary:
+            summary[store] = {}
+        summary[store][part] = len(items)
+
+    html_content += "<div class='summary'><h2>Summary</h2>"
+    for store, parts in summary.items():
+        total = sum(parts.values())
+        parts_str = ", ".join([f"{count} {part}" for part, count in parts.items()])
+        html_content += f"<p><strong>{store}</strong>: {total} items ({parts_str})</p>"
+    html_content += "</div>"
+
+    # Search Bar
     html_content += """
-        <div class="section">
-            <h2>Current Sale Items</h2>
-            <table id="table-all">
-                <thead>
-                    <tr>
-                        <th onclick="sortTable('table-all', 0)">Store</th>
-                        <th onclick="sortTable('table-all', 1)">Part</th>
-                        <th onclick="sortTable('table-all', 2)">Product Name</th>
-                        <th onclick="sortTable('table-all', 3, true)">New Price ($)</th>
-                        <th onclick="sortTable('table-all', 4, true)">Old Price ($)</th>
-                        <th onclick="sortTable('table-all', 5, true)">% Off</th>
-                        <th onclick="sortTable('table-all', 6)">Availability</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search items...">
+        </div>
     """
-    all_items = []
-    for site, items in data.items():
-        if not items:
-            continue
-        for item in items:
-            all_items.append(item)
 
-    for item in all_items:
-        percent_off = calculate_percent_off(item["price_new"], item["price_old"])
-        html_content += f"""
+    # Current Sale Items - Grouped by Store
+    html_content += "<div class='section'><h2>Current Sale Items</h2>"
+    stores = sorted(set(site_key.split("_")[0] for site_key in data.keys()))
+    for store in stores:
+        store_items = []
+        for site_key, items in data.items():
+            if site_key.startswith(store):
+                store_items.extend(items)
+        if not store_items:
+            continue
+
+        html_content += f"<h3>{store}</h3>"
+        html_content += f"<table id='table-{store.lower()}'>"
+        html_content += """
+            <thead>
                 <tr>
-                    <td>{item['store']}</td>
+                    <th onclick="sortTable('table-{}', 0)">Part</th>
+                    <th onclick="sortTable('table-{}', 1)">Product Name</th>
+                    <th onclick="sortTable('table-{}', 2, true)">New Price ($)</th>
+                    <th onclick="sortTable('table-{}', 3, true)">Old Price ($)</th>
+                    <th onclick="sortTable('table-{}', 4, true)">% Off</th>
+                    <th onclick="sortTable('table-{}', 5)">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+        """.format(store.lower(), store.lower(), store.lower(), store.lower(), store.lower(), store.lower())
+
+        for item in store_items:
+            percent_off = calculate_percent_off(item["price_new"], item["price_old"])
+            html_content += f"""
+                <tr>
                     <td>{item['part']}</td>
                     <td><a href="{item['url']}" target="_blank">{item['name']}</a></td>
                     <td>{item['price_new']}</td>
@@ -524,14 +667,11 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     <td>{percent_off}</td>
                     <td>{item['availability']}</td>
                 </tr>
-        """
-    html_content += """
-                </tbody>
-            </table>
-        </div>
-    """
+            """
+        html_content += "</tbody></table>"
+    html_content += "</div>"
 
-    # Historical Changes for each site
+    # Historical Changes with Enhanced Details
     html_content += """
         <div class="section">
             <h2>Historical Changes</h2>
@@ -540,18 +680,34 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
         html_content += "<p>No changes detected since the last run.</p>"
     else:
         for site, site_changes in changes.items():
-            html_content += f"<h3>{site}</h3>"
+            # Calculate summary of changes
+            new_count = len([c for c in site_changes if c["type"] == "new"])
+            price_change_count = len([c for c in site_changes if c["type"] == "price_change"])
+            removed_count = len([c for c in site_changes if c["type"] == "removed"])
+            summary_parts = []
+            if new_count > 0:
+                summary_parts.append(f"{new_count} New")
+            if price_change_count > 0:
+                summary_parts.append(f"{price_change_count} Price Changes")
+            if removed_count > 0:
+                summary_parts.append(f"{removed_count} Removed")
+            summary_text = ", ".join(summary_parts) if summary_parts else "No changes"
+
+            html_content += f"<h3 onclick='toggleSection(this)'>{site} ({summary_text})</h3>"
+            html_content += "<div class='collapsible-content'>"
 
             # New Items
             new_items = [change for change in site_changes if change["type"] == "new"]
             if new_items:
-                html_content += """
+                html_content += f"""
                 <h4>New Items</h4>
-                <table>
+                <table id="historical-new-{site.lower()}">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>New Price ($)</th>
+                            <th onclick="sortTable('historical-new-{site.lower()}', 0)">Part</th>
+                            <th onclick="sortTable('historical-new-{site.lower()}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-new-{site.lower()}', 2, true)">New Price ($)</th>
+                            <th onclick="sortTable('historical-new-{site.lower()}', 3)">Date Added</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -560,53 +716,57 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     item = change["item"]
                     html_content += f"""
                         <tr class="new">
+                            <td>{item['part']}</td>
                             <td><a href="{item['url']}" target="_blank">{item['name']}</a></td>
                             <td>{item['price_new']}</td>
+                            <td>{current_date}</td>
                         </tr>
                     """
-                html_content += """
-                    </tbody>
-                </table>
-                """
+                html_content += "</tbody></table>"
 
             # Price Changes
             price_changes = [change for change in site_changes if change["type"] == "price_change"]
             if price_changes:
-                html_content += """
+                html_content += f"""
                 <h4>Price Changes</h4>
-                <table>
+                <table id="historical-price-{site.lower()}">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Old Price ($)</th>
-                            <th>New Price ($)</th>
+                            <th onclick="sortTable('historical-price-{site.lower()}', 0)">Part</th>
+                            <th onclick="sortTable('historical-price-{site.lower()}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-price-{site.lower()}', 2, true)">Old Price ($)</th>
+                            <th onclick="sortTable('historical-price-{site.lower()}', 3, true)">New Price ($)</th>
+                            <th onclick="sortTable('historical-price-{site.lower()}', 4)">Date Changed</th>
                         </tr>
                     </thead>
                     <tbody>
                 """
                 for change in price_changes:
+                    # Extract part type from site name (e.g., SkateWarehouse_Wheels -> Wheels)
+                    part = site.split("_")[1]
                     html_content += f"""
                         <tr class="price-change">
+                            <td>{part}</td>
                             <td><a href="{change['url']}" target="_blank">{change['name']}</a></td>
                             <td>{change['old']}</td>
                             <td>{change['new']}</td>
+                            <td>{current_date}</td>
                         </tr>
                     """
-                html_content += """
-                    </tbody>
-                </table>
-                """
+                html_content += "</tbody></table>"
 
             # Removed Items
             removed_items = [change for change in site_changes if change["type"] == "removed"]
             if removed_items:
-                html_content += """
+                html_content += f"""
                 <h4>Removed Items</h4>
-                <table>
+                <table id="historical-removed-{site.lower()}">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-{site.lower()}', 0)">Part</th>
+                            <th onclick="sortTable('historical-removed-{site.lower()}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-removed-{site.lower()}', 2, true)">Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-{site.lower()}', 3)">Date Removed</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -615,14 +775,15 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     item = change["item"]
                     html_content += f"""
                         <tr class="removed">
+                            <td>{item['part']}</td>
                             <td>{item['name']}</td>
                             <td>{item['price_new']}</td>
+                            <td>{current_date}</td>
                         </tr>
                     """
-                html_content += """
-                    </tbody>
-                </table>
-                """
+                html_content += "</tbody></table>"
+
+            html_content += "</div>"
 
     html_content += """
         </div>

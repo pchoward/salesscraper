@@ -44,12 +44,16 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
-        # CI-specific options, skip --user-data-dir
+        # CI-specific options
         if os.getenv("CI"):
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--disable-gpu")
+            options.add_argument("--disable-extensions")
+            options.add_argument("--disable-setuid-sandbox")
+            options.add_argument("--remote-debugging-port=9222")
             logging.info("Skipping user-data-dir in CI environment to avoid conflicts")
+            logging.info(f"Chrome options: {options.arguments}")
 
         chromedriver_path = os.environ.get("CHROMEDRIVER_PATH") if os.getenv("CI") else ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
@@ -58,7 +62,7 @@ def fetch_page(url, max_retries=3, timeout=45):
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
             logging.info(f"Using chromedriver at {service.path}")
-
+            
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:

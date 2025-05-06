@@ -40,6 +40,13 @@ jobs:
           python -c "from webdriver_manager.chrome import ChromeDriverManager; print(ChromeDriverManager().install())"
           echo "CHROMEDRIVER_PATH=$(python -c 'from webdriver_manager.chrome import ChromeDriverManager; print(ChromeDriverManager().install())')" >> $GITHUB_ENV
 
+      - name: Clean up Chrome processes
+        run: |
+          pkill -9 chrome || true
+          pkill -9 chromedriver || true
+          rm -rf /tmp/chrome* || true
+          rm -rf ~/.cache/google-chrome || true
+
       - name: Run scraper
         run: python zumiez_analyzer-grok3.py
         env:

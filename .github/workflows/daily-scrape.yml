@@ -2,7 +2,7 @@ name: Daily Scrape
 
 on:
   push:
-    Branches:
+    branches:
       - main
   schedule:
     - cron: '0 0 * * *' # Run daily at midnight UTC
@@ -29,7 +29,7 @@ jobs:
     - name: Install Chrome and Chromedriver
       run: |
     # Update package lists
-    sudo apt-get update
+       sudo apt-get update
     
     # Install Chrome and dependencies
     sudo apt-get install -y \

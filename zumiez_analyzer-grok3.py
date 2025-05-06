@@ -44,6 +44,11 @@ def fetch_page(url, max_retries=3, timeout=45):
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--disable-infobars")
         options.add_argument("--window-size=1920,1080")
+        # Add arguments for headless mode in CI
+        if options.headless:
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--disable-gpu")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
 
@@ -71,24 +76,22 @@ def fetch_page(url, max_retries=3, timeout=45):
                         raise
 
             driver.set_page_load_timeout(timeout)
-            time.sleep(random.uniform(2, 5))  # Increased initial delay
+            time.sleep(random.uniform(2, 5))
             driver.get(url)
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
 
-            # Wait for dynamic content to load
-            time.sleep(random.uniform(5, 8))  # Increased delay for dynamic content
+            time.sleep(random.uniform(5, 8))
             logging.info("Initial wait for dynamic content")
 
             current_url = driver.current_url
             if "stash" in current_url.lower():
                 logging.error("Redirected to Stash page, retrying")
                 driver.quit()
-                time.sleep(random.uniform(5, 10))  # Delay before retry
+                time.sleep(random.uniform(5, 10))
                 continue
 
-            # Wait for product listings to appear (generic selector for all sites)
             try:
                 WebDriverWait(driver, 15).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
@@ -97,15 +100,14 @@ def fetch_page(url, max_retries=3, timeout=45):
             except Exception as e:
                 logging.warning(f"Could not detect product listings: {e}")
 
-            # Handle infinite scroll for sites like Zumiez and Tactics
             logging.info("Attempting infinite scroll")
-            max_scroll_attempts = 8  # Increased scroll attempts
+            max_scroll_attempts = 8
             scroll_attempts = 0
             previous_item_count = 0
 
             while scroll_attempts < max_scroll_attempts:
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(random.uniform(3, 6))  # Increased scroll delay
+                time.sleep(random.uniform(3, 6))
                 current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
                 logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
@@ -122,10 +124,9 @@ def fetch_page(url, max_retries=3, timeout=45):
                 previous_item_count = current_items
                 scroll_attempts += 1
 
-            time.sleep(random.uniform(3, 6))  # Increased final delay
+            time.sleep(random.uniform(3, 6))
             logging.info("Final wait for AJAX content")
 
-            # Scroll back to top to ensure all content is loaded
             driver.execute_script("window.scrollTo(0, 0);")
             time.sleep(random.uniform(2, 4))
 
@@ -136,7 +137,7 @@ def fetch_page(url, max_retries=3, timeout=45):
         except Exception as e:
             logging.error(f"Failed to fetch {url}: {e}")
             if attempt < max_retries - 1:
-                time.sleep(2 ** attempt + random.uniform(5, 10))  # Increased retry delay
+                time.sleep(2 ** attempt + random.uniform(5, 10))
             else:
                 logging.error(f"Max retries reached for {url}")
                 return None
@@ -146,7 +147,7 @@ def fetch_page(url, max_retries=3, timeout=45):
                     driver.quit()
                 except Exception as e:
                     logging.warning(f"Error quitting driver: {e}")
-
+                    
 def save_debug_file(filename, content):
     """Safely save debug files to the current working directory."""
     try:

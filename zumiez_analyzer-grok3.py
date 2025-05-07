@@ -11,7 +11,7 @@ import logging
 import random
 import requests
 import datetime
-import string  
+import string
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -19,7 +19,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager  # Import ChromeDriverManager
 from fake_useragent import UserAgent
 from selenium.common.exceptions import TimeoutException, WebDriverException
 
@@ -50,7 +50,8 @@ def fetch_page(url, max_retries=3, timeout=30):
             options.add_argument("--disable-dev-shm-usage")
             logging.info("Added minimal CI-specific options")
 
-        chromedriver_path = "/usr/local/bin/chromedriver" if os.getenv("CI") else ChromeDriverManager().install()
+        # Use webdriver-manager to get the Chromedriver path
+        chromedriver_path = ChromeDriverManager().install()
         service = Service(executable_path=chromedriver_path)
 
         driver = None
@@ -72,6 +73,11 @@ def fetch_page(url, max_retries=3, timeout=30):
                         continue
                     else:
                         raise
+                except WebDriverException as e:
+                    logging.error(f"WebDriverException during WebDriver init: {e}")
+                    if "cannot find Chrome binary" in str(e):
+                        logging.error("Ensure Chrome is correctly installed and in the system's PATH (though apt-get should handle this).")
+                    raise
 
             driver.set_page_load_timeout(timeout)
             time.sleep(random.uniform(1, 3))
@@ -144,7 +150,8 @@ def fetch_page(url, max_retries=3, timeout=30):
                     driver.quit()
                 except Exception as e:
                     logging.warning(f"Error quitting driver: {e}")
-                    
+
+#                     
 def save_debug_file(filename, content):
     """Safely save debug files to the current working directory."""
     try:

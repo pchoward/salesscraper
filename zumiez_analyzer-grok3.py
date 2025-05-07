@@ -3,6 +3,11 @@
 # Install with:
 #   pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
 
+#!/usr/bin/env python3
+# Requirements: requests, beautifulsoup4, selenium, webdriver-manager, fake-useragent
+# Install with:
+#   pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
+
 import os
 import re
 import json
@@ -22,6 +27,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager  # Import ChromeDriverManager
 from fake_useragent import UserAgent
 from selenium.common.exceptions import TimeoutException, WebDriverException
+from tempfile import mkdtemp  # Import to create temporary directory
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -43,12 +49,19 @@ def fetch_page(url, max_retries=3, timeout=30):
         options.add_argument("--window-size=1920,1080")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
+        
+        # Create a new temporary directory for user data
+        temp_dir = mkdtemp()
+        options.add_argument(f"--user-data-dir={temp_dir}")
+        logging.info(f"Using temporary user data directory: {temp_dir}")
 
-        # Add minimal CI-specific options
+        # Add CI-specific options
         if os.getenv("CI"):
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
-            logging.info("Added minimal CI-specific options")
+            options.add_argument("--disable-gpu")
+            options.add_argument("--remote-debugging-port=9222")
+            logging.info("Added CI-specific options")
 
         # Use webdriver-manager to get the Chromedriver path
         chromedriver_path = ChromeDriverManager().install()
@@ -150,6 +163,8 @@ def fetch_page(url, max_retries=3, timeout=30):
                     driver.quit()
                 except Exception as e:
                     logging.warning(f"Error quitting driver: {e}")
+
+# Rest of the code remains unchanged...
 
 #                     
 def save_debug_file(filename, content):

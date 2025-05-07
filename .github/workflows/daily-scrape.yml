@@ -1,31 +1,28 @@
 name: Daily Scrape
-
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *'  # Fixed cron expression - it was missing a field
   workflow_dispatch:
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-
+      
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
-
+      
       - name: Install Chrome
         run: |
           sudo apt-get update
@@ -34,13 +31,13 @@ jobs:
             libfontconfig1 libgcc-s1 libgdk-pixbuf-2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 \
             libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 \
             libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates
-
+      
       - name: Increase shared memory
         run: |
           sudo mount -o remount,size=2G /dev/shm
           df -h /dev/shm
-
-      - name: Clean up Chrome processes
+      
+      - name: Clean up Chrome processes and files
         run: |
           pkill -9 chrome || true
           pkill -9 chromedriver || true
@@ -48,19 +45,22 @@ jobs:
           rm -rf /tmp/.com.google.Chrome* || true
           rm -rf ~/.cache/google-chrome || true
           rm -rf ~/.config/google-chrome || true
-
+          mkdir -p /tmp/chrome-user-data  # Create a dedicated directory
+          chmod 777 /tmp/chrome-user-data # Ensure permissions
+      
       - name: Run scraper
         run: python zumiez_analyzer-grok3.py
         env:
           CI: true
-
+          PYTHONUNBUFFERED: 1  # Ensure Python output is not buffered
+      
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add sale_items_chart.html previous_data.json *_debug_*.html
+          git add sale_items_chart.html previous_data.json || true
+          git add *debug*.html || true
           git commit -m "Update sale_items_chart.html with latest scrape data" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          

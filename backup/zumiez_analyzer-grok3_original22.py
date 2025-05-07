@@ -470,7 +470,6 @@ class SkateWarehouseScraper(Scraper):
         logging.info(f"Parsed {len(products)} products")
         return products
 
-# CCS Scraper Fix
 class CCSScraper(Scraper):
     def parse(self, html):
         if not html:
@@ -483,17 +482,12 @@ class CCSScraper(Scraper):
 
         save_debug_file(f"ccs_debug_{self.part.lower()}.html", html)
 
-        # Updated selectors for CCS website
-        # The site appears to use a product-card structure based on search results
-        for prod in soup.select(".product-card, .product-item, .product"):
+        for prod in soup.select(".product-item"):
             try:
-                # Try multiple possible selectors for different elements
-                title_el = prod.select_one(".product-title, .product-name, h3")
-                price_el = prod.select_one(".product-price--sale, .product-price, .price--sale")
-                compare_price_el = prod.select_one(".product-price--compare, .compare-at-price, .price--compare")
+                title_el = prod.select_one(".product-title")
+                sale_el = prod.select_one(".product-price--sale") or prod.select_one(".product-price")
                 link_el = prod.select_one("a")
-                
-                if not (title_el and price_el and link_el):
+                if not (title_el and sale_el and link_el):
                     logging.warning("Missing title, price, or link for product")
                     continue
 
@@ -510,22 +504,13 @@ class CCSScraper(Scraper):
                     continue
                 seen.add(href)
 
-                # Extract prices using regex to handle different formats
-                price_text = price_el.get_text(strip=True)
+                price_text = sale_el.get_text(strip=True)
                 prices = re.findall(r"\$(\d+\.\d{2})", price_text)
                 if not prices:
                     logging.warning(f"No prices found for {href}")
                     continue
-                
                 price_new = prices[0]
-                
-                # Try to get original price from compare price element
-                price_old = None
-                if compare_price_el:
-                    compare_text = compare_price_el.get_text(strip=True)
-                    compare_prices = re.findall(r"\$(\d+\.\d{2})", compare_text)
-                    if compare_prices:
-                        price_old = compare_prices[0]
+                price_old = prices[1] if len(prices) > 1 else None
 
                 # For decks, filter for 30%+ discount
                 if self.part == "Decks":
@@ -566,7 +551,6 @@ class ZumiezDecksScraper(ZumiezScraper):
     def __init__(self):
         super().__init__("Zumiez", "https://www.zumiez.com/skate/skateboard-decks.html?customFilters=promotion_flag:Sale", "Decks")
 
-# Tactics Decks Scraper Fix
 class TacticsDecksScraper(Scraper):
     def __init__(self):
         super().__init__("Tactics", "https://www.tactics.com/skateboard-decks/sale", "Decks")
@@ -582,23 +566,15 @@ class TacticsDecksScraper(Scraper):
 
         save_debug_file(f"tactics_debug_decks.html", html)
 
-        # Updated selectors for current Tactics website
-        product_containers = soup.select(".product-card, .product-item, article.product, .product")
+        product_containers = soup.select(".product-card")
         logging.info(f"Found {len(product_containers)} product containers")
-
-        if len(product_containers) == 0:
-            # Try alternative selectors if the main ones don't work
-            product_containers = soup.select("[itemtype*='Product']")
-            logging.info(f"Using fallback selector, found {len(product_containers)} product containers")
 
         for container in product_containers:
             try:
-                # Try multiple possible selectors
                 link = container.select_one("a[href]")
                 if not link:
                     logging.warning("No link found for product")
                     continue
-                
                 href = link["href"]
                 if href.startswith("/"):
                     href = "https://www.tactics.com" + href
@@ -607,49 +583,18 @@ class TacticsDecksScraper(Scraper):
                     continue
                 seen.add(href)
 
-                # Try multiple possible selectors for the name
-                name_el = container.select_one(".product-card__title, .product-name, h3, [itemprop='name']")
+                name_el = container.select_one(".product-card__title")
                 name = name_el.get_text(strip=True) if name_el else ""
-                
-                # Try getting name from title attribute if not found
-                if not name and link.get("title"):
-                    name = link.get("title", "").strip()
-                    
                 if not name:
                     logging.warning(f"No name found for {href}")
                     continue
 
-                # Look for price elements with multiple possible selectors
-                price_new_el = container.select_one(".sale-price, .product-price--sale, .price.sale, [itemprop='price']")
-                price_old_el = container.select_one(".compare-price, .product-price--compare, .price.compare, [itemprop='comparePrice']")
-                
-                # Try to extract prices using regex
-                price_new = None
-                if price_new_el:
-                    price_text = price_new_el.get_text(strip=True)
-                    price_matches = re.findall(r"\$?(\d+\.\d{2})", price_text)
-                    if price_matches:
-                        price_new = price_matches[0]
-                
-                price_old = None
-                if price_old_el:
-                    price_old_text = price_old_el.get_text(strip=True)
-                    price_old_matches = re.findall(r"\$?(\d+\.\d{2})", price_old_text)
-                    if price_old_matches:
-                        price_old = price_old_matches[0]
-                
-                # If we still don't have prices, look for any price text in the container
-                if not price_new:
-                    all_text = container.get_text(strip=True)
-                    all_prices = re.findall(r"\$(\d+\.\d{2})", all_text)
-                    if len(all_prices) >= 2:
-                        # Assume first price is sale price, second is original
-                        price_new = all_prices[0]
-                        price_old = all_prices[1]
-                    elif len(all_prices) == 1:
-                        price_new = all_prices[0]
+                price_new_el = container.select_one(".product-card__price--sale")
+                price_old_el = container.select_one(".product-card__price--compare")
+                price_new = price_new_el.get_text(strip=True).replace("$", "") if price_new_el else None
+                price_old = price_old_el.get_text(strip=True).replace("$", "") if price_old_el else None
 
-                if not price_new:
+                if not (price_new and price_old):
                     logging.warning(f"No prices found for {href}")
                     continue
 

@@ -32,7 +32,14 @@ jobs:
         CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
         echo "Installed Chrome version: $CHROME_VERSION"
 
+    - name: Debug Shell Path
+      run: |
+        which bash
+        ls -l /bin/bash
+        ls -l /usr/bin/bash || echo "/usr/bin/bash does not exist"
+
     - name: Install ChromeDriver
+      shell: bash
       run: |
         CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
         CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION%.*})

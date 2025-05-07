@@ -4,11 +4,14 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Fixed cron expression - it was missing a field
+    - cron: '0 0 * * *'  # Fixed cron expression
   workflow_dispatch:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    container:
+      image: selenium/standalone-chrome:latest  # Use a preconfigured container
+      options: --shm-size=2g  # Increase shared memory
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -23,44 +26,52 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
       
-      - name: Install Chrome
+      - name: Prepare environment
         run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable fonts-liberation libgbm1 libnss3 libu2f-udev xdg-utils \
-            libatk1.0-0 libatk-bridge2.0-0 libcairo2 libcups2 libdbus-1-3 libexpat1 \
-            libfontconfig1 libgcc-s1 libgdk-pixbuf-2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 \
-            libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 \
-            libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates
-      
-      - name: Increase shared memory
-        run: |
-          sudo mount -o remount,size=2G /dev/shm
-          df -h /dev/shm
-      
-      - name: Clean up Chrome processes and files
-        run: |
-          pkill -9 chrome || true
-          pkill -9 chromedriver || true
-          rm -rf /tmp/chrome* || true
-          rm -rf /tmp/.com.google.Chrome* || true
-          rm -rf ~/.cache/google-chrome || true
-          rm -rf ~/.config/google-chrome || true
-          mkdir -p /tmp/chrome-user-data  # Create a dedicated directory
-          chmod 777 /tmp/chrome-user-data # Ensure permissions
+          # Ensure temporary directories are available and clean
+          mkdir -p /tmp/chrome-user-data
+          chmod 777 /tmp/chrome-user-data
+          rm -rf /tmp/chrome-user-data/*
+          
+          # Kill any stray Chrome processes
+          ps aux | grep chrome | awk '{print $2}' | xargs kill -9 || true
+          ps aux | grep chromedriver | awk '{print $2}' | xargs kill -9 || true
+          
+          # Clean up any ChromeDriver lock files
+          find /tmp -name ".com.google.Chrome*" -exec rm -rf {} \; 2>/dev/null || true
+          find /tmp -name "chrome_automation_*" -exec rm -rf {} \; 2>/dev/null || true
       
       - name: Run scraper
         run: python zumiez_analyzer-grok3.py
         env:
           CI: true
-          PYTHONUNBUFFERED: 1  # Ensure Python output is not buffered
+          PYTHONUNBUFFERED: 1
+          DISPLAY: ":99.0"  # Virtual display for Chrome
+      
+      - name: List debug files
+        run: ls -la *debug*.html || true
+      
+      - name: Check output files
+        run: |
+          ls -la sale_items_chart.html || echo "sale_items_chart.html not found"
+          ls -la previous_data.json || echo "previous_data.json not found"
       
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add sale_items_chart.html previous_data.json || true
-          git add *debug*.html || true
-          git commit -m "Update sale_items_chart.html with latest scrape data" || echo "No changes to commit"
-          git push
+          
+          # Add files selectively with error handling
+          git add sale_items_chart.html || echo "sale_items_chart.html not found, skipping"
+          git add previous_data.json || echo "previous_data.json not found, skipping"
+          git add *debug*.html || echo "No debug files found, skipping"
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update sale_items_chart.html with latest scrape data"
+            git push
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

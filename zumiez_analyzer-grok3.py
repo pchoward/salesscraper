@@ -3,11 +3,6 @@
 # Install with:
 #   pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
 
-#!/usr/bin/env python3
-# Requirements: requests, beautifulsoup4, selenium, webdriver-manager, fake-useragent
-# Install with:
-#   pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
-
 import os
 import re
 import json
@@ -17,6 +12,9 @@ import random
 import requests
 import datetime
 import string
+import uuid
+import shutil
+from pathlib import Path
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -24,54 +22,95 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager  # Import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 from selenium.common.exceptions import TimeoutException, WebDriverException
-from tempfile import mkdtemp  # Import to create temporary directory
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+def create_unique_user_dir():
+    """Create a unique user data directory for Chrome"""
+    unique_id = str(uuid.uuid4())
+    user_dir = f"/tmp/chrome-user-data-{unique_id}"
+    
+    # Ensure the directory exists and is empty
+    if os.path.exists(user_dir):
+        try:
+            shutil.rmtree(user_dir)
+        except Exception as e:
+            logging.warning(f"Failed to remove existing user dir: {e}")
+    
+    try:
+        os.makedirs(user_dir, exist_ok=True)
+        logging.info(f"Created fresh user data directory: {user_dir}")
+        return user_dir
+    except Exception as e:
+        logging.error(f"Failed to create user dir: {e}")
+        return None
+
 def fetch_page(url, max_retries=3, timeout=30):
     ua = UserAgent()
+    
     for attempt in range(max_retries):
         user_agent = ua.random
         logging.info(f"Using user agent: {user_agent}")
 
+        # Create a unique user data directory for this Chrome instance
+        user_data_dir = create_unique_user_dir()
+        if not user_data_dir:
+            logging.error("Could not create user data directory, skipping attempt")
+            continue
+
         options = Options()
-        options.headless = os.getenv("CI", "false").lower() == "true"
+        
+        # Always use headless mode in CI environment
+        if os.getenv("CI", "false").lower() == "true":
+            options.add_argument("--headless=new")  # Use newer headless mode
+            logging.info("Running in headless mode for CI")
+        
+        # Essential Chrome options
         options.add_argument(f"user-agent={user_agent}")
+        options.add_argument(f"--user-data-dir={user_data_dir}")
+        options.add_argument("--disable-extensions")
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-web-security")
         options.add_argument("--allow-running-insecure-content")
         options.add_argument("--disable-blink-features=AutomationControlled")
         options.add_argument("--disable-infobars")
         options.add_argument("--window-size=1920,1080")
+        options.add_argument("--no-first-run")
+        options.add_argument("--no-default-browser-check")
+        options.add_argument("--disable-popup-blocking")
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
         
-        # Create a new temporary directory for user data
-        temp_dir = mkdtemp()
-        options.add_argument(f"--user-data-dir={temp_dir}")
-        logging.info(f"Using temporary user data directory: {temp_dir}")
-
         # Add CI-specific options
         if os.getenv("CI"):
-            options.add_argument("--no-sandbox")
-            options.add_argument("--disable-dev-shm-usage")
-            options.add_argument("--disable-gpu")
-            options.add_argument("--remote-debugging-port=9222")
+            options.add_argument("--no-sandbox")  # Required for running in CI
+            options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+            options.add_argument("--disable-gpu")  # Disable GPU in headless
+            options.add_argument("--remote-debugging-port=0")  # Use random debug port
             logging.info("Added CI-specific options")
 
         # Use webdriver-manager to get the Chromedriver path
-        chromedriver_path = ChromeDriverManager().install()
-        service = Service(executable_path=chromedriver_path)
+        try:
+            chromedriver_path = ChromeDriverManager().install()
+            service = Service(executable_path=chromedriver_path)
+            logging.info(f"Using chromedriver at {service.path}")
+        except Exception as e:
+            logging.error(f"Failed to install ChromeDriver: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)
+                continue
+            else:
+                return None
 
         driver = None
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
-            logging.info(f"Using chromedriver at {service.path}")
-
+            
+            # Multiple attempts to initialize WebDriver
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:
@@ -82,32 +121,61 @@ def fetch_page(url, max_retries=3, timeout=30):
                 except TimeoutException as e:
                     logging.error(f"TimeoutException during WebDriver init: {e}")
                     if driver_attempt < driver_attempts - 1:
+                        # Sleep before retry
                         time.sleep(5)
                         continue
                     else:
                         raise
                 except WebDriverException as e:
                     logging.error(f"WebDriverException during WebDriver init: {e}")
-                    if "cannot find Chrome binary" in str(e):
-                        logging.error("Ensure Chrome is correctly installed and in the system's PATH (though apt-get should handle this).")
-                    raise
+                    
+                    # Handle specific error cases
+                    if "user data directory is already in use" in str(e):
+                        logging.warning("User data directory issue, creating a fresh one")
+                        # Try to clean up the directory
+                        try:
+                            shutil.rmtree(user_data_dir)
+                            user_data_dir = create_unique_user_dir()
+                            options.add_argument(f"--user-data-dir={user_data_dir}")
+                        except Exception as cleanup_error:
+                            logging.error(f"Failed to clean up user data dir: {cleanup_error}")
+                    
+                    if driver_attempt < driver_attempts - 1:
+                        time.sleep(5)
+                        continue
+                    else:
+                        raise
 
+            if not driver:
+                logging.error("Failed to initialize WebDriver after multiple attempts")
+                continue
+
+            # Set page load timeout
             driver.set_page_load_timeout(timeout)
+            
+            # Introduce randomized delay before loading page
             time.sleep(random.uniform(1, 3))
+            
+            # Navigate to the URL
             driver.get(url)
+            
+            # Wait for page to be fully loaded
             WebDriverWait(driver, timeout).until(
                 lambda d: d.execute_script("return document.readyState") == "complete"
             )
 
+            # Additional wait for any JavaScript to finish
             time.sleep(random.uniform(3, 5))
             logging.info("Initial wait for dynamic content")
 
+            # Check if we've been redirected to an undesired page
             current_url = driver.current_url
             if "stash" in current_url.lower():
                 logging.error("Redirected to Stash page, retrying")
                 driver.quit()
                 continue
 
+            # Wait for product elements to appear
             try:
                 WebDriverWait(driver, 15).until(
                     EC.presence_of_element_located((By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
@@ -116,23 +184,29 @@ def fetch_page(url, max_retries=3, timeout=30):
             except Exception as e:
                 logging.warning(f"Could not detect product listings: {e}")
 
+            # Infinite scroll implementation
             logging.info("Attempting infinite scroll")
             max_scroll_attempts = 8
             scroll_attempts = 0
             previous_item_count = 0
 
             while scroll_attempts < max_scroll_attempts:
+                # Scroll to bottom
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(random.uniform(2, 4))
+                
+                # Count items
                 current_items = len(driver.find_elements(By.CSS_SELECTOR, "li.ProductCard, .product-card, .product-item, a[href*='deck'], a[href*='wheels'], a[href*='truck'], a[href*='bearings']"))
                 logging.info(f"Scroll attempt {scroll_attempts + 1}: found {current_items} items")
 
+                # Check for redirects
                 current_url = driver.current_url
                 if "stash" in current_url.lower():
                     logging.error("Redirected to Stash page during scrolling")
                     driver.quit()
                     return None
 
+                # If no new items loaded, we've reached the end
                 if current_items == previous_item_count and current_items > 0:
                     logging.info("No more items to load")
                     break
@@ -140,12 +214,15 @@ def fetch_page(url, max_retries=3, timeout=30):
                 previous_item_count = current_items
                 scroll_attempts += 1
 
+            # Final wait for any AJAX requests to complete
             time.sleep(random.uniform(2, 4))
             logging.info("Final wait for AJAX content")
 
+            # Scroll back to top
             driver.execute_script("window.scrollTo(0, 0);")
             time.sleep(random.uniform(1, 2))
 
+            # Get the page source
             html = driver.page_source
             logging.info(f"Successfully fetched {url}")
             return html
@@ -158,11 +235,31 @@ def fetch_page(url, max_retries=3, timeout=30):
                 logging.error(f"Max retries reached for {url}")
                 return None
         finally:
+            # Always ensure WebDriver is closed properly
             if driver:
                 try:
                     driver.quit()
+                    logging.info("WebDriver closed successfully")
                 except Exception as e:
                     logging.warning(f"Error quitting driver: {e}")
+            
+            # Clean up the user data directory
+            try:
+                if user_data_dir and os.path.exists(user_data_dir):
+                    shutil.rmtree(user_data_dir)
+                    logging.info(f"Removed user data directory: {user_data_dir}")
+            except Exception as e:
+                logging.warning(f"Failed to remove user data directory: {e}")
+
+#                     
+def save_debug_file(filename, content):
+    """Safely save debug files to the current working directory."""
+    try:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(content)
+        logging.info(f"Debug file saved: {filename}")
+    except Exception as e:
+        logging.error(f"Failed to save debug file {filename}: {e}")
 
 # Rest of the code remains unchanged...
 

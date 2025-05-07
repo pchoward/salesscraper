@@ -4,14 +4,17 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Fixed cron expression
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:  # Allow manual triggering
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    container:
-      image: selenium/standalone-chrome:latest  # Use a preconfigured container
-      options: --shm-size=2g  # Increase shared memory
+    
+    # Add explicit permissions needed for git operations
+    permissions:
+      contents: write
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -26,52 +29,62 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium webdriver-manager fake-useragent
       
+      - name: Install Chrome
+        run: |
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
+      
       - name: Prepare environment
         run: |
-          # Ensure temporary directories are available and clean
-          mkdir -p /tmp/chrome-user-data
-          chmod 777 /tmp/chrome-user-data
-          rm -rf /tmp/chrome-user-data/*
+          # Create and prepare temp directories with proper permissions
+          sudo mkdir -p /tmp/chrome_tmp
+          sudo chmod 777 /tmp/chrome_tmp
           
-          # Kill any stray Chrome processes
-          ps aux | grep chrome | awk '{print $2}' | xargs kill -9 || true
-          ps aux | grep chromedriver | awk '{print $2}' | xargs kill -9 || true
+          # Clean up any existing Chrome processes
+          sudo pkill -f chrome || true
+          sudo pkill -f chromedriver || true
           
-          # Clean up any ChromeDriver lock files
-          find /tmp -name ".com.google.Chrome*" -exec rm -rf {} \; 2>/dev/null || true
-          find /tmp -name "chrome_automation_*" -exec rm -rf {} \; 2>/dev/null || true
+          # Clean up any lock files
+          sudo rm -rf /tmp/.X*-lock || true
+          sudo rm -rf /tmp/.com.google.Chrome* || true
+          sudo rm -rf /tmp/chrome* || true
+          
+          # Set environment variable for temp directory
+          echo "TMPDIR=/tmp/chrome_tmp" >> $GITHUB_ENV
       
       - name: Run scraper
         run: python zumiez_analyzer-grok3.py
         env:
           CI: true
-          PYTHONUNBUFFERED: 1
-          DISPLAY: ":99.0"  # Virtual display for Chrome
+          PYTHONUNBUFFERED: 1  # Ensure Python output is not buffered
       
-      - name: List debug files
-        run: ls -la *debug*.html || true
-      
-      - name: Check output files
+      - name: List generated files
         run: |
+          ls -la
           ls -la sale_items_chart.html || echo "sale_items_chart.html not found"
           ls -la previous_data.json || echo "previous_data.json not found"
+          ls -la *debug*.html || echo "No debug files found"
       
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           
-          # Add files selectively with error handling
-          git add sale_items_chart.html || echo "sale_items_chart.html not found, skipping"
-          git add previous_data.json || echo "previous_data.json not found, skipping"
-          git add *debug*.html || echo "No debug files found, skipping"
+          # Check for and add files if they exist
+          for file in sale_items_chart.html previous_data.json *debug*.html; do
+            if ls $file 2>/dev/null; then
+              git add "$file"
+              echo "Added $file to git"
+            fi
+          done
           
-          # Check if there are changes to commit
+          # Check if there are staged changes before committing
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update sale_items_chart.html with latest scrape data"
+            git commit -m "Update sale items data [skip ci]"
             git push
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

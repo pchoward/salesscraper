@@ -14,7 +14,6 @@ import datetime
 import string
 import uuid
 import shutil
-from pathlib import Path
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -29,25 +28,62 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def create_unique_user_dir():
-    """Create a unique user data directory for Chrome"""
-    unique_id = str(uuid.uuid4())
-    user_dir = f"/tmp/chrome-user-data-{unique_id}"
-    
-    # Ensure the directory exists and is empty
-    if os.path.exists(user_dir):
+def safe_write_file(filename, content, mode='w'):
+    """Write content to file with permission error handling"""
+    try:
+        # Try using the current directory
+        with open(filename, mode, encoding='utf-8') as f:
+            f.write(content)
+        logging.info(f"Successfully wrote to file: {filename}")
+        return True
+    except (IOError, PermissionError) as e:
+        logging.error(f"Permission error writing to {filename}: {e}")
+        
+        # Try using /tmp as fallback
         try:
-            shutil.rmtree(user_dir)
-        except Exception as e:
-            logging.warning(f"Failed to remove existing user dir: {e}")
+            tmp_filename = os.path.join('/tmp', os.path.basename(filename))
+            with open(tmp_filename, mode, encoding='utf-8') as f:
+                f.write(content)
+            logging.info(f"Wrote to alternate location: {tmp_filename}")
+            
+            # If successful, try to copy back to original location
+            try:
+                shutil.copy(tmp_filename, filename)
+                logging.info(f"Copied from {tmp_filename} to {filename}")
+                return True
+            except Exception as copy_error:
+                logging.error(f"Couldn't copy from temp to original: {copy_error}")
+                return False
+        except Exception as tmp_error:
+            logging.error(f"Could not write to temp location either: {tmp_error}")
+            return False
+
+def create_chrome_temp_dir():
+    """Create a properly permissioned temporary directory for Chrome"""
+    # Try using the system TMPDIR environment variable
+    system_tmpdir = os.environ.get('TMPDIR', '/tmp')
+    unique_id = str(uuid.uuid4())
+    temp_dir = os.path.join(system_tmpdir, f'chrome_data_{unique_id}')
     
     try:
-        os.makedirs(user_dir, exist_ok=True)
-        logging.info(f"Created fresh user data directory: {user_dir}")
-        return user_dir
+        # Create directory with full permissions
+        os.makedirs(temp_dir, mode=0o777, exist_ok=True)
+        os.chmod(temp_dir, 0o777)  # Ensure permissions are set correctly
+        logging.info(f"Created Chrome temp dir: {temp_dir}")
+        return temp_dir
     except Exception as e:
-        logging.error(f"Failed to create user dir: {e}")
-        return None
+        logging.error(f"Failed to create Chrome temp dir: {e}")
+        
+        # Fallback to using tempfile module
+        try:
+            import tempfile
+            alt_temp_dir = tempfile.mkdtemp(prefix='chrome_data_')
+            os.chmod(alt_temp_dir, 0o777)
+            logging.info(f"Created alternate temp dir: {alt_temp_dir}")
+            return alt_temp_dir
+        except Exception as alt_e:
+            logging.error(f"Failed to create alternate temp dir: {alt_e}")
+            return None
 
 def fetch_page(url, max_retries=3, timeout=30):
     ua = UserAgent()
@@ -56,22 +92,23 @@ def fetch_page(url, max_retries=3, timeout=30):
         user_agent = ua.random
         logging.info(f"Using user agent: {user_agent}")
 
-        # Create a unique user data directory for this Chrome instance
-        user_data_dir = create_unique_user_dir()
-        if not user_data_dir:
-            logging.error("Could not create user data directory, skipping attempt")
+        # Create a properly permissioned temporary directory
+        temp_dir = create_chrome_temp_dir()
+        if not temp_dir:
+            logging.error("Could not create temp directory, skipping attempt")
+            time.sleep(2)
             continue
 
         options = Options()
         
-        # Always use headless mode in CI environment
+        # Set headless mode for CI environment
         if os.getenv("CI", "false").lower() == "true":
-            options.add_argument("--headless=new")  # Use newer headless mode
+            options.add_argument("--headless=new")
             logging.info("Running in headless mode for CI")
         
         # Essential Chrome options
         options.add_argument(f"user-agent={user_agent}")
-        options.add_argument(f"--user-data-dir={user_data_dir}")
+        options.add_argument(f"--user-data-dir={temp_dir}")
         options.add_argument("--disable-extensions")
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-web-security")
@@ -87,10 +124,10 @@ def fetch_page(url, max_retries=3, timeout=30):
         
         # Add CI-specific options
         if os.getenv("CI"):
-            options.add_argument("--no-sandbox")  # Required for running in CI
-            options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
-            options.add_argument("--disable-gpu")  # Disable GPU in headless
-            options.add_argument("--remote-debugging-port=0")  # Use random debug port
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--disable-gpu")
+            options.add_argument("--remote-debugging-port=0")
             logging.info("Added CI-specific options")
 
         # Use webdriver-manager to get the Chromedriver path
@@ -110,7 +147,7 @@ def fetch_page(url, max_retries=3, timeout=30):
         try:
             logging.info(f"Fetching {url} (Attempt {attempt + 1})")
             
-            # Multiple attempts to initialize WebDriver
+            # Initialize WebDriver
             driver_attempts = 3
             for driver_attempt in range(driver_attempts):
                 try:
@@ -121,7 +158,6 @@ def fetch_page(url, max_retries=3, timeout=30):
                 except TimeoutException as e:
                     logging.error(f"TimeoutException during WebDriver init: {e}")
                     if driver_attempt < driver_attempts - 1:
-                        # Sleep before retry
                         time.sleep(5)
                         continue
                     else:
@@ -134,12 +170,16 @@ def fetch_page(url, max_retries=3, timeout=30):
                         logging.warning("User data directory issue, creating a fresh one")
                         # Try to clean up the directory
                         try:
-                            shutil.rmtree(user_data_dir)
-                            user_data_dir = create_unique_user_dir()
-                            options.add_argument(f"--user-data-dir={user_data_dir}")
+                            if temp_dir and os.path.exists(temp_dir):
+                                shutil.rmtree(temp_dir)
+                            temp_dir = create_chrome_temp_dir()
+                            options.add_argument(f"--user-data-dir={temp_dir}")
                         except Exception as cleanup_error:
                             logging.error(f"Failed to clean up user data dir: {cleanup_error}")
                     
+                    if "cannot find Chrome binary" in str(e):
+                        logging.error("Ensure Chrome is correctly installed and in the system's PATH")
+                        
                     if driver_attempt < driver_attempts - 1:
                         time.sleep(5)
                         continue
@@ -243,35 +283,17 @@ def fetch_page(url, max_retries=3, timeout=30):
                 except Exception as e:
                     logging.warning(f"Error quitting driver: {e}")
             
-            # Clean up the user data directory
+            # Clean up the temp directory
             try:
-                if user_data_dir and os.path.exists(user_data_dir):
-                    shutil.rmtree(user_data_dir)
-                    logging.info(f"Removed user data directory: {user_data_dir}")
+                if temp_dir and os.path.exists(temp_dir):
+                    shutil.rmtree(temp_dir)
+                    logging.info(f"Removed temp directory: {temp_dir}")
             except Exception as e:
-                logging.warning(f"Failed to remove user data directory: {e}")
+                logging.warning(f"Failed to remove temp directory: {e}")
 
-#                     
 def save_debug_file(filename, content):
-    """Safely save debug files to the current working directory."""
-    try:
-        with open(filename, "w", encoding="utf-8") as f:
-            f.write(content)
-        logging.info(f"Debug file saved: {filename}")
-    except Exception as e:
-        logging.error(f"Failed to save debug file {filename}: {e}")
-
-# Rest of the code remains unchanged...
-
-#                     
-def save_debug_file(filename, content):
-    """Safely save debug files to the current working directory."""
-    try:
-        with open(filename, "w", encoding="utf-8") as f:
-            f.write(content)
-        logging.info(f"Debug file saved: {filename}")
-    except Exception as e:
-        logging.error(f"Failed to save debug file {filename}: {e}")
+    """Safely save debug files with permission error handling."""
+    safe_write_file(filename, content)
 
 class Scraper:
     def __init__(self, name, url, part):
@@ -606,11 +628,23 @@ class TacticsDecksScraper(Scraper):
         return products
 
 def load_previous(path="previous_data.json"):
-    return json.load(open(path)) if os.path.exists(path) else {}
+    """Load previous data with permission error handling."""
+    try:
+        if os.path.exists(path):
+            with open(path, 'r') as f:
+                return json.load(f)
+        return {}
+    except Exception as e:
+        logging.error(f"Error loading previous data: {e}")
+        return {}
 
 def save_current(data, path="previous_data.json"):
-    with open(path, "w") as f:
-        json.dump(data, f, indent=2)
+    """Save current data with permission error handling."""
+    try:
+        return safe_write_file(path, json.dumps(data, indent=2))
+    except Exception as e:
+        logging.error(f"Error saving current data: {e}")
+        return False
 
 def compare(prev, curr):
     changes = {}
@@ -894,7 +928,8 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
         if not store_items:
             continue
 
-        html_content += f"<h3>{store}</h3>"
+        html_content += f"<h3 onclick='toggleSection(this)'>{store}</h3>"
+        html_content += f"<div class='collapsible-content'>"
         html_content += f"<table id='table-{store.lower()}'>"
         html_content += """
             <thead>
@@ -922,7 +957,7 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
                     <td>{item['availability']}</td>
                 </tr>
             """
-        html_content += "</tbody></table>"
+        html_content += "</tbody></table></div>"
     html_content += "</div>"
 
     # Historical Changes with Enhanced Details
@@ -955,13 +990,13 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
             if new_items:
                 html_content += f"""
                 <h4>New Items</h4>
-                <table id="historical-new-{site.lower()}">
+                <table id="historical-new-{site.lower().replace('_', '-')}">
                     <thead>
                         <tr>
-                            <th onclick="sortTable('historical-new-{site.lower()}', 0)">Part</th>
-                            <th onclick="sortTable('historical-new-{site.lower()}', 1)">Product Name</th>
-                            <th onclick="sortTable('historical-new-{site.lower()}', 2, true)">New Price ($)</th>
-                            <th onclick="sortTable('historical-new-{site.lower()}', 3)">Date Added</th>
+                            <th onclick="sortTable('historical-new-{site.lower().replace('_', '-')}', 0)">Part</th>
+                            <th onclick="sortTable('historical-new-{site.lower().replace('_', '-')}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-new-{site.lower().replace('_', '-')}', 2, true)">New Price ($)</th>
+                            <th onclick="sortTable('historical-new-{site.lower().replace('_', '-')}', 3)">Date Added</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -983,14 +1018,14 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
             if price_changes:
                 html_content += f"""
                 <h4>Price Changes</h4>
-                <table id="historical-price-{site.lower()}">
+                <table id="historical-price-{site.lower().replace('_', '-')}">
                     <thead>
                         <tr>
-                            <th onclick="sortTable('historical-price-{site.lower()}', 0)">Part</th>
-                            <th onclick="sortTable('historical-price-{site.lower()}', 1)">Product Name</th>
-                            <th onclick="sortTable('historical-price-{site.lower()}', 2, true)">Old Price ($)</th>
-                            <th onclick="sortTable('historical-price-{site.lower()}', 3, true)">New Price ($)</th>
-                            <th onclick="sortTable('historical-price-{site.lower()}', 4)">Date Changed</th>
+                            <th onclick="sortTable('historical-price-{site.lower().replace('_', '-')}', 0)">Part</th>
+                            <th onclick="sortTable('historical-price-{site.lower().replace('_', '-')}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-price-{site.lower().replace('_', '-')}', 2, true)">Old Price ($)</th>
+                            <th onclick="sortTable('historical-price-{site.lower().replace('_', '-')}', 3, true)">New Price ($)</th>
+                            <th onclick="sortTable('historical-price-{site.lower().replace('_', '-')}', 4)">Date Changed</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1013,13 +1048,13 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
             if removed_items:
                 html_content += f"""
                 <h4>Removed Items</h4>
-                <table id="historical-removed-{site.lower()}">
+                <table id="historical-removed-{site.lower().replace('_', '-')}">
                     <thead>
                         <tr>
-                            <th onclick="sortTable('historical-removed-{site.lower()}', 0)">Part</th>
-                            <th onclick="sortTable('historical-removed-{site.lower()}', 1)">Product Name</th>
-                            <th onclick="sortTable('historical-removed-{site.lower()}', 2, true)">Last Known Price ($)</th>
-                            <th onclick="sortTable('historical-removed-{site.lower()}', 3)">Date Removed</th>
+                            <th onclick="sortTable('historical-removed-{site.lower().replace('_', '-')}', 0)">Part</th>
+                            <th onclick="sortTable('historical-removed-{site.lower().replace('_', '-')}', 1)">Product Name</th>
+                            <th onclick="sortTable('historical-removed-{site.lower().replace('_', '-')}', 2, true)">Last Known Price ($)</th>
+                            <th onclick="sortTable('historical-removed-{site.lower().replace('_', '-')}', 3)">Date Removed</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1044,61 +1079,71 @@ def generate_html_chart(data, changes, output_file="sale_items_chart.html"):
     </html>
     """
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(html_content)
-    logging.info(f"Generated HTML chart at {output_file}")
+    # Save with permission error handling
+    if safe_write_file(output_file, html_content):
+        logging.info(f"Generated HTML chart at {output_file}")
+    else:
+        logging.error(f"Failed to write HTML chart to {output_file}")
 
 def main():
-    scrapers = [
-        ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/wheels.html?customFilters=brand:Bones,OJ%20Wheels,Powell,Spitfire;promotion_flag:Sale", "Wheels"),
-        SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/searchresults.html?filter_cat=SALEWHEELS&filter_type=Wheels#filter_cat=SALEWHEELS&filter_type=Wheels&brand_str%5B%5D=Bones%20Wheels&brand_str%5B%5D=Spitfire&opt_page=1&opt_sort=alphaAtoZ&opt_perpage=20", "Wheels"),
-        CCSScraper("CCS", "https://shop.ccs.com/collections/clearance/skateboard-wheels", "Wheels"),
-        ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/trucks.html?customFilters=brand:Ace%20Trucks,Independent;promotion_flag:Sale", "Trucks"),
-        SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Trucks/catpage-SALETRUCKS.html", "Trucks"),
-        SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Parts/catpage-BOXLSHOES.html", "Bearings"),
-        ZumiezDecksScraper(),
-        SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Decks/catpage-SALEDECK.html", "Decks"),
-        CCSScraper("CCS", "https://shop.ccs.com/collections/clearance/skateboard-deck", "Decks"),
-        TacticsDecksScraper(),
-    ]
+    try:
+        scrapers = [
+            ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/wheels.html?customFilters=brand:Bones,OJ%20Wheels,Powell,Spitfire;promotion_flag:Sale", "Wheels"),
+            SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/searchresults.html?filter_cat=SALEWHEELS&filter_type=Wheels#filter_cat=SALEWHEELS&filter_type=Wheels&brand_str%5B%5D=Bones%20Wheels&brand_str%5B%5D=Spitfire&opt_page=1&opt_sort=alphaAtoZ&opt_perpage=20", "Wheels"),
+            CCSScraper("CCS", "https://shop.ccs.com/collections/clearance/skateboard-wheels", "Wheels"),
+            ZumiezScraper("Zumiez", "https://www.zumiez.com/skate/components/trucks.html?customFilters=brand:Ace%20Trucks,Independent;promotion_flag:Sale", "Trucks"),
+            SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Trucks/catpage-SALETRUCKS.html", "Trucks"),
+            SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Parts/catpage-BOXLSHOES.html", "Bearings"),
+            ZumiezDecksScraper(),
+            SkateWarehouseScraper("SkateWarehouse", "https://www.skatewarehouse.com/Clearance_Skateboard_Decks/catpage-SALEDECK.html", "Decks"),
+            CCSScraper("CCS", "https://shop.ccs.com/collections/clearance/skateboard-deck", "Decks"),
+            TacticsDecksScraper(),
+        ]
 
-    current = {}
-    for s in scrapers:
-        site_key = f"{s.name}_{s.part}"
-        logging.info(f"Scraping {site_key}")
-        current[site_key] = s.scrape()
-        logging.info(f"Finished scraping {site_key}: {len(current[site_key])} items")
+        current = {}
+        for s in scrapers:
+            site_key = f"{s.name}_{s.part}"
+            logging.info(f"Scraping {site_key}")
+            current[site_key] = s.scrape()
+            logging.info(f"Finished scraping {site_key}: {len(current[site_key])} items")
 
-    for site, items in current.items():
-        print(f"{site}: {len(items)} items scraped")
+        for site, items in current.items():
+            print(f"{site}: {len(items)} items scraped")
 
-    combined_data = {}
-    for site_key, items in current.items():
-        store, part = site_key.split("_")
-        combined_items = []
-        for item in items:
-            item["store"] = store
-        combined_items.extend(items)
-        combined_data[site_key] = combined_items
+        combined_data = {}
+        for site_key, items in current.items():
+            store, part = site_key.split("_")
+            combined_items = []
+            for item in items:
+                item["store"] = store
+            combined_items.extend(items)
+            combined_data[site_key] = combined_items
 
-    previous = load_previous()
-    diffs = compare(previous, combined_data)
-    if diffs:
-        print("Changes detected:")
-        for site, changes in diffs.items():
-            print(f"\n{site}:")
-            for c in changes:
-                if c["type"] == "new":
-                    print(f"  New: {c['item']['name']} at {c['item']['price_new']}")
-                elif c["type"] == "price_change":
-                    print(f"  Price change: {c['old']} -> {c['new']} | {c['url']}")
-                elif c["type"] == "removed":
-                    print(f"  Removed: {c['item']['name']}")
-    else:
-        print("No changes detected.")
+        previous = load_previous()
+        diffs = compare(previous, combined_data)
+        if diffs:
+            print("Changes detected:")
+            for site, changes in diffs.items():
+                print(f"\n{site}:")
+                for c in changes:
+                    if c["type"] == "new":
+                        print(f"  New: {c['item']['name']} at {c['item']['price_new']}")
+                    elif c["type"] == "price_change":
+                        print(f"  Price change: {c['old']} -> {c['new']} | {c['url']}")
+                    elif c["type"] == "removed":
+                        print(f"  Removed: {c['item']['name']}")
+        else:
+            print("No changes detected.")
 
-    generate_html_chart(combined_data, diffs)
-    save_current(combined_data)
+        generate_html_chart(combined_data, diffs)
+        save_current(combined_data)
+        
+    except Exception as e:
+        logging.error(f"Error in main function: {e}")
+        # Try to save what we have
+        if 'combined_data' in locals() and combined_data:
+            logging.info("Attempting to save partial data...")
+            save_current(combined_data)
 
 if __name__ == "__main__":
     main()

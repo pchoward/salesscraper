@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "Powell Peralta Dragons 93a 56mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "42.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Powell Peralta Dragons 93a 56mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "42.95",
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -212,15 +212,6 @@
     {
       "name": "NewBones Mummy Skulls 100a V5 Sidecut Wheels Black",
       "url": "\nhttps://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK4\n",
-      "price_new": "24.99",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Bones Mummy Skulls 100a V5 Sidecut Wheels Black",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK3\n",
       "price_new": "24.99",
       "price_old": null,
       "availability": "Check store",
@@ -534,28 +525,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "WORBLE Holy Mess 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/worble-holy-mess-8-5-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Passport Wine Em & Dine Em Always Open 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/passport-wine-em-and-dine-em-always-open-8-0-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Grant Bandit 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-taylor-bandit-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "There Chandler Wild Card 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/there-chandler-wild-card-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "78.95",
+      "name": "RIPNDIP Venice 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/ripndip-venice-8-0-skateboard-deck.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

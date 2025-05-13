@@ -28,6 +28,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Bones Roughriders ATF 59mm 80a Red Cruiser Wheels",
       "url": "https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html",
       "price_new": "34.99",
@@ -41,15 +50,6 @@
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -127,19 +127,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -312,15 +312,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html",
       "price_new": "14.99",
@@ -334,6 +325,15 @@
       "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
       "price_new": "27.99",
       "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -362,15 +362,6 @@
       "name": "Clearance\u00a0-16%Independent S11 Hollow Grant Taylor Barcode Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Hollow_Grant_Taylor_Barcode_Truck/descpage-INHGTTR.html?color=SI\n",
       "price_new": "24.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-21%Independent Stage 11 BTG Speed Standard Truck",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTGTR.html?color=BL\n",
-      "price_new": "21.98",
       "price_old": null,
       "availability": "Check store",
       "part": "Trucks",
@@ -425,10 +416,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Santa Cruz Eclipse Dot Birch 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/santa-cruz-eclipse-dot-birch-8-0-skateboard-deck.html",
+      "name": "Sk8mafia Willms Explorer 8.3\" Skateboard Deck",
+      "url": "https://www.zumiez.com/sk8mafia-willms-explorer-8-3-skateboard-deck.html",
       "price_new": "39.99",
-      "price_old": "59.95",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker Figgy Sundown 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-figgy-sundown-8-0-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker T-Funk Sundown 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/8-38-t-funk-sundown-baker.html",
+      "price_new": "51.99",
+      "price_old": "80.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

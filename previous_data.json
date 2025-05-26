@@ -19,8 +19,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "name": "Bones Roughriders ATF 59mm 80a Red Cruiser Wheels",
+      "url": "https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html",
+      "price_new": "34.99",
+      "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -32,15 +41,6 @@
       "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "37.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,15 +64,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Bones Roughriders ATF 59mm 80a Red Cruiser Wheels",
-      "url": "https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels-347434.html",
-      "price_new": "34.99",
-      "price_old": "35.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
@@ -82,10 +73,37 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "38.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -104,24 +122,6 @@
       "url": "https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "42.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -210,15 +210,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-58%Spitfire F4 Lil Smokies Tablet 99a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH\n",
-      "price_new": "18.52",
-      "price_old": "45.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
@@ -267,15 +258,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "30.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
@@ -285,19 +267,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Colbourn 139mm Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "30.95",
+      "name": "Ace Anderson 66 AF1 Black & White Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
+      "price_new": "27.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & White Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
-      "price_new": "27.99",
-      "price_old": "34.95",
+      "name": "Independent Colbourn 139mm Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "30.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -362,46 +344,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Baker Figgy Sundown 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-figgy-sundown-8-0-skateboard-deck.html",
-      "price_new": "51.99",
+      "name": "There Chandler Wild Card 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/there-chandler-wild-card-8-5-skateboard-deck.html",
+      "price_new": "49.99",
       "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Opera Cloudy 9.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-cloudy-9-125-skateboard-deck.html",
+      "name": "Real Nicole Pig Romp 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-nicole-pig-romp-8-25-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "74.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Krooked Razo Guest 8.62\" Skateboard Deck",
-      "url": "https://www.zumiez.com/krooked-razo-guest-8-62-skateboard-deck.html",
+      "name": "Studio Synergy 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-synergy-8-25-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "82.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Opera Mask Logo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-mask-logo-8-25-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Primitive Silvas SOTY 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-silvas-soty-8-5-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

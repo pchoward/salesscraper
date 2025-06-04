@@ -28,24 +28,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
@@ -55,19 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
+      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -82,10 +55,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -100,10 +73,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "37.95",
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -113,6 +86,24 @@
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -131,6 +122,15 @@
       "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "37.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -222,19 +222,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & White Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
-      "price_new": "27.99",
-      "price_old": "34.95",
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "35.95",
+      "name": "Ace Anderson 66 AF1 Black & White Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-white-skateboard-truck.html",
+      "price_new": "27.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -299,19 +299,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Thompson Ethereal 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-thompson-ethereal-8-0-skateboard-deck.html",
+      "name": "Real Nicole Pig Romp 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-nicole-pig-romp-8-25-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

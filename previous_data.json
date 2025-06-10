@@ -28,6 +28,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
@@ -55,6 +64,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "19.99",
@@ -64,28 +82,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -150,15 +150,6 @@
       "name": "NewBones Mummy Skulls 100a V5 Sidecut Wheels Black",
       "url": "\nhttps://www.skatewarehouse.com/Bones_Mummy_Skulls_100a_V5_Sidecut_Wheels/descpage-BSMSKWH.html?color=BK4\n",
       "price_new": "24.99",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Spitfire F4 Lil Smokies Classic 101a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Classic_101a_Wheels/descpage-SFLSCWH.html?color=WH\n",
-      "price_new": "29.98",
       "price_old": null,
       "availability": "Check store",
       "part": "Wheels",
@@ -324,7 +315,26 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Anti-Hero Grant Bandit 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-taylor-bandit-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "DGK The Harpers Street Soldier 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/dgk-the-harpers-street-soldier-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",

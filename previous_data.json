@@ -19,19 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Savie Formula Four 53mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-savie-formula-four-53mm-99a-black-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "42.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -39,6 +30,15 @@
     {
       "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -55,15 +55,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "19.99",
@@ -73,8 +64,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -86,15 +77,6 @@
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "37.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -113,6 +95,15 @@
       "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "37.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -317,19 +308,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Anti-Hero Grant Bandit 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-taylor-bandit-8-5-skateboard-deck.html",
+      "name": "Baker T-Funk Sundown 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/8-38-t-funk-sundown-baker.html",
       "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Opera Mask Logo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-mask-logo-8-25-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "price_old": "80.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

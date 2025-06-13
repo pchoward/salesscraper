@@ -10,10 +10,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -28,17 +28,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -55,10 +55,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -66,15 +66,6 @@
     {
       "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -91,19 +82,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
-      "price_old": "37.95",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -122,6 +113,15 @@
       "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "44.99",
       "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "37.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -308,10 +308,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Baker T-Funk Sundown 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/8-38-t-funk-sundown-baker.html",
-      "price_new": "51.99",
-      "price_old": "80.95",
+      "name": "Real Nicole Unchained 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-nicole-unchained-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

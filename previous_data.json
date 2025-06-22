@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -82,6 +82,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
@@ -118,15 +127,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "37.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
@@ -136,19 +136,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Coffin Bloodsuckers 54mm 97a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-coffin-bloodsuckers-54mm-97a-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "41.95",
+      "name": "Spitfire Firebolt 51mm 99a Red Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "37.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "name": "OJ Coffin Bloodsuckers 54mm 97a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-coffin-bloodsuckers-54mm-97a-black-skateboard-wheels.html",
       "price_new": "39.99",
-      "price_old": "49.95",
+      "price_old": "41.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -231,19 +231,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "35.95",
+      "name": "Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "30.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Steel Grey 139 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-steel-grey-139-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "30.95",
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -326,19 +326,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Monet Skateboards Bootleg 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-bootleg-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Primitive x WWE Hamilton Hitman 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-x-wwe-hamilton-hitman-8-125-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
+      "name": "Baker Figgy Sundown 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-figgy-sundown-8-0-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

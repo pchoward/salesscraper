@@ -19,19 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,10 +55,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -77,6 +68,24 @@
       "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "44.99",
       "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -122,15 +131,6 @@
       "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "37.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -326,15 +326,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Baker Figgy Sundown 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-figgy-sundown-8-0-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Krooked Cromer Fangs 8.5\" Skateboard Deck",
       "url": "https://www.zumiez.com/krooked-cromer-fangs-8-5-skateboard-deck.html",
       "price_new": "49.99",
@@ -344,10 +335,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Monet Skateboards Bootleg 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-bootleg-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
+      "name": "Studio Javelin 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-javelin-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "79.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive Silvas SOTY 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-silvas-soty-8-5-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -377,6 +386,15 @@
       "url": "\nhttps://www.skatewarehouse.com/Opera_Kieran_Woolley_Upward_Deck/descpage-OPKWUDK.html\n",
       "price_new": "49.98",
       "price_old": "75.00",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-30%Sk8 Mafia Turner Balance Foil Deck 8.25 x 31.77",
+      "url": "\nhttps://www.skatewarehouse.com/Sk8_Mafia_Turner_Balance_Foil_Deck/descpage-SMBTBFDK.html\n",
+      "price_new": "44.98",
+      "price_old": "64.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

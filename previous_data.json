@@ -10,17 +10,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -37,19 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
       "price_new": "29.99",
-      "price_old": "39.95",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -82,10 +73,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "38.95",
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -104,6 +95,15 @@
       "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "37.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -204,19 +204,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "24.95",
+      "name": "Ace 44 AF1 Gold Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "32.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 AF1 Gold Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "32.95",
+      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -335,28 +335,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Space Program Visintainer Venus 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/space-program-visintainer-venus-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Studio Javelin 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-javelin-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "73.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "79.95",
+      "name": "Primitive Silvas SOTY 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-silvas-soty-8-5-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -395,15 +377,6 @@
       "url": "\nhttps://www.skatewarehouse.com/Opera_Kieran_Woolley_Upward_Deck/descpage-OPKWUDK.html\n",
       "price_new": "49.98",
       "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-37%There Chandler Ghoul Deck 8.5 x 32.18",
-      "url": "\nhttps://www.skatewarehouse.com/There_Chandler_Ghoul_Deck/descpage-THCHGHDK.html\n",
-      "price_new": "49.98",
-      "price_old": "79.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

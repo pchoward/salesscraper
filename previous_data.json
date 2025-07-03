@@ -1,6 +1,15 @@
 {
   "Zumiez_Wheels": [
     {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
       "price_new": "39.99",
@@ -14,15 +23,6 @@
       "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "19.99",
       "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,15 +64,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -86,6 +77,15 @@
       "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "37.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -315,22 +315,23 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Foundation Campbell Ice Cream 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-campbell-ice-cream-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",
       "url": "\nhttps://www.skatewarehouse.com/Blueprint_Sky_x_MLSL_Purple_Deck/descpage-BLSMSDK.html\n",
       "price_new": "48.99",
       "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-36%Deathwish Yuri Estilo Deck 8.25 x 31.75",
-      "url": "\nhttps://www.skatewarehouse.com/Deathwish_Yuri_Estilo_Deck/descpage-DWYEDK.html\n",
-      "price_new": "49.98",
-      "price_old": "78.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

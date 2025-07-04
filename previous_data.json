@@ -19,19 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -55,19 +46,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "38.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -77,15 +59,6 @@
       "url": "https://www.zumiez.com/spitfire-firebolt-51mm-99a-red-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "37.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -118,10 +91,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
       "price_new": "24.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -195,19 +186,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "24.95",
+      "name": "Ace 44 AF1 Gold Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "32.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 AF1 Gold Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "32.95",
+      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -315,32 +306,13 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [
-    {
-      "name": "Foundation Campbell Ice Cream 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-campbell-ice-cream-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    }
-  ],
+  "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",
       "url": "\nhttps://www.skatewarehouse.com/Blueprint_Sky_x_MLSL_Purple_Deck/descpage-BLSMSDK.html\n",
       "price_new": "48.99",
       "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-36%King Zach Fan Love Deck 8.25 x 31.919",
-      "url": "\nhttps://www.skatewarehouse.com/King_Zach_Fan_Love_Deck/descpage-KGFLDK.html\n",
-      "price_new": "49.98",
-      "price_old": "78.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

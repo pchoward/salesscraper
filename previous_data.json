@@ -19,19 +19,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -55,55 +55,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Coffin Bloodsuckers 54mm 97a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-coffin-bloodsuckers-54mm-97a-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "41.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -127,10 +82,55 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Coffin Bloodsuckers 54mm 97a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-coffin-bloodsuckers-54mm-97a-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "41.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,15 +141,6 @@
       "name": "Clearance\u00a0-33%Spitfire F4 Lil Smokies Tablet 101a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH\n",
       "price_new": "29.98",
-      "price_old": "45.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-58%Spitfire F4 Lil Smokies Tablet 99a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH\n",
-      "price_new": "18.52",
       "price_old": "45.00",
       "availability": "Check store",
       "part": "Wheels",
@@ -294,24 +285,6 @@
       "url": "https://www.zumiez.com/krooked-cromer-fangs-8-5-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Toy Machine Willard One Hit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/toy-machine-willard-one-hit-8-0-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Jacuzzi Dilo Gator Bait 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jacuzzi-dilo-gator-bait-8-0-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

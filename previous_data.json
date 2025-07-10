@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -46,6 +46,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
@@ -68,15 +77,6 @@
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -140,6 +140,15 @@
     {
       "name": "Clearance\u00a0-33%Spitfire F4 Lil Smokies Tablet 101a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": "45.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-33%Spitfire F4 Lil Smokies Tablet 99a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_99a_Wheels/descpage-SFLSTWH.html?color=WH\n",
       "price_new": "29.98",
       "price_old": "45.00",
       "availability": "Check store",
@@ -281,26 +290,34 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
+      "name": "April Dashawn 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/april-dashawn-8-5-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Krooked Cromer Fangs 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-cromer-fangs-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "79.95",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive Williams Podium 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-williams-podium-8-38-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",
-      "url": "\nhttps://www.skatewarehouse.com/Blueprint_Sky_x_MLSL_Purple_Deck/descpage-BLSMSDK.html\n",
-      "price_new": "48.99",
-      "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

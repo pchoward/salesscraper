@@ -10,8 +10,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -19,8 +19,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -168,15 +168,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "24.99",
@@ -199,6 +190,15 @@
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -232,15 +232,6 @@
     }
   ],
   "SkateWarehouse_Trucks": [
-    {
-      "name": "Clearance\u00a0-30%Independent Mid Truck Tiago Lemos",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
-      "price_new": "19.98",
-      "price_old": "28.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
     {
       "name": "Clearance\u00a0-21%Independent Stage 11 BTG Speed Standard Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTGTR.html?color=BL\n",
@@ -297,6 +288,15 @@
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
+    },
+    {
+      "name": "Hoddle Thunderdome 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/hoddle-thunderdome-8-0-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Decks": [
@@ -314,6 +314,15 @@
       "url": "\nhttps://www.skatewarehouse.com/Chocolate_Chico_Nicaraguan_Sunrise_Re-Issue_SIGNED_Deck/descpage-CHNSSDK.html\n",
       "price_new": "59.98",
       "price_old": "99.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-36%Deathwish Foy DB Champ Deck 8.0 x 31.5",
+      "url": "\nhttps://www.skatewarehouse.com/Deathwish_Foy_DB_Champ_Deck/descpage-DWFDBCDK.html\n",
+      "price_new": "49.98",
+      "price_old": "78.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

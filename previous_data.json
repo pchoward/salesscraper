@@ -10,8 +10,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -37,8 +37,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -50,24 +50,6 @@
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -91,10 +73,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -279,17 +279,7 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [
-    {
-      "name": "Monet Skateboards Moon 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-moon-8-5-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    }
-  ],
+  "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",

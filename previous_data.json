@@ -37,6 +37,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
       "price_new": "29.99",
@@ -64,15 +73,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
       "price_new": "44.99",
@@ -84,15 +84,6 @@
     {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -186,19 +177,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "35.95",
+      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Red & Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-red-silver-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "24.95",
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"

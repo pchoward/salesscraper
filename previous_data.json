@@ -10,6 +10,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "price_new": "31.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
@@ -23,15 +32,6 @@
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,19 +64,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -177,6 +177,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 44 Classic Army Green Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "19.99",
@@ -217,15 +226,6 @@
       "url": "https://www.zumiez.com/independent-colbourn-139mm-skateboard-truck.html",
       "price_new": "14.99",
       "price_old": "30.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -290,17 +290,8 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-38-skateboard-deck.html",
+      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "79.95",
       "availability": "Check store",
@@ -308,8 +299,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
+      "name": "Color Bars x Harry Potter Boy Who Lived 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-38-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "79.95",
       "availability": "Check store",

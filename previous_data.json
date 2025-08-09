@@ -28,15 +28,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
@@ -55,9 +46,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -116,6 +107,15 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
+    },
+    {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -159,15 +159,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "35.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "24.99",
@@ -181,6 +172,15 @@
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -280,6 +280,15 @@
   ],
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
+    {
+      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "79.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
     {
       "name": "Color Bars x Harry Potter Boy Who Lived 8.38\" Skateboard Deck",
       "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-38-skateboard-deck.html",

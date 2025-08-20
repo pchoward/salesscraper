@@ -19,6 +19,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
@@ -37,17 +46,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -98,15 +107,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -150,6 +150,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "24.99",
@@ -163,15 +172,6 @@
       "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "32.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -261,17 +261,7 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [
-    {
-      "name": "Art Project x J Strickland Escape 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/art-project-x-j-strickland-escape-8-5-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    }
-  ],
+  "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",

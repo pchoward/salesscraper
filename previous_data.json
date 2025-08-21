@@ -1,10 +1,10 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -19,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -30,6 +30,15 @@
     {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -46,6 +55,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
@@ -55,9 +73,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
+      "name": "Spitfire Formula Four OG Classics Blue 54mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-blue-54mm-99a-skateboard-wheels.html",
+      "price_new": "31.99",
       "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -98,15 +116,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -141,15 +150,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "35.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 44 Classic Army Green Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "19.99",
@@ -163,6 +163,15 @@
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -261,7 +270,35 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Anti-Hero Grant Bandit 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-taylor-bandit-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Real Ishod Revealing 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-ishod-revealing-8-06-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "75.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Foundation Campbell Ice Cream 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-campbell-ice-cream-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",

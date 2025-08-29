@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
-      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "25.00",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
+      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -186,6 +186,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 44 AF1 Gold Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
       "price_new": "19.99",
@@ -199,15 +208,6 @@
       "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -312,6 +312,15 @@
       "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Pollinate 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-pollinate-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

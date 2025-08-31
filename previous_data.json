@@ -46,15 +46,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -64,19 +55,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -109,6 +91,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
       "price_new": "24.99",
@@ -131,6 +122,15 @@
       "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -186,15 +186,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 44 AF1 Gold Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
       "price_new": "19.99",
@@ -208,6 +199,15 @@
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -290,6 +290,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
       "price_new": "51.99",
@@ -299,10 +308,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "Anti-Hero Grant Coat Of Arms 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-grant-coat-of-arms-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,28 +37,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ From Concentrate 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -122,6 +113,15 @@
       "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -299,19 +299,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Real Ishod Mascot 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-ishod-mascot-8-06-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "75.95",
+      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Roger Eves Skeleton 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/roger-eves-skeleton-8-25-skateboard-deck.html",
+      "name": "Corporate Strong Man 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/corporate-strong-man-8-25-skateboard-deck.html",
       "price_new": "39.99",
-      "price_old": "62.95",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

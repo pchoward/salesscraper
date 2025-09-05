@@ -37,6 +37,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
       "price_new": "39.99",
@@ -125,15 +134,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -186,19 +186,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "name": "Independent Geering 139 Hollow Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
       "price_new": "29.99",
-      "price_old": "35.95",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent Geering 139 Hollow Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
-      "price_old": "34.95",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -315,19 +315,18 @@
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
-    }
-  ],
-  "SkateWarehouse_Decks": [
+    },
     {
-      "name": "Clearance\u00a0-34%Blueprint Sky x MLSL Purple Deck 8 x 32",
-      "url": "\nhttps://www.skatewarehouse.com/Blueprint_Sky_x_MLSL_Purple_Deck/descpage-BLSMSDK.html\n",
-      "price_new": "48.98",
-      "price_old": "75.00",
+      "name": "Anti-Hero Gerwer Grimple Stix Barbarians 8.28\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-gerwer-grimple-stix-barbarians-8-28-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
-      "store": "SkateWarehouse"
+      "store": "Zumiez"
     }
   ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

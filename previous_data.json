@@ -37,28 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -73,9 +55,36 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "price_new": "24.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -100,10 +109,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Winkowski Mushroom Swirl 53mm 101a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
       "price_new": "24.99",
-      "price_old": "39.95",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -113,15 +122,6 @@
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -156,10 +156,10 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Spitfire Flashpoint Classic 99a Wheels",
+      "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
-      "price_old": null,
+      "price_old": "35.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
@@ -299,28 +299,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Anti-Hero Kanfoush Anti Intelligence 8.4\" Skateboard Deck",
       "url": "https://www.zumiez.com/anti-hero-kanfoush-anti-intelligence-8-4-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "TIGHTBOOTH Doggy Piss 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/tightbooth-doggy-piss-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "76.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

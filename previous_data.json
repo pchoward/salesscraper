@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
-      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "25.00",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
+      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,15 +64,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -95,6 +86,15 @@
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -177,15 +177,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 AF1 Gold Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "32.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "24.99",
@@ -199,6 +190,15 @@
       "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 AF1 Gold Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "32.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -260,7 +260,7 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-13%Independent Stage 11 Standard Bar Truck Flat Black",
+      "name": "Clearance\u00a0-7%Independent Stage 11 Standard Bar Truck Flat Black",
       "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-INBRTR.html?color=BK\n",
       "price_new": "24.98",
       "price_old": "28.95",
@@ -290,19 +290,37 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
+      "name": "Anti-Hero Kanfoush Anti Intelligence 8.4\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-kanfoush-anti-intelligence-8-4-skateboard-deck.html",
+      "price_new": "49.99",
       "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Kanfoush Anti Intelligence 8.4\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-kanfoush-anti-intelligence-8-4-skateboard-deck.html",
+      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "78.95",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Frog Decker Comic Book 8.5\" Skateboard deck",
+      "url": "https://www.zumiez.com/frog-decker-comic-book-8-5-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "75.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Art Project x J Strickland Snake 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/art-project-x-j-strickland-snake-8-5-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

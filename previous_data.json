@@ -55,15 +55,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -86,6 +77,15 @@
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -186,15 +186,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Geering 139 Hollow Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 44 AF1 Gold Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-af1-gold-skateboard-truck.html",
       "price_new": "19.99",
@@ -208,6 +199,15 @@
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Geering 139 Hollow Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -290,28 +290,37 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Kanfoush Anti Intelligence 8.4\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-kanfoush-anti-intelligence-8-4-skateboard-deck.html",
-      "price_new": "49.99",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
       "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
+      "name": "Real Ishod Mascot 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-ishod-mascot-8-06-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Frog Decker Comic Book 8.5\" Skateboard deck",
-      "url": "https://www.zumiez.com/frog-decker-comic-book-8-5-skateboard-deck.html",
+      "name": "Studio Synergy 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-synergy-8-25-skateboard-deck.html",
       "price_new": "39.99",
-      "price_old": "75.95",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WORBLE Cloud Racer 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/worble-cloud-racer-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

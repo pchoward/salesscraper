@@ -64,15 +64,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
@@ -82,28 +73,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "56.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -122,6 +95,33 @@
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -272,15 +272,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
       "price_new": "51.99",
@@ -290,19 +281,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -317,19 +299,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Studio Synergy 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-synergy-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "73.95",
+      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Art Project x J Strickland Snake 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/art-project-x-j-strickland-snake-8-5-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Real Ishod Mascot 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-ishod-mascot-8-06-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -344,10 +326,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Hoddle Thunderdome 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hoddle-thunderdome-8-0-skateboard-deck.html",
-      "price_new": "34.99",
-      "price_old": "69.95",
+      "name": "Deathwish O'Dwyer Skull 8.475\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-odwyer-skull-8-475-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

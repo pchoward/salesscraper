@@ -28,19 +28,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Spitfire Formula Four Classic 53mm 99a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-classic-53mm-99a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "38.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Classic 53mm 99a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-classic-53mm-99a-orange-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "38.00",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,6 +64,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-black-skateboard-wheels.html",
       "price_new": "24.99",
@@ -82,19 +91,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Ville Annihilation 58mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-ville-annihilation-58mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "52.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -122,24 +140,6 @@
       "url": "https://www.zumiez.com/oj-winkowski-mushroom-swirl-53mm-101a-skateboard-wheels.html",
       "price_new": "24.99",
       "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Ville Annihilation 58mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-ville-annihilation-58mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "52.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -204,8 +204,8 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -213,8 +213,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
+      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -353,10 +353,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Hoddle Luxton Realist 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hoddle-luxton-realist-8-25-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "name": "Anti-Hero Grant Stacked 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-grant-stacked-8-38-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Welcome x Beetlejuice Carousel 10.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-carousel-10-0-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -380,10 +389,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Foundation Lindloff More Stuff 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-lindloff-more-stuff-8-38-skateboard-deck.html",
+      "name": "Krooked Una Butterflies 8.28\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-una-butterflies-8-28-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

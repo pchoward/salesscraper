@@ -37,24 +37,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -66,6 +48,15 @@
     {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
       "availability": "Check store",
@@ -100,6 +91,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ From Concentrate 54mm 101a Green Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-green-skateboard-wheels.html",
       "price_new": "19.99",
@@ -127,28 +127,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pace Elite Mini Combos 54mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pace-elite-mini-combos-54mm-99a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Plain Jane Jungle Keyframe 54mm 92a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-plain-jane-jungle-keyframe-54mm-92a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "37.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -213,15 +195,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Geering 139 Hollow Skateboard Truck",
       "url": "https://www.zumiez.com/independent-geering-139-hollow-skateboard-trucks.html",
       "price_new": "29.99",
@@ -233,6 +206,24 @@
     {
       "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
       "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Smith 144 White Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -253,15 +244,6 @@
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Smith 144 White Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -335,15 +317,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
       "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
       "price_new": "39.99",
@@ -353,28 +326,46 @@
       "store": "Zumiez"
     },
     {
-      "name": "Hoddle Thunderdome 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hoddle-thunderdome-8-0-skateboard-deck.html",
-      "price_new": "34.99",
-      "price_old": "69.95",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Studio McGraw Mosh 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-mcgraw-mosh-8-5-skateboard-deck.html",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Krooked Una Teeth 8.28\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-una-teeth-8-28-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "77.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Carousel 10.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-carousel-10-0-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
+      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Look Out 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

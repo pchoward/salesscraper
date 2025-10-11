@@ -28,19 +28,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ From Concentrate 54mm 101a Green Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-green-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 54mm 101a Green Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-green-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -82,35 +82,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ From Concentrate 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-from-concentrate-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Fade Formula Four 58mm 80a Red Conical Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Powell Peralta Dragons 93a 56mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/powell-peralta-dragons-93a-56mm-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "42.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -186,15 +159,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
       "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
@@ -204,8 +168,26 @@
       "store": "Zumiez"
     },
     {
+      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
       "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Smith 144 White Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -231,19 +213,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Smith 144 White Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
+      "name": "Independent x Hockey Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html",
+      "price_new": "9.99",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -317,10 +299,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -330,6 +312,15 @@
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "84.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "FB County Westside 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -353,10 +344,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -371,19 +362,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "name": "Real Ishod Burnout 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-ishod-burnout-8-38-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -91,15 +91,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Team Elite Throw Ups Chubbies 54mm 101a Citrus Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-team-elite-throw-ups-chubbies-54mm-101a-citrus-skateboard-wheels.html",
       "price_new": "29.99",
@@ -150,8 +141,8 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
+      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -159,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -208,15 +199,6 @@
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "35.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent x Hockey Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html",
-      "price_new": "9.99",
-      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -272,19 +254,19 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
+      "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -299,10 +281,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "84.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Krooked Cromer Unicycle 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-cromer-unicycle-8-38-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -317,6 +317,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
       "price_new": "49.99",
@@ -326,28 +335,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Gerwer Grimple Stix Barbarians 8.28\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-gerwer-grimple-stix-barbarians-8-28-skateboard-deck.html",
+      "name": "Studio Javelin 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-javelin-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "75.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Passport Art Dept Set Dress 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/passport-art-dept-set-dress-8-5-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Hoddle Paul Bell 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hoddle-paul-bell-8-38-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

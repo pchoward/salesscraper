@@ -186,19 +186,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
-      "price_old": "31.95",
+      "price_old": "35.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
-      "price_old": "35.95",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -254,15 +254,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
       "price_new": "54.99",
@@ -281,10 +272,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
       "price_new": "39.99",
-      "price_old": "64.95",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -299,8 +290,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
       "availability": "Check store",
@@ -308,28 +299,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Krooked Geering Guest Punx 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/krooked-geering-guest-punx-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Corporate World Ruler 8.3\" Skateboard Deck",
-      "url": "https://www.zumiez.com/corporate-world-ruler-8-3-skateboard-deck.html",
+      "name": "Corporate Strong Man 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/corporate-strong-man-8-25-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Jart Smoke 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jart-smoke-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

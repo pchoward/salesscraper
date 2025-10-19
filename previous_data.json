@@ -19,15 +19,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
       "price_new": "39.99",
@@ -37,18 +28,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
       "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -68,6 +59,15 @@
       "url": "https://www.zumiez.com/spitfire-fade-formula-four-58mm-80a-red-conical-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,8 +141,8 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -150,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
+      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
       "availability": "Check store",
@@ -168,19 +168,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -281,15 +281,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
       "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
       "price_new": "39.99",
@@ -299,10 +290,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Corporate Strong Man 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/corporate-strong-man-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Welcome x Bauhaus Portrait On Dark Lord 9.85\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-bauhaus-portrait-on-dark-lord-9-85-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

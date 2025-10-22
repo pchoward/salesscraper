@@ -10,15 +10,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
       "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
       "price_new": "24.99",
@@ -37,9 +28,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -59,6 +50,15 @@
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,15 +141,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
       "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
@@ -190,6 +181,15 @@
       "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -245,15 +245,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
       "price_new": "54.99",
@@ -272,64 +263,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "FB County Westside 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Hopps Bighopps Roses 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hopps-bighopps-roses-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Studio McGraw Mosh 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-mcgraw-mosh-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "77.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -344,10 +290,46 @@
       "store": "Zumiez"
     },
     {
-      "name": "Studio Javelin 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-javelin-8-5-skateboard-deck.html",
+      "name": "WKND Look Out 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "73.95",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Maalouf Ghost 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-ghost-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Hopps Bighopps Roses 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/hopps-bighopps-roses-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Krooked Cromer Unicycle 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-cromer-unicycle-8-38-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

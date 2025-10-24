@@ -10,15 +10,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
       "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
       "price_new": "24.99",
@@ -32,6 +23,15 @@
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -168,19 +168,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
+      "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent Mountain Hollow 149 Stage 11 Silver & Black Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-mountain-hollow-149-stage-11-silver-and-black-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -227,6 +227,15 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
       "price_new": "54.99",
@@ -245,71 +254,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Deathwish O'Dwyer Skull 8.475\" Skateboard Deck",
-      "url": "https://www.zumiez.com/deathwish-odwyer-skull-8-475-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Muerle Simply 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-muerle-simply-8-125-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Hoddle Luxton Realist 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hoddle-luxton-realist-8-25-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Considine Third Eye 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-considine-third-eye-8-125-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Studio Synergy 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-synergy-8-25-skateboard-deck.html",
+      "name": "Studio Spirit 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-spirit-8-0-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "73.95",
       "availability": "Check store",
@@ -317,10 +263,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Foundation Lindloff More Stuff 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-lindloff-more-stuff-8-38-skateboard-deck.html",
+      "name": "Krooked Geering Guest Punx 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-geering-guest-punx-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Studio Dupre Body Roll 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-dupre-body-roll-8-25-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "77.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

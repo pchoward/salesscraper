@@ -254,10 +254,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Studio Spirit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-spirit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "73.95",
+      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -272,10 +272,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Studio Dupre Body Roll 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-dupre-body-roll-8-25-skateboard-deck.html",
+      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Krooked Razo Guest 8.62\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-razo-guest-8-62-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "77.95",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Logo 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-logo-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

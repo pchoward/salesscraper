@@ -28,15 +28,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -46,10 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -57,6 +48,24 @@
     {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Swirled Classic Teal & Purple 52mm 99D Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-swirled-classic-teal-purple-52mm-99d-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "42.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
@@ -127,15 +136,6 @@
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
       "price_old": "35.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -218,15 +218,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "FB County Westside 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
       "price_new": "39.99",
@@ -236,10 +227,37 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Britney Spears Snake 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-britney-spears-snake-8-5-skateboard-deck.html",
-      "price_new": "54.99",
+      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Pizza x Homies Vintage Homies 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/pizza-homies-vintage-homies-8-0-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "65.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
+      "price_new": "51.99",
       "price_old": "84.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Studio McGraw Mosh 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-mcgraw-mosh-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "77.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -254,28 +272,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Color Bars x Harry Potter Boy Who Lived 8.38\" Skateboard Deck",
       "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-38-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "79.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Art Project Chakras 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/art-project-chakras-9-1-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

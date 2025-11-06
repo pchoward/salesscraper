@@ -28,10 +28,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -46,19 +46,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Swirled Classic Teal & Purple 52mm 99D Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-swirled-classic-teal-purple-52mm-99d-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "42.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -123,15 +114,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
@@ -144,6 +126,15 @@
       "name": "Independent Smith 144 White Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
       "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -164,15 +155,6 @@
       "name": "Clearance\u00a0-28%Independent Stage 11 BTG Speed Standard Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTGTR.html?color=BL\n",
       "price_new": "19.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-10%Independent Stage 11 BTG Speed Standard Truck Burgundy",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_BTG_Speed_Standard_Truck/descpage-INBTBTR.html?color=RD\n",
-      "price_new": "24.98",
       "price_old": null,
       "availability": "Check store",
       "part": "Trucks",
@@ -209,8 +191,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "name": "FB County Westside 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
       "availability": "Check store",
@@ -218,8 +200,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
       "availability": "Check store",
@@ -236,54 +218,54 @@
       "store": "Zumiez"
     },
     {
-      "name": "Pizza x Homies Vintage Homies 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/pizza-homies-vintage-homies-8-0-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "65.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Studio McGraw Mosh 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-mcgraw-mosh-8-5-skateboard-deck.html",
+      "name": "Anti-Hero Gerwer Grimple Stix Barbarians 8.28\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-gerwer-grimple-stix-barbarians-8-28-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "77.95",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Arbor Pelka Daytripper 8.375\" Skateboard Deck",
-      "url": "https://www.zumiez.com/arbor-pelka-daytripper-8-375-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-38-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "79.95",
+      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Studio Synergy 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/studio-synergy-8-25-skateboard-deck.html",
-      "price_new": "39.99",
+      "name": "WKND Look Out 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Studio Javelin 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-javelin-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
+      "price_new": "49.99",
       "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",

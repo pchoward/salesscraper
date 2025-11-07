@@ -37,6 +37,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Grant Formula Four Radial 55.5mm Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-grant-formula-four-radial-55-5mm-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Big Beatdowns Formula Four 66.6mm 99a White Classic Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-big-beatdowns-formula-four-66-6mm-99a-white-classic-skateboard-wheels.html",
       "price_new": "34.99",
@@ -46,7 +55,25 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Wheels",
+      "name": "Spitfire Formula Four OG Classics Green 53mm 99a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-og-classics-green-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "56.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
       "price_old": "54.95",
@@ -109,6 +136,15 @@
       "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -191,15 +227,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
       "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
       "price_new": "39.99",
@@ -209,19 +236,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Gerwer Grimple Stix Barbarians 8.28\" Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-gerwer-grimple-stix-barbarians-8-28-skateboard-deck.html",
+      "name": "HUF x Kodak Filmer Board 9.8\" Skateboard Deck",
+      "url": "https://www.zumiez.com/huf-x-kodak-filmer-board-9-8-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "75.95",
+      "price_old": "79.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -229,15 +256,6 @@
     {
       "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
       "availability": "Check store",
@@ -263,10 +281,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
+      "name": "Studio McGraw Mosh 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-mcgraw-mosh-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "73.95",
+      "price_old": "77.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Arbor Pelka Daytripper 8.375\" Skateboard Deck",
+      "url": "https://www.zumiez.com/arbor-pelka-daytripper-8-375-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -105,15 +105,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "29.99",
@@ -123,9 +114,27 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent Smith 144 White Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
       "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -155,8 +164,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "78.95",
       "availability": "Check store",
@@ -173,19 +182,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Pizza x Homies Vintage Homies 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/pizza-homies-vintage-homies-8-0-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "65.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

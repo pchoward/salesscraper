@@ -28,19 +28,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -172,10 +172,37 @@
       "store": "Zumiez"
     },
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive x WWE Hamilton Hitman 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-x-wwe-hamilton-hitman-8-125-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -212,15 +239,6 @@
       "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Hopps Bighopps Roses 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/hopps-bighopps-roses-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -28,6 +28,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
       "price_new": "39.99",
@@ -41,15 +50,6 @@
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -163,19 +163,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
+      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Anti-Hero Anderson Some Legs 8.5 Skateboard Deck",
-      "url": "https://www.zumiez.com/anti-hero-anderson-some-legs-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "Monet Skateboards Skullew 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-skateboards-skullew-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

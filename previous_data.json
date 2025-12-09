@@ -37,19 +37,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "39.95",
+      "name": "Spitfire Superwide 80HD 60mm Ice Grey Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-superwide-80hd-60mm-ice-grey-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,7 +141,44 @@
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Trucks": [],
+  "SkateWarehouse_Trucks": [
+    {
+      "name": "Sale\u00a0-12%Independent Industrial 2 IKP Standard Truck Raw/Silver",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Industrial_2_IKP_Standard_Truck/descpage-INIK2TR.html?color=SI\n",
+      "price_new": "27.98",
+      "price_old": "31.99",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Sale\u00a0-12%Independent S11 Industrial IKP Truck Raw/Trans Black",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Industrial_IKP_Truck/descpage-INIKPTR.html?color=SI\n",
+      "price_new": "27.98",
+      "price_old": "31.99",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Sale\u00a0-9%Independent S11 Inverted Kingpin Standard Truck",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Inverted_Kingpin_Standard_Truck/descpage-INFISTR.html?color=GY\n",
+      "price_new": "27.98",
+      "price_old": "30.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-7%Independent Stage 11 Standard Bar Truck Flat Black",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-INBRTR.html?color=BK\n",
+      "price_new": "24.98",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    }
+  ],
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {

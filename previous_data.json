@@ -182,10 +182,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "84.95",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -200,8 +200,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "FB County Westside 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "64.95",
       "availability": "Check store",
@@ -209,8 +218,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Logo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-logo-8-25-skateboard-deck.html",
+      "name": "WKND Look Out 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
       "availability": "Check store",
@@ -218,19 +227,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Color Bars x Harry Potter Boy Who Lived 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/color-bars-x-harry-potter-boy-who-lived-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "79.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
+      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

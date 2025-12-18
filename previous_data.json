@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
-      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -200,37 +191,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Pollinate 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-pollinate-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Look Out 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

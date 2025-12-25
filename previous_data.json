@@ -155,15 +155,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
       "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
       "price_new": "51.99",
@@ -173,16 +164,34 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Decks": [
+    {
+      "name": "Clearance\u00a0-33%Opera Fardell Pet Deck 8.7 x 32.6",
+      "url": "\nhttps://www.skatewarehouse.com/Opera_Fardell_Pet_Deck/descpage-OPFPTDK.html\n",
+      "price_new": "49.98",
+      "price_old": "75.00",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
     {
       "name": "Clearance\u00a0-30%Welcome x Harry Potter Arrival Deck 9.5 x 32.4",
       "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Arrival_Deck/descpage-WCHPARDK.html\n",

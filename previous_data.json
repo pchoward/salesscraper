@@ -146,15 +146,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
       "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
       "price_new": "51.99",
@@ -164,19 +155,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Frog Caterpillar 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/frog-caterpillar-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "75.95",
+      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -186,6 +168,15 @@
       "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Studio Dupre Body Roll 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-dupre-body-roll-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "77.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

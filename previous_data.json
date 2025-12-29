@@ -87,15 +87,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 44 Classic Army Green Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Smith 144 White Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
       "price_new": "29.99",
@@ -108,6 +99,15 @@
       "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
       "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -173,6 +173,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "FB County Westside 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
       "price_new": "39.99",
@@ -186,15 +195,6 @@
       "url": "https://www.zumiez.com/frog-caterpillar-8-25-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "75.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Welcome x Bauhaus Mask On Early Grab 10.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-bauhaus-mask-on-early-grab-10-0-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -215,15 +215,6 @@
       "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Arrival_Deck/descpage-WCHPARDK.html\n",
       "price_new": "62.98",
       "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Dementor Deck 10.125 x 30.25",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Dementor_Deck/descpage-WCHPDMDK.html\n",
-      "price_new": "65.98",
-      "price_old": "94.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

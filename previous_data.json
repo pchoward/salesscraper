@@ -48,15 +48,6 @@
   ],
   "SkateWarehouse_Wheels": [
     {
-      "name": "Clearance\u00a0-33%Spitfire F4 Lil Smokies Tablet 101a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH\n",
-      "price_new": "29.98",
-      "price_old": "45.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
@@ -164,15 +155,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "FB County Westside 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
       "price_new": "39.99",
@@ -182,10 +164,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "FB County Velour Track Suit 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-velour-track-suit-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -202,9 +184,9 @@
   ],
   "SkateWarehouse_Decks": [
     {
-      "name": "Clearance\u00a0-33%Opera Fardell Pet Deck 8.7 x 32.6",
+      "name": "Clearance\u00a0-55%Opera Fardell Pet Deck 8.7 x 32.6",
       "url": "\nhttps://www.skatewarehouse.com/Opera_Fardell_Pet_Deck/descpage-OPFPTDK.html\n",
-      "price_new": "49.98",
+      "price_new": "33.33",
       "price_old": "75.00",
       "availability": "Check store",
       "part": "Decks",

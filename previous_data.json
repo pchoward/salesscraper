@@ -137,37 +137,19 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
+      "name": "Opera Exit 8.375 Skateboard Deck",
+      "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
       "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
       "price_new": "51.99",
       "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "FB County Westside 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/fb-county-westside-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Logo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-logo-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -193,9 +175,18 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-38%Welcome x Harry Potter Finale Deck 9.5 x 33",
+      "name": "Clearance\u00a0-30%Welcome x Harry Potter Dementor Deck 10.125 x 30.25",
+      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Dementor_Deck/descpage-WCHPDMDK.html\n",
+      "price_new": "65.98",
+      "price_old": "94.99",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-30%Welcome x Harry Potter Finale Deck 9.5 x 33",
       "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Finale_Deck/descpage-WCHPFNDK.html\n",
-      "price_new": "55.00",
+      "price_new": "62.98",
       "price_old": "89.99",
       "availability": "Check store",
       "part": "Decks",

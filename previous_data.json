@@ -146,6 +146,15 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Opera Exit 8.375 Skateboard Deck",
       "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
       "price_new": "49.99",

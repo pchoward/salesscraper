@@ -26,15 +26,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    },
-    {
-      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
-      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "25.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -153,18 +144,27 @@
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
+    },
+    {
+      "name": "LZMFG Pursuit Of Perfection 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/lzmfg-pursuit-of-perfection-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Welcome x Beetlejuice Lydia 9.6\" Skateboard Deck",
+      "url": "https://www.zumiez.com/welcome-x-beetlejuice-lydia-9-6-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "84.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Arrival Deck 9.5 x 32.4",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Arrival_Deck/descpage-WCHPARDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
     {
       "name": "Clearance\u00a0-30%Welcome x Harry Potter Finale Deck 9.5 x 33",
       "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Finale_Deck/descpage-WCHPFNDK.html\n",

@@ -69,15 +69,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Smith 144 White Skateboard Trucks",
-      "url": "https://www.zumiez.com/independent-smith-144-white-skateboard-trucks.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent 144 Hollow Silver & Black Skateboard Truck",
       "url": "https://www.zumiez.com/independent-144-hollow-silver-and-black-skateboard-truck.html",
       "price_new": "29.99",
@@ -136,6 +127,15 @@
   ],
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
+    {
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
     {
       "name": "Opera Exit 8.375 Skateboard Deck",
       "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",

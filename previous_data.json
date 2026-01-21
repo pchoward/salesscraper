@@ -30,6 +30,15 @@
   ],
   "SkateWarehouse_Wheels": [
     {
+      "name": "Clearance\u00a0-33%Spitfire F4 Lil Smokies Tablet 101a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Spitfire_F4_Lil_Smokies_Tablet_101a_Wheels/descpage-SFST1WH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": "45.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
       "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
@@ -128,44 +137,25 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Opera Exit 8.375 Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "74.95",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Studio Spirit 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/studio-spirit-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "73.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Finale Deck 9.5 x 33",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Finale_Deck/descpage-WCHPFNDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Seeker Deck 8.75 x 32.25",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Seeker_Deck/descpage-WCHPSKDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

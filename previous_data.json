@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -19,9 +10,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -141,24 +132,6 @@
       "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "72.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Creature Lockwood Crest 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/creature-lockwood-crest-8-25-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "67.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Sheisty Sinner 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/sheisty-sinner-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

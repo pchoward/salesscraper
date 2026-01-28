@@ -10,10 +10,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Bones OG V4 Party Pack 53mm 100a Skateboard Wheels",
+      "url": "https://www.zumiez.com/bones-og-v4-party-pack-53mm-100a-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "25.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -58,15 +76,6 @@
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
-    },
-    {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Trucks": [
@@ -75,6 +84,15 @@
       "url": "\nhttps://www.skatewarehouse.com/Independent_Industrial_2_IKP_Standard_Truck/descpage-INIK2TR.html?color=SI\n",
       "price_new": "27.98",
       "price_old": "31.99",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-41%Independent Mid Truck Tiago Lemos",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
+      "price_new": "16.98",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "SkateWarehouse"
@@ -119,19 +137,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "name": "Opera Exit 8.375 Skateboard Deck",
+      "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

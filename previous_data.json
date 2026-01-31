@@ -146,15 +146,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "72.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Opera Exit 8.375 Skateboard Deck",
       "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
       "price_new": "49.99",
@@ -164,35 +155,25 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Carousel 10.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-carousel-10-0-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
+      "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "72.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Look Out 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-look-out-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-50%Welcome x Harry Potter Finale Deck 9.5 x 33",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Finale_Deck/descpage-WCHPFNDK.html\n",
-      "price_new": "44.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-50%Welcome x Harry Potter Seeker Deck 8.75 x 32.25",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Seeker_Deck/descpage-WCHPSKDK.html\n",
-      "price_new": "44.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

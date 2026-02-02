@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -37,10 +28,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Superwide 80HD 62mm Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-superwide-80hd-62mm-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -155,10 +146,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Carousel 10.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-carousel-10-0-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "84.95",
+      "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "72.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

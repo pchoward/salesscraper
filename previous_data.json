@@ -128,28 +128,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Opera Exit 8.375 Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-exit-8-375-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Welcome x Beetlejuice Carousel 10.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/welcome-x-beetlejuice-carousel-10-0-skateboard-deck.html",
       "price_new": "54.99",
       "price_old": "84.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Grizzly Triple Double 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/grizzly-triple-double-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

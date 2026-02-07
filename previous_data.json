@@ -60,15 +60,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 44 Classic Army Green Skateboard Truck",
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "19.99",
@@ -136,6 +127,15 @@
   ],
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
+    {
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
     {
       "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
       "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",

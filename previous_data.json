@@ -19,15 +19,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
@@ -37,10 +28,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Pastel Double Duros 53mm 101a Orange Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-pastel-double-duros-53mm-101a-orange-skateboard-wheels.html",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
-      "price_old": "56.95",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -121,15 +112,6 @@
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
-    },
-    {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Trucks": [
@@ -182,19 +164,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Welcome x Beetlejuice Showtime 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/welcome-x-beetlejuice-showtime-8-5-skateboard-deck.html",
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
       "price_new": "51.99",
-      "price_old": "84.95",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
-      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
-      "price_new": "51.99",
-      "price_old": "78.95",
+      "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "72.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

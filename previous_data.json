@@ -146,6 +146,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Real Stenne Battle Axe 8.06\" Skateboard Deck",
+      "url": "https://www.zumiez.com/real-stenne-battle-axe-8-06-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "POETICCOLLECTIVE Flames 8.25\" Skateboard Deck",
       "url": "https://www.zumiez.com/poeticcollective-flames-8-25-skateboard-deck.html",
       "price_new": "49.99",
@@ -153,46 +162,9 @@
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
-    },
-    {
-      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-33%Jacuzzi Unlimited Dare Deck 8.75 x 31.8",
-      "url": "\nhttps://www.skatewarehouse.com/Jacuzzi_Unlimited_Dare_Deck/descpage-JZD875DK.html\n",
-      "price_new": "49.98",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-33%Opera Jack Fardell Organ Deck 8.7 x 32.6",
-      "url": "\nhttps://www.skatewarehouse.com/Opera_Jack_Fardell_Organ_Deck/descpage-OPJFODK.html\n",
-      "price_new": "49.98",
-      "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-33%Opera Kreiner Grooves Deck 8.5 x 32",
-      "url": "\nhttps://www.skatewarehouse.com/Opera_Kreiner_Grooves_Deck/descpage-OPKGVDK.html\n",
-      "price_new": "49.98",
-      "price_old": "75.00",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

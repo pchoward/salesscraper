@@ -19,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,10 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,49 +64,30 @@
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Wheels": [
-    {
-      "name": "Clearance\u00a0-30%Bones STF Retros 99a V2 Locks Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Retros_99a_V2_Locks_Wheels/descpage-BS221WH.html?color=WH\n",
-      "price_new": "26.98",
-      "price_old": "39.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Bones STF Retros 99a V4 Wide Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Retros_99a_V4_Wide_Wheels/descpage-BS421WH.html?color=WH\n",
-      "price_new": "26.98",
-      "price_old": "39.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
-      "price_new": "26.98",
-      "price_old": "34.99",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH4\n",
-      "price_new": "26.98",
-      "price_old": "34.99",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Wheels": [],
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -136,6 +117,15 @@
       "url": "https://www.zumiez.com/independent-144-stage-11-black-and-ano-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -198,7 +188,44 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Hockey Kadow Endless 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/hockey-kadow-endless-8-5-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Taylor Cake Boss 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-taylor-cake-boss-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []

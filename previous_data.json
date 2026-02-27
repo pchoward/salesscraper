@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Durao Burn Squad Formula Four Lock In Full 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-durao-burn-squad-formula-four-lock-in-full-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -19,19 +10,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
-      "price_old": "47.95",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
-      "price_old": "49.95",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -50,15 +50,6 @@
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
       "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Classic Full 56mm 80hd Clear Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-classic-full-56mm-80hd-clear-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "38.00",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -123,6 +114,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "24.99",
@@ -154,15 +154,6 @@
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -225,7 +216,17 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Deathwish O'Dwyer Shenanigans 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-odwyer-shenanigans-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-30%Grizzly Catamaran Deck 8.0 x 31.63",

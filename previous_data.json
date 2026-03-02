@@ -19,15 +19,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -40,6 +31,15 @@
       "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
       "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -231,6 +231,42 @@
       "url": "https://www.zumiez.com/deathwish-odwyer-shenanigans-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "73.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Monet Chrome Tulips 8.25 Skateboard Deck",
+      "url": "https://www.zumiez.com/monet-chrome-tulips-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Pylon Primo Devilderio 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/pylon-primo-devilderio-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

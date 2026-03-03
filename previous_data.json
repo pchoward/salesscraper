@@ -100,6 +100,15 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": "35.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
     }
   ],
   "CCS_Wheels": [],
@@ -114,8 +123,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -123,8 +132,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -236,8 +245,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
+      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
       "availability": "Check store",
@@ -245,28 +254,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Theories Power Of The Mind 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/theories-power-of-the-mind-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "73.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Monet Chrome Tulips 8.25 Skateboard Deck",
-      "url": "https://www.zumiez.com/monet-chrome-tulips-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Pylon Primo Devilderio 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/pylon-primo-devilderio-8-25-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
+      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "82.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -84,6 +84,15 @@
       "store": "SkateWarehouse"
     },
     {
+      "name": "Bones STF Sidecuts 99a V5 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Sidecuts_99a_V5_Wheels/descpage-BSSV5WH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
       "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
       "price_new": "26.98",
@@ -97,6 +106,42 @@
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH4\n",
       "price_new": "26.98",
       "price_old": "34.99",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones STF Standards 99a V1 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Standards_99a_V1_Wheels/descpage-BSSV1WH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones X-Formula Sidecuts 97a V5 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Sidecuts_97a_V5_Wheels/descpage-BSD97WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones X-Formula Sidecuts 99a V5 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Sidecuts_99a_V5_Wheels/descpage-BSD99WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones X-Formula Standards V1 99a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Standards_V1_99a_Wheels/descpage-BSS99WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
@@ -258,6 +303,15 @@
       "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

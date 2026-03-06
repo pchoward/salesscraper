@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "Spitfire Durao Burn Squad Formula Four Lock In Full 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-durao-burn-squad-formula-four-lock-in-full-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "51.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -56,15 +47,6 @@
     }
   ],
   "SkateWarehouse_Wheels": [
-    {
-      "name": "Bones ATF Rough Riders Eternal Flame Wheels Green",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSREGWH.html?color=GN\n",
-      "price_new": "39.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
     {
       "name": "Clearance\u00a0-30%Bones STF Retros 99a V2 Locks Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Retros_99a_V2_Locks_Wheels/descpage-BS221WH.html?color=WH\n",
@@ -159,19 +141,19 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -290,8 +272,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
+      "name": "WKND Maalouf Fire In The Pipe 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-maalouf-fire-in-the-pipe-8-0-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
       "availability": "Check store",
@@ -299,19 +281,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "82.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
+      "name": "Hockey Kadow Endless 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/hockey-kadow-endless-8-5-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

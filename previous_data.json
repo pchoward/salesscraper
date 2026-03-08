@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -28,18 +28,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -93,15 +93,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Bones STF Standards 99a V1 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Standards_99a_V1_Wheels/descpage-BSSV1WH.html?color=WH\n",
-      "price_new": "29.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Bones X-Formula Sidecuts 97a V5 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Sidecuts_97a_V5_Wheels/descpage-BSD97WH.html?color=WH\n",
       "price_new": "39.98",
@@ -127,15 +118,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
-      "price_new": "29.98",
-      "price_old": "35.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
     }
   ],
   "CCS_Wheels": [],
@@ -143,24 +125,6 @@
     {
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -190,15 +154,6 @@
       "url": "https://www.zumiez.com/independent-144-stage-11-black-and-ano-red-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "31.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -281,10 +236,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
+      "name": "Passport Tub Time 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/passport-tub-time-8-0-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

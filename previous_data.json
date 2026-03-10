@@ -66,15 +66,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Bones STF Sidecuts 99a V5 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Sidecuts_99a_V5_Wheels/descpage-BSSV5WH.html?color=WH\n",
-      "price_new": "29.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
       "price_new": "26.98",
@@ -197,15 +188,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-48%Independent Mid Truck Tiago Lemos",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
-      "price_new": "14.98",
-      "price_old": "28.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-12%Independent S11 Industrial IKP Truck Raw/Trans Black",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Industrial_IKP_Truck/descpage-INIKPTR.html?color=SI\n",
       "price_new": "27.98",
@@ -231,15 +213,6 @@
       "availability": "Check store",
       "part": "Trucks",
       "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-7%Independent Stage 11 Standard Bar Truck Flat Black",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Standard_Bar_Truck/descpage-INBRTR.html?color=BK\n",
-      "price_new": "24.98",
-      "price_old": "28.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
     }
   ],
   "SkateWarehouse_Bearings": [],
@@ -249,6 +222,24 @@
       "url": "https://www.zumiez.com/deathwish-odwyer-shenanigans-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

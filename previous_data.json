@@ -1,15 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -19,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -47,6 +38,42 @@
     }
   ],
   "SkateWarehouse_Wheels": [
+    {
+      "name": "Bones ATF All Tank Filmers 80a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_All_Tank_Filmers_80a_Wheels/descpage-BSATWH.html?color=WH\n",
+      "price_new": "42.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones ATF Rough Riders Eternal Flame Wheels Black",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSREBWH.html?color=BK\n",
+      "price_new": "42.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones ATF Rough Riders Eternal Flame Wheels Red",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSRERWH.html?color=RD\n",
+      "price_new": "42.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones ATF Rough Riders Eternal Flame Wheels White",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSREWWH.html?color=WH\n",
+      "price_new": "42.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
     {
       "name": "Clearance\u00a0-30%Bones STF Retros 99a V2 Locks Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Retros_99a_V2_Locks_Wheels/descpage-BS221WH.html?color=WH\n",
@@ -188,6 +215,15 @@
       "store": "SkateWarehouse"
     },
     {
+      "name": "Clearance\u00a0-48%Independent Mid Truck Tiago Lemos",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
+      "price_new": "14.98",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
       "name": "Clearance\u00a0-12%Independent S11 Industrial IKP Truck Raw/Trans Black",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Industrial_IKP_Truck/descpage-INIKPTR.html?color=SI\n",
       "price_new": "27.98",
@@ -231,6 +267,15 @@
       "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

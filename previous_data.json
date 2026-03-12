@@ -10,6 +10,24 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
@@ -23,15 +41,6 @@
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
       "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,33 +150,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "24.99",
@@ -181,15 +163,6 @@
       "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
       "price_new": "14.99",
       "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent 144 Stage 11 Black & Ano Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-144-stage-11-black-and-ano-red-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -276,15 +249,6 @@
       "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

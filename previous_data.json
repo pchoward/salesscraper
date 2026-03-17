@@ -1,24 +1,6 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
       "price_new": "44.99",
@@ -28,10 +10,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -224,15 +224,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-48%Independent Mid Truck Tiago Lemos",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
-      "price_new": "14.98",
-      "price_old": "28.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-16%Independent S11 Hollow Braden Hoban Truck Silver/Blk",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Hollow_Braden_Hoban_Truck/descpage-INBHTR.html?color=SI\n",
       "price_new": "29.98",
@@ -276,24 +267,6 @@
       "url": "https://www.zumiez.com/deathwish-odwyer-shenanigans-8-25-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Thompson Pretend 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-thompson-pretend-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "71.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Frog Decker Cat Daddy 8.18\" Skateboard Deck",
-      "url": "https://www.zumiez.com/frog-decker-cat-daddy-8-18-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

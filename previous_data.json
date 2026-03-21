@@ -204,6 +204,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
       "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
       "price_new": "24.99",
@@ -247,15 +256,6 @@
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
-    },
-    {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Trucks": [
@@ -264,6 +264,15 @@
       "url": "\nhttps://www.skatewarehouse.com/Independent_Industrial_2_IKP_Standard_Truck/descpage-INIK2TR.html?color=SI\n",
       "price_new": "27.98",
       "price_old": "31.99",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-48%Independent Mid Truck Tiago Lemos",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
+      "price_new": "14.98",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "SkateWarehouse"
@@ -308,6 +317,15 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
+    {
+      "name": "Clearance\u00a0-30%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",
+      "url": "\nhttps://www.skatewarehouse.com/DGK_x_Bruce_Lee_Dragon_Lee_Lenticular_Deck/descpage-DKBLDG80DK.html\n",
+      "price_new": "69.98",
+      "price_old": "99.99",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
     {
       "name": "Clearance\u00a0-30%Grizzly Catamaran Deck 8.0 x 31.63",
       "url": "\nhttps://www.skatewarehouse.com/Grizzly_Catamaran_Deck/descpage-GZCTM80DK.html\n",

@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -31,6 +31,15 @@
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Frozen Energy Keyframe 52mm 92a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-frozen-energy-keyframe-52mm-92a-black-skateboard-wheels.html",
+      "price_new": "29.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -93,15 +102,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-30%Bones STF Retros 99a V4 Wide Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Retros_99a_V4_Wide_Wheels/descpage-BS421WH.html?color=WH\n",
-      "price_new": "26.98",
-      "price_old": "39.00",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
       "price_new": "26.98",
@@ -150,6 +150,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
@@ -172,15 +181,6 @@
       "url": "https://www.zumiez.com/independent-gonzales-151-stage-4-white-and-blue-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "30.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -309,9 +309,9 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-30%Grizzly Praise Due Deck 7.75 x 31",
+      "name": "Clearance\u00a0-38%Grizzly Praise Due Deck 7.75 x 31",
       "url": "\nhttps://www.skatewarehouse.com/Grizzly_Praise_Due_Deck/descpage-GZPRD77DK.html\n",
-      "price_new": "44.98",
+      "price_new": "39.98",
       "price_old": "65.00",
       "availability": "Check store",
       "part": "Decks",

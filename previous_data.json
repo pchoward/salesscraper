@@ -141,8 +141,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -150,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -172,6 +172,15 @@
       "url": "https://www.zumiez.com/independent-gonzales-151-stage-4-white-and-blue-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "30.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -208,15 +217,6 @@
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "31.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"

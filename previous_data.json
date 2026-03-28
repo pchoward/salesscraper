@@ -28,15 +28,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
-      "price_new": "44.99",
-      "price_old": "54.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
@@ -50,6 +41,15 @@
       "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
       "price_new": "44.99",
       "price_old": "57.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -150,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -159,8 +159,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -290,10 +290,37 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "82.95",
+      "name": "adidas Gazelle ADV Pink, Black, & Gum Skate Shoes",
+      "url": "https://www.zumiez.com/adidas-gazelle-adv-pink-black-and-gum-skate-shoes.html",
+      "price_new": "49.96",
+      "price_old": "99.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "adidas Originals Campus 00s Crystal White & Core Black Shoes",
+      "url": "https://www.zumiez.com/adidas-originals-campus-00s-crystal-white-and-core-black-skate-shoes.html",
+      "price_new": "54.96",
+      "price_old": "109.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ninth Hall Ambush Tiger Raw Indigo Loose Fit Jeans",
+      "url": "https://www.zumiez.com/ninth-hall-ambush-tiger-raw-indigo-jeans.html",
+      "price_new": "44.99",
+      "price_old": "74.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ninth Hall Fundamentals Spray Black Wash Hoodie",
+      "url": "https://www.zumiez.com/ninth-hall-fundamentals-spray-black-wash-hoodie.html",
+      "price_new": "54.99",
+      "price_old": "79.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

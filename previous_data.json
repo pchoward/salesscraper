@@ -10,15 +10,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -28,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Double Duro Chubbies 56mm 99a & 95a Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "57.95",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -41,6 +32,15 @@
       "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Double Duro Chubbies 56mm 99a & 95a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "57.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -132,6 +132,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Independent Gonzales 151 Stage 4 White & Blue Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-gonzales-151-stage-4-white-and-blue-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "30.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
@@ -145,15 +154,6 @@
       "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Gonzales 151 Stage 4 White & Blue Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-gonzales-151-stage-4-white-and-blue-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "30.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -270,7 +270,17 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Deathwish Dickson Deathwitch Trials 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-dickson-deathwitch-trials-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-30%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",

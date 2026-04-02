@@ -109,6 +109,15 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
+      "price_new": "29.98",
+      "price_old": "35.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
     }
   ],
   "CCS_Wheels": [],
@@ -272,10 +281,10 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Deathwish Dickson Deathwitch Trials 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/deathwish-dickson-deathwitch-trials-8-0-skateboard-deck.html",
+      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "78.95",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

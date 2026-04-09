@@ -19,15 +19,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
@@ -50,6 +41,15 @@
       "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -132,17 +132,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Gonzales 151 Stage 4 White & Blue Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-gonzales-151-stage-4-white-and-blue-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "30.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -150,8 +141,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -286,6 +277,15 @@
       "url": "\nhttps://www.skatewarehouse.com/DGK_x_Bruce_Lee_Dragon_Lee_Lenticular_Deck/descpage-DKBLDG80DK.html\n",
       "price_new": "69.98",
       "price_old": "99.99",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-30%Santa Cruz Malba Crash Test Reissue Deck 10.03 x 29.35",
+      "url": "\nhttps://www.skatewarehouse.com/Santa_Cruz_Malba_Crash_Test_Reissue_Deck/descpage-SCMCDK.html\n",
+      "price_new": "75.19",
+      "price_old": "108.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

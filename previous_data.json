@@ -1,5 +1,42 @@
 {
-  "Zumiez_Wheels": [],
+  "Zumiez_Wheels": [
+    {
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Wheels": [
     {
       "name": "Bones ATF All Tank Filmers 80a Wheels",
@@ -47,6 +84,15 @@
       "store": "SkateWarehouse"
     },
     {
+      "name": "Bones X-Formula Sidecuts 99a V5 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Sidecuts_99a_V5_Wheels/descpage-BSD99WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
       "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
@@ -57,7 +103,98 @@
     }
   ],
   "CCS_Wheels": [],
-  "Zumiez_Trucks": [],
+  "Zumiez_Trucks": [
+    {
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent 149 Justin Henry Stage 11 Skateboard Trucks",
+      "url": "https://www.zumiez.com/independent-149-justin-henry-stage-11-skateboard-trucks.html",
+      "price_new": "24.99",
+      "price_old": "35.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 44 Classic Army Green Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-44-classic-army-green-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent 144 Stage 11 Black & Ano Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-144-stage-11-black-and-ano-red-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent x Hockey Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-x-hockey-silver-149-skateboard-truck.html",
+      "price_new": "9.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Stage 11 Inverted Kingpin Raw Silver 149 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Trucks": [
     {
       "name": "Clearance\u00a0-12%Independent Industrial 2 IKP Standard Truck Raw/Silver",
@@ -140,60 +277,6 @@
       "url": "\nhttps://www.skatewarehouse.com/Santa_Cruz_Malba_Crash_Test_Reissue_Deck/descpage-SCMCDK.html\n",
       "price_new": "75.19",
       "price_old": "108.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Arrival Deck 9.5 x 32.4",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Arrival_Deck/descpage-WCHPARDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Dementor Deck 10.125 x 30.25",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Dementor_Deck/descpage-WCHPDMDK.html\n",
-      "price_new": "65.98",
-      "price_old": "94.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-50%Welcome x Harry Potter Finale Deck 9.5 x 33",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Finale_Deck/descpage-WCHPFNDK.html\n",
-      "price_new": "44.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-50%Welcome x Harry Potter Seeker Deck 8.75 x 32.25",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Seeker_Deck/descpage-WCHPSKDK.html\n",
-      "price_new": "44.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Thestral Deck 10 x 31",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Thestral_Deck/descpage-WCHPTHDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Welcome x Harry Potter Voldemort Deck 9.75 x 31.75",
-      "url": "\nhttps://www.skatewarehouse.com/Welcome_x_Harry_Potter_Voldemort_Deck/descpage-WCHPVMDK.html\n",
-      "price_new": "62.98",
-      "price_old": "89.99",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

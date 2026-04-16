@@ -57,15 +57,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Bones ATF Rough Riders Eternal Flame Wheels Red",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSRERWH.html?color=RD\n",
-      "price_new": "42.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
       "price_new": "26.98",
@@ -123,8 +114,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -132,8 +123,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",

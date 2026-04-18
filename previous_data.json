@@ -1,6 +1,15 @@
 {
   "Zumiez_Wheels": [
     {
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -10,8 +19,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
@@ -23,15 +32,6 @@
       "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -105,8 +105,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -114,8 +114,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -246,19 +246,10 @@
   "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
     {
-      "name": "Clearance\u00a0-30%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",
+      "name": "Clearance\u00a0-35%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",
       "url": "\nhttps://www.skatewarehouse.com/DGK_x_Bruce_Lee_Dragon_Lee_Lenticular_Deck/descpage-DKBLDG80DK.html\n",
-      "price_new": "69.98",
+      "price_new": "64.98",
       "price_old": "99.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-30%Santa Cruz Malba Crash Test Reissue Deck 10.03 x 29.35",
-      "url": "\nhttps://www.skatewarehouse.com/Santa_Cruz_Malba_Crash_Test_Reissue_Deck/descpage-SCMCDK.html\n",
-      "price_new": "75.19",
-      "price_old": "108.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "SkateWarehouse"

@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -41,15 +41,6 @@
     {
       "name": "Bones ATF All Tank Filmers 80a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_All_Tank_Filmers_80a_Wheels/descpage-BSATWH.html?color=WH\n",
-      "price_new": "42.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Bones ATF Rough Riders Eternal Flame Wheels Black",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSREBWH.html?color=BK\n",
       "price_new": "42.98",
       "price_old": null,
       "availability": "Check store",
@@ -96,15 +87,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
@@ -123,10 +105,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -172,6 +154,15 @@
       "url": "https://www.zumiez.com/independent-stage-11-inverted-kingpin-raw-silver-149-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "31.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"

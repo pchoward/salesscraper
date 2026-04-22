@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -96,6 +96,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
@@ -105,10 +114,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -157,15 +166,6 @@
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
-    },
-    {
-      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Trucks": [
@@ -210,15 +210,6 @@
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Inverted_Kingpin_Standard_Truck/descpage-INFISTR.html?color=GY\n",
       "price_new": "24.98",
       "price_old": "30.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Clearance\u00a0-9%Independent Stage 11 Elijah Berle Skull Standard Truck",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Elijah_Berle_Skull_Standard_Truck/descpage-INEBTR.html?color=SI\n",
-      "price_new": "29.98",
-      "price_old": null,
       "availability": "Check store",
       "part": "Trucks",
       "store": "SkateWarehouse"

@@ -1,28 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,10 +28,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "38.95",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -87,15 +87,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "36.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 55 Classic Silver Skateboard Truck",
       "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "19.99",
@@ -114,9 +105,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -141,6 +132,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "36.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
       "price_new": "29.99",
@@ -159,9 +159,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",

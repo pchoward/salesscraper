@@ -10,6 +10,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
       "price_new": "29.99",
@@ -19,8 +28,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
       "availability": "Check store",
@@ -32,15 +41,6 @@
       "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -57,10 +57,10 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Clearance\u00a0-22%Bones STF Skate Aid II V1 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_STF_Skate_Aid_II_V1_Wheels/descpage-BSSAWH.html?color=WH3\n",
-      "price_new": "26.98",
-      "price_old": "34.99",
+      "name": "Bones SPF Scorpeedo 81B Sidecut Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_SPF_Scorpeedo_81B_Sidecut_Wheels/descpage-BSS81WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
@@ -114,6 +114,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
       "price_new": "24.99",
@@ -127,15 +136,6 @@
       "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "36.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -225,17 +225,7 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [
-    {
-      "name": "Foundation F-Melt 8.13\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-f-melt-8-13-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    }
-  ],
+  "Zumiez_Decks": [],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-35%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",

@@ -10,19 +10,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -41,6 +41,15 @@
       "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Double Duro Chubbies 56mm 99a & 95a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "57.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -96,15 +105,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 55 Classic Silver Skateboard Truck",
       "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "19.99",
@@ -132,8 +132,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -141,8 +141,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -154,6 +154,15 @@
       "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -225,7 +234,17 @@
     }
   ],
   "SkateWarehouse_Bearings": [],
-  "Zumiez_Decks": [],
+  "Zumiez_Decks": [
+    {
+      "name": "Disney x HUF Mickey Mouse Greetings 8.0\" Cruiser Skateboard Deck",
+      "url": "https://www.zumiez.com/disney-x-huf-mickey-mouse-greetings-8-0-cruiser-skateboard-deck.html",
+      "price_new": "64.99",
+      "price_old": "99.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    }
+  ],
   "SkateWarehouse_Decks": [
     {
       "name": "Clearance\u00a0-40%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",

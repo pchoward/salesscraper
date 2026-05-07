@@ -46,10 +46,46 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four Remy Chimera 53mm 99a Black Conical Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-remy-chimera-53mm-99a-black-conical-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Double Duro Chubbies 56mm 99a & 95a Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
       "price_new": "44.99",
       "price_old": "57.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Classic 53mm 99a Orange Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-classic-53mm-99a-orange-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "38.00",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Bones Roughriders ATF 59mm 80a Black Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/bones-roughriders-atf-59mm-80a-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Thunderjuice 75mm 78a Orange Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-75mm-78a-orange-cruiser-wheels.html",
+      "price_new": "44.99",
+      "price_old": "54.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -105,15 +141,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
       "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
@@ -123,10 +150,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "36.95",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -145,6 +172,15 @@
       "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -226,17 +262,7 @@
   ],
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [],
-  "SkateWarehouse_Decks": [
-    {
-      "name": "Clearance\u00a0-40%DGK x Bruce Lee Dragon Lee Lenticular Deck 8.0 x 31.875",
-      "url": "\nhttps://www.skatewarehouse.com/DGK_x_Bruce_Lee_Dragon_Lee_Lenticular_Deck/descpage-DKBLDG80DK.html\n",
-      "price_new": "59.98",
-      "price_old": "99.99",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Decks": [],
   "CCS_Decks": [],
   "Tactics_Decks": []
 }

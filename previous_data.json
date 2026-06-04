@@ -46,15 +46,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
       "price_new": "31.99",
@@ -82,15 +73,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -98,19 +80,27 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    }
-  ],
-  "SkateWarehouse_Wheels": [
+    },
     {
-      "name": "Bones ATF All Tank Filmers 80a Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_All_Tank_Filmers_80a_Wheels/descpage-BSATWH.html?color=WH\n",
-      "price_new": "42.98",
-      "price_old": null,
+      "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
-      "store": "SkateWarehouse"
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "31.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
     }
   ],
+  "SkateWarehouse_Wheels": [],
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
@@ -118,15 +108,6 @@
       "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "27.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -141,19 +122,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "28.95",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -172,6 +153,15 @@
       "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -263,19 +253,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Jacuzzi Big Ol 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jacuzzi-big-ol-8-5-skateboard-deck.html",
+      "name": "Deathwish Foy DB Champ 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-foy-db-champ-8-0-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "74.95",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Baker Carozzi Dimensions 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-carozzi-dimensions-8-0-skateboard-deck.html",
+      "name": "Jacuzzi Big Ol 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/jacuzzi-big-ol-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "78.95",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

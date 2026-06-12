@@ -10,15 +10,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
       "price_new": "44.99",
@@ -37,10 +28,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
+      "price_new": "31.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -89,15 +98,6 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
     }
   ],
   "SkateWarehouse_Wheels": [
@@ -114,19 +114,19 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace 55 Classic Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
-      "price_old": "27.95",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 55 Classic Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "19.99",
-      "price_old": "33.95",
+      "price_old": "27.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -159,19 +159,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "36.95",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -263,37 +263,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Baker Tyson Chicken 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-tyson-chicken-8-0-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "78.95",
+      "name": "Chocolate Perez Art Official 8.4\" Skateboard Deck",
+      "url": "https://www.zumiez.com/chocolate-perez-art-official-8-4-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "82.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Deathwish Dickson Deathwitch Trials 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/deathwish-dickson-deathwitch-trials-8-0-skateboard-deck.html",
+      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Jacuzzi Big Ol J Egg 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jacuzzi-big-ol-j-egg-8-38-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Foundation F-Melt 8.13\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-f-melt-8-13-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
+      "price_old": "82.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

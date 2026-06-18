@@ -102,6 +102,24 @@
   ],
   "SkateWarehouse_Wheels": [
     {
+      "name": "Bones ATF Rough Riders Eternal Flame Wheels Green",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSREGWH.html?color=GN\n",
+      "price_new": "39.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones ATF Rough Riders Eternal Flame Wheels Red",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSRERWH.html?color=RD\n",
+      "price_new": "42.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
+    },
+    {
       "name": "Bones X-Formula Sidecuts 95a V5 Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Sidecuts_95a_V5_Wheels/descpage-BSD95WH.html?color=WH\n",
       "price_new": "39.98",
@@ -159,6 +177,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
       "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
       "price_new": "29.99",
@@ -171,15 +198,6 @@
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -208,15 +226,6 @@
       "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -272,10 +281,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Hamilton Secret Garden 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "name": "EDGLRD Tech Script 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/edglrd-tech-script-8-25-skateboard-deck-1.html",
+      "price_new": "49.99",
+      "price_old": "77.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Foundation 3 Star Reverb 7.88\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-3-star-reverb-7-88-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

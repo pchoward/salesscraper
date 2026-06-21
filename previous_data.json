@@ -19,6 +19,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ II Original Combo 60mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-ii-original-combo-60mm-99a-white-skateboard-wheels.html",
       "price_new": "31.99",
@@ -50,15 +59,6 @@
       "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "38.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -186,15 +186,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 60 AF1 Matte Black Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
       "price_new": "24.99",
@@ -204,9 +195,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -222,6 +213,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
@@ -231,19 +231,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "28.95",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "36.95",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -303,6 +303,51 @@
       "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
       "price_new": "44.99",
       "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive Hamilton Secret Garden 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Chocolate Perez Art Official 8.4\" Skateboard Deck",
+      "url": "https://www.zumiez.com/chocolate-perez-art-official-8-4-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Jacuzzi Big Ol 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/jacuzzi-big-ol-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "74.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Anti-Hero Matthews The Pigeonator 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/anti-hero-matthews-the-pigeonator-8-5-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Art Project x Persue BK Throwie 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/art-project-x-persue-bk-throwie-8-25-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

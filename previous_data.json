@@ -46,10 +46,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four 53mm 99a Bighead Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-53mm-99a-bighead-black-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
       "price_new": "41.99",
       "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,28 +82,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four 53mm 99a Bighead Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-53mm-99a-bighead-black-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "34.99",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "31.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Double Duro Chubbies 56mm 99a & 95a Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "57.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -109,10 +118,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "39.95",
+      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -147,15 +156,6 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Bones X-Formula Widecuts 99a V6 Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Widecuts_99a_V6_Wheels/descpage-BSW99WH.html?color=WH\n",
-      "price_new": "39.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-14%Spitfire Flashpoint Classic 99a Wheels",
       "url": "\nhttps://www.skatewarehouse.com/Spitfire_Flashpoint_Classic_99a_Wheels/descpage-SFFCLWH.html?color=WH\n",
       "price_new": "29.98",
@@ -177,15 +177,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "27.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
@@ -195,10 +186,28 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 55 Classic Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "27.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -231,10 +240,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "name": "Independent Delfino Hollow 149 Stage 11 Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-delfino-hollow-149-stage-11-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "28.95",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -259,6 +268,24 @@
     }
   ],
   "SkateWarehouse_Trucks": [
+    {
+      "name": "Clearance\u00a0-41%Independent Forged Hollow Mid Truck Silver",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Forged_Hollow_Mid_Truck/descpage-INFHMTR.html?color=SI\n",
+      "price_new": "16.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
+    {
+      "name": "Clearance\u00a0-48%Independent Mid Truck Tiago Lemos",
+      "url": "\nhttps://www.skatewarehouse.com/Independent_Mid_Truck/descpage-INMTLTR.html?color=SI\n",
+      "price_new": "14.98",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "SkateWarehouse"
+    },
     {
       "name": "Clearance\u00a0-16%Independent S11 Hollow Braden Hoban Truck Silver/Blk",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Hollow_Braden_Hoban_Truck/descpage-INBHTR.html?color=SI\n",
@@ -312,15 +339,6 @@
       "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
       "price_new": "44.99",
       "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Baker Hawk Big Cats 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-hawk-big-cats-8-38-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

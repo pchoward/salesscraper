@@ -28,15 +28,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "38.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
       "price_new": "41.99",
@@ -59,6 +50,15 @@
       "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -154,6 +154,15 @@
       "availability": "Check store",
       "part": "Wheels",
       "store": "SkateWarehouse"
+    },
+    {
+      "name": "Bones X-Formula Widecuts 99a V6 Wheels",
+      "url": "\nhttps://www.skatewarehouse.com/Bones_X-Formula_Widecuts_99a_V6_Wheels/descpage-BSW99WH.html?color=WH\n",
+      "price_new": "39.98",
+      "price_old": null,
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "SkateWarehouse"
     }
   ],
   "CCS_Wheels": [],
@@ -204,10 +213,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Classic 55 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -231,10 +240,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "36.95",
+      "name": "Ace Classic 55 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -317,17 +326,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Nuevo Script 7.75\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-nuevo-script-7-75-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Foundation Witkin Butterfly 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-witkin-butterfly-8-0-skateboard-deck.html",
+      "name": "Foundation 3 Star Reverb 7.88\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-3-star-reverb-7-88-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "59.95",
       "availability": "Check store",

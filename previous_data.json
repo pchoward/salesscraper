@@ -10,6 +10,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four 53mm 99a Bighead Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-53mm-99a-bighead-black-skateboard-wheels.html",
       "price_new": "39.99",
@@ -28,19 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "51.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "38.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -55,28 +55,19 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ x Porous Walker Grandma's Keyframe 54mm 92a Blue Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "38.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -109,6 +100,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
       "price_new": "41.99",
@@ -132,6 +132,15 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 55 Classic Silver Skateboard Truck",
       "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "19.99",
@@ -141,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -159,8 +168,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -168,10 +177,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -190,15 +199,6 @@
       "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -281,8 +281,8 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
+      "name": "Primitive Hamilton Secret Garden 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
       "price_new": "44.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -290,8 +290,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Hamilton Secret Garden 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
+      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
       "price_new": "44.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -303,6 +303,33 @@
       "url": "https://www.zumiez.com/baker-hawk-big-cats-8-38-skateboard-deck.html",
       "price_new": "54.99",
       "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker Rowan Shep Dawgs 4 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-zorilla-shep-dawgs-4-8-125-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Deathwish Foy DB Champ 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-foy-db-champ-8-0-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Disney x HUF Mickey Mouse Greetings 8.0\" Cruiser Skateboard Deck",
+      "url": "https://www.zumiez.com/disney-x-huf-mickey-mouse-greetings-8-0-cruiser-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "99.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

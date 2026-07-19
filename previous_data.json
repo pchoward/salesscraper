@@ -10,6 +10,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
@@ -28,15 +37,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "51.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
       "price_new": "41.99",
@@ -50,15 +50,6 @@
       "url": "https://www.zumiez.com/spitfire-formula-four-53mm-99a-bighead-black-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "40.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -104,6 +95,15 @@
       "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
       "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "40.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -177,19 +177,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "33.95",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "28.95",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -208,6 +208,15 @@
       "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
       "price_new": "19.99",
       "price_old": "24.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Blackout 144 Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-blackout-144-stage-11-skateboard-truck-1.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -281,15 +290,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Primitive Hamilton Secret Garden 8.0\" Skateboard Deck",
       "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
       "price_new": "44.99",
@@ -299,8 +299,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Foundation Witkin Butterfly 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-witkin-butterfly-8-0-skateboard-deck.html",
+      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Foundation 3 Star Reverb 8.13\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-3-star-reverb-8-13-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "59.95",
       "availability": "Check store",
@@ -308,8 +317,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Chocolate Rodriguez Poe Reissue 7.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/chocolate-rodriguez-poe-reissue-7-5-skateboard-deck.html",
+      "name": "Chocolate Herrera Loteria 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/chocolate-herrera-loteria-8-5-skateboard-deck.html",
+      "price_new": "51.99",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Girl Wilson Hecox Reissue 7.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/girl-wilson-hecox-reissue-7-5-skateboard-deck.html",
       "price_new": "49.99",
       "price_old": "74.95",
       "availability": "Check store",

@@ -28,10 +28,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
+      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -46,10 +46,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -91,6 +91,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "OJ Elite Nomads 53mm 95a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-elite-nomads-53mm-95a-white-skateboard-wheels.html",
       "price_new": "34.99",
@@ -118,26 +127,7 @@
       "store": "Zumiez"
     }
   ],
-  "SkateWarehouse_Wheels": [
-    {
-      "name": "Bones ATF Rough Riders Eternal Flame Wheels Red",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_ATF_Rough_Riders_Eternal_Flame_Wheels/descpage-BSRERWH.html?color=RD\n",
-      "price_new": "42.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    },
-    {
-      "name": "Bones SPF Scorpeedo 84B Sidecut Wheels",
-      "url": "\nhttps://www.skatewarehouse.com/Bones_SPF_Scorpeedo_84B_Sidecut_Wheels/descpage-BSSPWH.html?color=WH\n",
-      "price_new": "39.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "SkateWarehouse"
-    }
-  ],
+  "SkateWarehouse_Wheels": [],
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
@@ -177,10 +167,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "28.95",
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -195,15 +185,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent B\u00e6kkel 144 Hollow Stage 11 Skateboard Truck",
       "url": "https://www.zumiez.com/independent-baekkel-144-hollow-stage-11-skateboard-truck-2026.html",
       "price_new": "29.99",
@@ -213,10 +194,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Vertigo Span 144 Stage 11 Hollow Black & Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-vertigo-span-144-stage-11-hollow-black-and-silver-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "34.95",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -226,6 +207,15 @@
       "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Independent Vertigo Span 144 Stage 11 Hollow Black & Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-vertigo-span-144-stage-11-hollow-black-and-silver-skateboard-truck.html",
+      "price_new": "29.99",
+      "price_old": "34.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -317,8 +307,8 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
+      "name": "Primitive Lemos Sci-Fi 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-lemos-sci-fi-8-38-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -326,8 +316,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Lemos Sci-Fi 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-lemos-sci-fi-8-38-skateboard-deck.html",
+      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -344,6 +334,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Primitive Euro Slant Core 8.125\" Skateboard Deck",
       "url": "https://www.zumiez.com/primitive-euro-slant-core-8-125-skateboard-deck.html",
       "price_new": "39.99",
@@ -353,19 +352,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Desarmo Vision 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-desarmo-vision-8-38-skateboard-deck.html",
-      "price_new": "44.99",
-      "price_old": "69.95",
+      "name": "Krooked Cernicky Deviled 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/krooked-cernicky-deviled-8-5-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Krooked Cernicky Deviled 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/krooked-cernicky-deviled-8-5-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "78.95",
+      "name": "Foundation Witkin Butterfly 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-witkin-butterfly-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

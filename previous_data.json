@@ -1,6 +1,15 @@
 {
   "Zumiez_Wheels": [
     {
+      "name": "Spitfire Formula Four Classic 56mm 97a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-classic-56mm-97a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Tablet Formula Four 53mm 99a Natural Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-tablet-formula-four-53mm-99a-natural-skateboard-wheels.html",
       "price_new": "39.99",
@@ -10,28 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Double Duro Hardline 54mm 99a/95a White & Gum Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-double-duro-hardline-54mm-99a-95a-white-and-gum-skateboard-wheels.html",
-      "price_new": "54.99",
-      "price_old": "68.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
       "price_new": "44.99",
       "price_old": "51.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Classic 56mm 97a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-classic-56mm-97a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -150,8 +141,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "14.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -159,8 +150,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "14.99",
       "price_old": "33.95",
       "availability": "Check store",
@@ -195,19 +186,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Classic 55 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "19.99",
-      "price_old": "24.95",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
+      "name": "Ace Classic 55 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
       "price_new": "19.99",
-      "price_old": "28.95",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -292,6 +283,15 @@
     {
       "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
       "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive Gillet Portal 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-gillet-portal-8-125-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",

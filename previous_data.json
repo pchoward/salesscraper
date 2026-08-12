@@ -28,19 +28,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
+      "name": "OJ Double Duro Hardline 54mm 99a/95a White & Gum Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-double-duro-hardline-54mm-99a-95a-white-and-gum-skateboard-wheels.html",
+      "price_new": "54.99",
+      "price_old": "68.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "OJ Double Duro Hardline 54mm 99a/95a White & Gum Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-double-duro-hardline-54mm-99a-95a-white-and-gum-skateboard-wheels.html",
-      "price_new": "54.99",
-      "price_old": "68.95",
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -150,18 +150,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "14.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "14.99",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -299,8 +299,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Gillet Portal 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-gillet-portal-8-125-skateboard-deck.html",
+      "name": "Primitive Lemos Sci-Fi 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-lemos-sci-fi-8-38-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -308,8 +308,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Lemos Sci-Fi 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-lemos-sci-fi-8-38-skateboard-deck.html",
+      "name": "Primitive Gillet Portal 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-gillet-portal-8-125-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -330,6 +330,33 @@
       "url": "https://www.zumiez.com/primitive-hamilton-secret-garden-8-0-skateboard-deck.html",
       "price_new": "44.99",
       "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Foundation 3 Star Reverb 7.88\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-3-star-reverb-7-88-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Foundation 3 Star Reverb 8.13\" Skateboard Deck",
+      "url": "https://www.zumiez.com/foundation-3-star-reverb-8-13-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "59.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Blueprint x MLSL Sky Brown 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/blueprint-x-mlsl-sky-brown-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

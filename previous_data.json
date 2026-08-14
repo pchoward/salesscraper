@@ -19,15 +19,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "44.99",
-      "price_old": "51.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
       "price_new": "49.99",
@@ -41,6 +32,15 @@
       "url": "https://www.zumiez.com/oj-double-duro-hardline-54mm-99a-95a-white-and-gum-skateboard-wheels.html",
       "price_new": "54.99",
       "price_old": "68.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "44.99",
+      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -64,9 +64,9 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "29.99",
+      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "31.99",
       "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -77,6 +77,15 @@
       "url": "https://www.zumiez.com/oj-x-porous-walker-grandmas-keyframe-54mm-92a-blue-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "38.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -104,15 +113,6 @@
       "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "40.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Martinez Guero Chubbies 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-martinez-guero-chubbies-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "39.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -150,18 +150,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "14.99",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "14.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -204,19 +204,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Classic 55 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "24.95",
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
+      "name": "Ace Classic 55 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-matte-black-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "24.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -299,19 +299,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
+      "name": "Pizza Za Boy Club 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/pizza-za-boy-club-8-25-skateboard-deck.html",
       "price_new": "44.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Foundation 3 Star Reverb 7.88\" Skateboard Deck",
-      "url": "https://www.zumiez.com/foundation-3-star-reverb-7-88-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "59.95",
+      "price_old": "65.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
@@ -319,9 +310,9 @@
   ],
   "SkateWarehouse_Decks": [
     {
-      "name": "Clearance\u00a0-33%HUF Lost My Way Home Deck 8.25 x 31.875",
+      "name": "Clearance\u00a0-44%HUF Lost My Way Home Deck 8.25 x 31.875",
       "url": "\nhttps://www.skatewarehouse.com/HUF_Lost_My_Way_Home_Deck/descpage-HULMWHDK.html\n",
-      "price_new": "59.98",
+      "price_new": "49.98",
       "price_old": "89.99",
       "availability": "Check store",
       "part": "Decks",

@@ -46,10 +46,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "40.95",
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -59,6 +59,15 @@
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
       "price_new": "41.99",
       "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "40.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -86,15 +95,6 @@
       "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "57.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -141,10 +141,10 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Independent Berle Skull 149 Stage 11 Silver & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-berle-skull-149-stage-11-silver-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "29.95",
+      "name": "Ace 55 Classic Silver Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "27.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -168,10 +168,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "27.95",
+      "name": "Independent Berle Skull 149 Stage 11 Silver & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-berle-skull-149-stage-11-silver-and-orange-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "29.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -224,15 +224,6 @@
   ],
   "SkateWarehouse_Trucks": [
     {
-      "name": "Clearance\u00a0-16%Independent S11 Hollow Braden Hoban Truck Silver/Blk",
-      "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Hollow_Braden_Hoban_Truck/descpage-INBHTR.html?color=SI\n",
-      "price_new": "29.98",
-      "price_old": null,
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "SkateWarehouse"
-    },
-    {
       "name": "Clearance\u00a0-19%Independent S11 Inverted Kingpin Standard Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Inverted_Kingpin_Standard_Truck/descpage-INFISTR.html?color=GY\n",
       "price_new": "24.98",
@@ -242,7 +233,7 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Sale\u00a0-3%Independent Stage 11 Pro Rhino Span Standard Truck",
+      "name": "Sale\u00a0-6%Independent Stage 11 Pro Rhino Span Standard Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_Stage_11_Pro_Rhino_Span_Standard_Truck/descpage-INRHTR.html?color=SI\n",
       "price_new": "29.98",
       "price_old": null,
@@ -290,10 +281,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Desarmo Vision 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-desarmo-vision-8-38-skateboard-deck.html",
-      "price_new": "44.99",
+      "name": "Primitive Gillet Portal 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-gillet-portal-8-125-skateboard-deck.html",
+      "price_new": "39.99",
       "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Harry Potter x Welcome Finale 9.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/harry-potter-x-welcome-finale-9-5-skateboard-deck.html",
+      "price_new": "44.99",
+      "price_old": "89.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -19,10 +19,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Tablet Formula Four 53mm 99a Natural Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-tablet-formula-four-53mm-99a-natural-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "51.95",
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
+      "price_new": "29.99",
+      "price_old": "40.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,28 +46,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
       "price_new": "39.99",
       "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "OJ x Strangelove Braun Wolf Elite Hardline 56mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
-      "price_new": "29.99",
-      "price_old": "40.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -159,18 +150,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Independent Berle Skull 149 Stage 11 Silver & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-berle-skull-149-stage-11-silver-and-orange-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "29.95",
+      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 77 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-77-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "19.99",
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "price_new": "24.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -186,19 +177,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "name": "Independent Berle Skull 149 Stage 11 Silver & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-berle-skull-149-stage-11-silver-and-orange-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
+      "price_old": "29.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -208,6 +190,15 @@
       "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
       "price_new": "24.99",
       "price_old": "36.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "19.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -308,37 +299,37 @@
       "store": "Zumiez"
     },
     {
-      "name": "Jacuzzi Latham Voodoo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jacuzzi-voodoo-8-25-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "82.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Jart Gernika 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jart-gernika-8-0-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "64.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Harry Potter x Welcome Seeker 8.75\" Skateboard Deck",
-      "url": "https://www.zumiez.com/harry-potter-x-welcome-seeker-8-75-skateboard-deck.html",
+      "name": "There Pinson Master Poe 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/there-pinson-master-poe-8-5-skateboard-deck.html",
       "price_new": "54.99",
-      "price_old": "89.95",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Deathwish Yuri Deathwitch Trials 8.12\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-yuri-deathwitch-trials-8-12-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Deathwish Dickson All Screwed Up 8.475\" Skateboard Deck",
+      "url": "https://www.zumiez.com/deathwish-dickson-all-screwed-up-8-475-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker Carozzi Pranzo Twin II 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-carozzi-pranzo-twin-ii-8-38-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

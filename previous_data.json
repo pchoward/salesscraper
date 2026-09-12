@@ -1,6 +1,15 @@
 {
   "Zumiez_Wheels": [
     {
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
       "price_new": "39.99",
@@ -10,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "51.95",
+      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
+      "price_new": "49.99",
+      "price_old": "65.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -28,10 +37,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Tea Cup Thunder Juice 75mm 78a White Cruiser Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-thunderjuice-tea-cup-75mm-78a-white-cruiser-skateboard-wheels.html",
-      "price_new": "49.99",
-      "price_old": "65.95",
+      "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
+      "price_new": "41.99",
+      "price_old": "51.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -73,15 +91,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire x Grimple Stix Formula Four 53mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-x-grimple-stix-formula-four-53mm-99a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Double Duro Hardline 54mm 99a/95a White & Gum Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-double-duro-hardline-54mm-99a-95a-white-and-gum-skateboard-wheels.html",
       "price_new": "54.99",
@@ -91,28 +100,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "47.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
       "name": "OJ Martinez Its Us Witches Double Duro 58mm 99a/95a Skateboard Wheels",
       "url": "https://www.zumiez.com/oj-martinez-its-us-witches-double-duro-58mm-99a-95a-skateboard-wheels.html",
       "price_new": "54.99",
       "price_old": "67.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "41.99",
-      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -177,15 +168,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace 55 Classic Silver & Red Skateboard Truck",
       "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "19.99",
@@ -195,19 +177,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
       "price_new": "24.99",
-      "price_old": "36.95",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
-      "price_new": "24.99",
+      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
+      "price_new": "19.99",
       "price_old": "33.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "36.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -269,9 +260,9 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "Sale\u00a0-5%Independent S11 Frgd Titanium Joslin Sticker Slap Truck",
+      "name": "Independent S11 Frgd Titanium Joslin Sticker Slap Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Frgd_Titanium_Joslin_Sticker_Slap_Truck/descpage-INSFTR.html?color=SI\n",
-      "price_new": "49.98",
+      "price_new": "49.99",
       "price_old": null,
       "availability": "Check store",
       "part": "Trucks",
@@ -353,19 +344,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "EDGLRD Barrio Triste 003 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/edglrd-barrio-triste-003-8-38-skateboard-deck.html",
+      "name": "Chocolate Trahan Flags 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/chocolate-trahan-flags-8-5-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "77.95",
+      "price_old": "74.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Jacuzzi Latham Voodoo 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/jacuzzi-voodoo-8-25-skateboard-deck.html",
+      "name": "EDGLRD Barrio Triste 003 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/edglrd-barrio-triste-003-8-38-skateboard-deck.html",
       "price_new": "49.99",
-      "price_old": "74.95",
+      "price_old": "77.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

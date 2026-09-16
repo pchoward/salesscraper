@@ -1,19 +1,19 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "51.95",
+      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -50,15 +50,6 @@
       "url": "https://www.zumiez.com/oj-x-strangelove-braun-wolf-elite-hardline-56mm-99a-white-skateboard-wheels.html",
       "price_new": "29.99",
       "price_old": "40.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Radioactive Big Head Classic 54mm 99a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-classic-54mm-99a-white-skateboard-wheels.html",
-      "price_new": "41.99",
-      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -167,15 +158,6 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "33.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Ace Anderson 66 AF1 Black & Cream Skateboard Truck",
       "url": "https://www.zumiez.com/ace-anderson-66-af1-black-and-cream-skateboard-truck.html",
       "price_new": "24.99",
@@ -207,6 +189,15 @@
       "url": "https://www.zumiez.com/independent-vertigo-span-144-stage-11-hollow-black-and-silver-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "34.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -307,15 +298,6 @@
   "SkateWarehouse_Bearings": [],
   "Zumiez_Decks": [
     {
-      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Primitive Desarmo Daydream 8.125\" Skateboard Deck",
       "url": "https://www.zumiez.com/primitive-desarmo-daydream-8-125-skateboard-deck.html",
       "price_new": "34.99",
@@ -325,8 +307,8 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Rodriguez Eclipse 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-rodriguez-eclipse-8-0-skateboard-deck-1.html",
+      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
       "price_new": "39.99",
       "price_old": "69.95",
       "availability": "Check store",
@@ -334,10 +316,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Nuevo Script 8.0\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-nuevo-script-8-0-skateboard-deck.html",
+      "name": "Crailtap Midday Midnight Rain 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/crailtap-midday-midnight-rain-8-5-skateboard-deck.html",
       "price_new": "39.99",
-      "price_old": "64.95",
+      "price_old": "82.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker Rowan Creamer 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-rowan-creamer-8-125-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Baker Tyson Troll Safari 8.25\" Skateboard Deck",
+      "url": "https://www.zumiez.com/baker-peterson-troll-safari-8-25-skateboard-deck.html",
+      "price_new": "54.99",
+      "price_old": "78.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

@@ -19,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "51.95",
+      "name": "OJ Elite EZ EDGE 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-ez-edge-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "27.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,10 +37,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Elite EZ EDGE 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-ez-edge-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "19.99",
-      "price_old": "27.95",
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -158,6 +158,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "Ace 33 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-33-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "28.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
       "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
       "price_new": "14.99",
@@ -167,10 +176,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 33 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-33-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "28.95",
+      "name": "Independent B\u00e6kkel 144 Hollow Stage 11 Skateboard Truck",
+      "url": "https://www.zumiez.com/independent-baekkel-144-hollow-stage-11-skateboard-truck-2026.html",
+      "price_new": "29.99",
+      "price_old": "37.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -189,15 +198,6 @@
       "url": "https://www.zumiez.com/ace-44-af1-low-hollow-silver-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "36.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Ace 60 AF1 Satin Lime Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-satin-lime-skateboard-truck.html",
-      "price_new": "19.99",
-      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -325,9 +325,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
+      "name": "Primitive Rodriguez Eclipse 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-rodriguez-eclipse-8-0-skateboard-deck-1.html",
       "price_new": "39.99",
+      "price_old": "69.95",
+      "availability": "Check store",
+      "part": "Decks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Primitive Hamilton Dimension 8.125\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-hamilton-dimension-8-125-skateboard-deck.html",
+      "price_new": "34.99",
       "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",

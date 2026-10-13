@@ -1,19 +1,10 @@
 {
   "Zumiez_Wheels": [
     {
-      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
-      "price_new": "24.99",
-      "price_old": "39.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Classic Black & Orange 53mm 97a Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-classic-black-and-orange-53mm-97a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -28,10 +19,28 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "51.95",
+      "name": "OJ Elite Mini Combo 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-mini-combo-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "24.99",
+      "price_old": "39.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Spitfire Formula Four Classic Black & Orange 53mm 97a Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-classic-black-and-orange-53mm-97a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -58,15 +67,6 @@
       "name": "Spitfire Formula Four Radial Full 56mm 99a Green & Purple Swirl Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radial-full-56mm-99a-green-and-purple-swirl-skateboard-wheels.html",
       "price_new": "44.99",
-      "price_old": "49.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
       "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
@@ -158,18 +158,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
       "price_new": "14.99",
-      "price_old": "33.95",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
-      "price_new": "24.99",
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "14.99",
       "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
@@ -212,10 +212,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "28.95",
+      "name": "Ace 60 AF1 Matte Black Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-matte-black-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -250,7 +250,7 @@
       "store": "SkateWarehouse"
     },
     {
-      "name": "SUPER DEAL\u00a0-23%Independent S11 Frgd Titanium Joslin Sticker Slap Truck",
+      "name": "SUPER DEAL\u00a0-20%Independent S11 Frgd Titanium Joslin Sticker Slap Truck",
       "url": "\nhttps://www.skatewarehouse.com/Independent_S11_Frgd_Titanium_Joslin_Sticker_Slap_Truck/descpage-INSFTR.html?color=SI\n",
       "price_new": "42.00",
       "price_old": null,
@@ -325,19 +325,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
-      "price_new": "39.99",
-      "price_old": "69.95",
+      "name": "Primitive x Naruto Hamilton Orochimaru 8.5\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-x-naruto-hamilton-orochimaru-8-5-skateboard-deck.html",
+      "price_new": "49.99",
+      "price_old": "75.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Primitive x Naruto Hamilton Orochimaru 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-x-naruto-hamilton-orochimaru-8-5-skateboard-deck.html",
-      "price_new": "49.99",
-      "price_old": "75.95",
+      "name": "Primitive Zaprazny Refraction 8.38\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-zaprazny-refraction-8-38-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "69.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"

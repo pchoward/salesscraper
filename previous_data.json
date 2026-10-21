@@ -19,10 +19,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
-      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
-      "price_new": "31.99",
-      "price_old": "47.95",
+      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
+      "price_new": "34.99",
+      "price_old": "51.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -37,10 +37,19 @@
       "store": "Zumiez"
     },
     {
-      "name": "Spitfire Formula Four Radioactive Big Head 57mm 99a Black Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-big-head-57mm-99a-skateboard-wheels.html",
-      "price_new": "34.99",
-      "price_old": "51.95",
+      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
+      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
+      "price_new": "39.99",
+      "price_old": "49.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
+      "name": "OJ Dressen Spider 56mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-dressen-spider-56mm-101a-white-skateboard-wheels.html",
+      "price_new": "31.99",
+      "price_old": "47.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -50,15 +59,6 @@
       "url": "https://www.zumiez.com/oj-double-duro-chubbies-56mm-99a-and-95a-skateboard-wheels.html",
       "price_new": "24.99",
       "price_old": "57.95",
-      "availability": "Check store",
-      "part": "Wheels",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Spitfire Formula Four Radioactive Classic 53mm 99a Black & Blue Swirl Skateboard Wheels",
-      "url": "https://www.zumiez.com/spitfire-formula-four-radioactive-classic-53mm-99a-skateboard-wheels.html",
-      "price_new": "39.99",
-      "price_old": "49.95",
       "availability": "Check store",
       "part": "Wheels",
       "store": "Zumiez"
@@ -91,6 +91,15 @@
       "store": "Zumiez"
     },
     {
+      "name": "OJ Elite EZ EDGE 54mm 101a White Skateboard Wheels",
+      "url": "https://www.zumiez.com/oj-elite-ez-edge-54mm-101a-white-skateboard-wheels.html",
+      "price_new": "19.99",
+      "price_old": "27.95",
+      "availability": "Check store",
+      "part": "Wheels",
+      "store": "Zumiez"
+    },
+    {
       "name": "Spitfire Formula Four Radial Full 56mm 99a Green & Purple Swirl Skateboard Wheels",
       "url": "https://www.zumiez.com/spitfire-formula-four-radial-full-56mm-99a-green-and-purple-swirl-skateboard-wheels.html",
       "price_new": "44.99",
@@ -104,15 +113,6 @@
   "CCS_Wheels": [],
   "Zumiez_Trucks": [
     {
-      "name": "Ace 33 Classic Silver & Red Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-33-classic-silver-and-red-skateboard-truck.html",
-      "price_new": "24.99",
-      "price_old": "28.95",
-      "availability": "Check store",
-      "part": "Trucks",
-      "store": "Zumiez"
-    },
-    {
       "name": "Independent Berle Skull 149 Stage 11 Silver & Orange Skateboard Truck",
       "url": "https://www.zumiez.com/independent-berle-skull-149-stage-11-silver-and-orange-skateboard-truck.html",
       "price_new": "24.99",
@@ -122,10 +122,10 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
-      "price_new": "14.99",
-      "price_old": "33.95",
+      "name": "Ace 33 Classic Silver & Red Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-33-classic-silver-and-red-skateboard-truck.html",
+      "price_new": "24.99",
+      "price_old": "28.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -135,6 +135,15 @@
       "url": "https://www.zumiez.com/ace-55-classic-silver-skateboard-truck.html",
       "price_new": "14.99",
       "price_old": "27.95",
+      "availability": "Check store",
+      "part": "Trucks",
+      "store": "Zumiez"
+    },
+    {
+      "name": "Ace 66 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-66-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
@@ -194,17 +203,17 @@
       "store": "Zumiez"
     },
     {
-      "name": "Ace 55 AF1 Rose Gold Skateboard Truck",
-      "url": "https://www.zumiez.com/ace-55-af1-rose-gold-skateboard-truck.html",
-      "price_new": "29.99",
-      "price_old": "37.95",
+      "name": "Ace 60 AF1 Blue & Orange Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-60-af1-blue-and-orange-skateboard-truck.html",
+      "price_new": "14.99",
+      "price_old": "33.95",
       "availability": "Check store",
       "part": "Trucks",
       "store": "Zumiez"
     },
     {
-      "name": "Independent B\u00e6kkel 144 Hollow Stage 11 Skateboard Truck",
-      "url": "https://www.zumiez.com/independent-baekkel-144-hollow-stage-11-skateboard-truck-2026.html",
+      "name": "Ace 55 AF1 Rose Gold Skateboard Truck",
+      "url": "https://www.zumiez.com/ace-55-af1-rose-gold-skateboard-truck.html",
       "price_new": "29.99",
       "price_old": "37.95",
       "availability": "Check store",
@@ -307,54 +316,18 @@
       "store": "Zumiez"
     },
     {
-      "name": "Baker Rowan Dimensions 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/baker-zorilla-dimensions-8-125-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "78.95",
+      "name": "Primitive Nuevo Script 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/primitive-nuevo-script-8-0-skateboard-deck.html",
+      "price_new": "39.99",
+      "price_old": "64.95",
       "availability": "Check store",
       "part": "Decks",
       "store": "Zumiez"
     },
     {
-      "name": "Deathwish Clock 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/deathwish-clock-8-25-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Deathwish Hayes Lucky Duck 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/deathwish-hayes-lucky-duck-8-25-skateboard-deck.html",
-      "price_new": "54.99",
-      "price_old": "78.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Primitive Gillet Virgin 8.125\" Skateboard Deck",
-      "url": "https://www.zumiez.com/primitive-gillet-virgin-8-125-skateboard-deck.html",
-      "price_new": "34.99",
-      "price_old": "69.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "Opera Cherub Pop Slick 8.25\" Skateboard Deck",
-      "url": "https://www.zumiez.com/opera-cherub-pop-slick-8-25-skateboard-deck-1.html",
-      "price_new": "49.99",
-      "price_old": "74.95",
-      "availability": "Check store",
-      "part": "Decks",
-      "store": "Zumiez"
-    },
-    {
-      "name": "WKND Burzinski Fairweather 8.5\" Skateboard Deck",
-      "url": "https://www.zumiez.com/wknd-burzinski-fairweather-8-5-skateboard-deck.html",
-      "price_new": "49.99",
+      "name": "WKND Thompson Interstate 8.0\" Skateboard Deck",
+      "url": "https://www.zumiez.com/wknd-thompson-interstate-8-0-skateboard-deck.html",
+      "price_new": "39.99",
       "price_old": "71.95",
       "availability": "Check store",
       "part": "Decks",
